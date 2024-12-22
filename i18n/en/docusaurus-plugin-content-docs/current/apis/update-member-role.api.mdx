@@ -1,0 +1,71 @@
+---
+id: update-member-role
+title: "更新项目成员角色"
+description: ""
+sidebar_label: "更新项目成员角色"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVt1vE0cQ/1eieXLQFaeVeLm3fvCAqqooJU+RVa3vJvbC3e1md88hnE5KaIBE/VAoFQ0hIFBbSnlIaYUEJKj/DD7beeq/UM3t2b4kPmhD/eLb+d6Z385MAj5KhR4z6IO7wAKNDvioPcWl4SICF8ABIVExOp7zwYVY+szgZxg2Uc2KAMEBw1oa3HmYRSk0N0Jx1NBwQDLFQjSoiJtAxEIEF8RShAoc4GReMtOGoz67+7eyvVu9jZXsj/v93/YOfnyW7TzN7q3Uuq9Wuy+2X6+s9vfX+vs3euu3uy+edPf2+ttrVoLMTYMDChdjruhSRsXoAF5moQzQ3kd7bQwZuAmYZUk0bRSPWpCmzihIhVL8ixgHz3/P/lqr/W9uY40q/3yT6/4Pj3vrz7PNb0/usWE1UZuPhL9MEp6IDEaGPpmUAffyitcvanKZHDclmhfRM+CAVIQPQyV3E5CoQq41t1qH3R69R299M7u51bv31cGdTXeq9/VGd/+n/oPVmoyDYPrvV9/0vns8oug2Ufq7D/ub17ObWzXmhzyafr1y9WB/a7D7sztFIs6UF2sjQn4F/drgxpNsd7v7cmPw6/eDjT+nIXVAiQAJxG+LzKqc+8SZyh5d7d3fGd+q++pBdu2X7t71sads/c7Bzsrg0arlWV3uU13BcJMXY+7Io5nFRYqnVK2UxBVqKSJtU/nBzAz9HY7s80/BKdfqVP3UfykP6zDD1JwKJoDCAexgZHQVd0EEgVhC9RYBHrWqBFpcV5tvmzCo4vEJNUsdCESLT8BZ6kA4bk+T2Pa1TWAI1WIRv5JjvzJShR7yDvpn35guhSFTlypYUlTqacOUQr+SHTdHeKi0YQkTGHGFwhjgehKImO9zcsiC84fgVMg1hQiQRbmhMj8tPwEaDvYBWKy3kfn5ZLBiGr1YcbMM7nyD6mfagqaNjHMQUxt0oc4kr3fO1PP81ZN8kKT1hI5p3ZZc15NhD02pA6Lq2PHTGLv4gh6LDdABanCz41Z4dvgiD7eycaMYtpAyOqMFkWejuKlHyfjSF54+1ljAAYrHHt4/PXN6Jk+a0CZkOZKLOdC7+6x3++nBw5f9u7u2Tdq2ctRgqW+T7aIeBi+bugwYj0o1tzmcByY5RXEGChyCA+5wJLvF2CtySZTRRGo40BbakIkkaTKNcypIUyIvxqiKunWY4qxJWZhPwOeavis2i3LotdlijE1Pvfvsn5iEgsiiZbo8C+JiRF7C5dFKQnP4HWI+sgucIIw8+yeOorwWnMD5qNBpY/Q68zJa9sfW5XsXyMhY/diuQOFbjQ89D6UpydKsSsuP+/zcBXCgWWwgofDzzYstETTZ0nD5NMOulNMSCFjUilmLZK1H+v0DsSQZOg==
+sidebar_class_name: "put api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"更新项目成员角色"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/v5/repos/{owner}/{repo}/members/{username}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"仓库所属空间地址(企业、组织或个人的地址path)","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"仓库路径(path)","required":true,"example":"","schema":{"type":"string"}},{"name":"username","in":"path","description":"用户名","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"permission":{"type":"string","description":"成员权限: 拉代码(pull)，推代码(push)，管理员(admin)。默认: push, customized(自定义角色)"},"roleId":{"type":"string","description":"角色ID, 如果permission传入了customized则需要传入角色id"}},"title":"UpdateMemberRoleReq"},"example":""}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","properties":{"avatarUrl":{"type":"string"},"eventsUrl":{"type":"string"},"followersUrl":{"type":"string"},"followingUrl":{"type":"string"},"gistsUrl":{"type":"string"},"htmlUrl":{"type":"string"},"id":{"type":"string"},"login":{"type":"string"},"memberRole":{"type":"string"},"name":{"type":"string"},"organizationsUrl":{"type":"string"},"receivedEventsUrl":{"type":"string"},"remark":{"type":"string"},"reposUrl":{"type":"string"},"starredUrl":{"type":"string"},"subscriptionsUrl":{"type":"string"},"type":{"type":"string"},"url":{"type":"string"},"permissions":{"type":"object","additionalProperties":{"type":"boolean"},"properties":{}}},"title":"RepoMember"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

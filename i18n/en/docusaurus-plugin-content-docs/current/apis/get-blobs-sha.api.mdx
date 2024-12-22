@@ -1,0 +1,71 @@
+---
+id: get-blobs-sha
+title: "获取文件blob"
+description: ""
+sidebar_label: "获取文件blob"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VLFu1EAQ/RU0FUSr+AhK4w4khBAF0gWqk4Xm7Dl7wd7d7I6PHNbWdNDlU6DgdwDxGWjWzsWQS5lU9s7Yb968ebMDVOQ8lchUQb7BNpCCikLptWNtDeQACqwjj3J8WUEONfGz1q7DWYOggLEOkK9gSc4GzdZrClAocOixIyYv2QEMdgQ52I+GPCjQguyQGzhQztN5r70QYt+TArrAzrU0JkPZUIeQD8A7J7HAXpsaYlT7Kp6cvfMiIbV/FzUK+TM4awIFyZ8sFvL4F/71K1BQWsNkWLJH2ZE8bqDa9XsqGRQ4L2NkPWIG/YlmX2nDVKfJbKzvkMfQkxOIKjV6k6WC3rcH4zNSN3JkSlvJ+yFpgTUnda7staTgIEqmIaySlYZ0DFT2XvMO8lWhoCNu7ORMaVSmkUOGTmfb00zMELIhOS9mgxxjVmvO1lIlG0KDUcZBfjuatbjGPxM1k2BRRr2xiffEsmwJzbvKluHQ7AVsPDw+XhwvpHlnA3doBGPy0J8v3399vfx9+fnnj29C53+g4VpMwZwUY7rgzLWozWwMY9crQKel+mmyn7PCLb/aunxajFqLTql/icqACwWNDSwIw7DGQG99G6OEz3vyk9Bb9BrX0vxqgEoHeb/l2pgzf7ic9uDRg9uamIJodkIe235akg+0298asnv3WDRpdc81ZRKx2Ps96TxmnpYlOZ79I/se5+Z/8fwNxPgXY/vy5A==
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取文件blob"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/repos/{owner}/{repo}/git/blobs/{sha}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"sha","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","properties":{"size":{"type":"integer","format":"int32"},"sha":{"type":"string"},"url":{"type":"string"},"content":{"type":"string"},"encoding":{"type":"string"}},"title":"BlobsShaResp"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

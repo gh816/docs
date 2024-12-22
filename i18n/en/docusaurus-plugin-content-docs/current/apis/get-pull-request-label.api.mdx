@@ -1,0 +1,71 @@
+---
+id: get-pull-request-label
+title: "获取某个 Pull Request 的所有标签"
+description: ""
+sidebar_label: "获取某个 Pull Request 的所有标签"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVd9vG0UQ/leseUqrUy8gysO98YAqBIjIhafIstZ3E3vhfmV3HWpOJznIUmqJkEppEykxkPKCiAIxEGjqlP4z9d3FT/wLaO7O8SVpGifp02lvZ+b7ZnbmmwAs9AWaTKEFxgKzJWpgoTQF9xX3XDAANPB8FIyOH1lgQB3VXNO2y7jYRKk+YTW0QQPF6hKMeaCrUn4noaKBzwRzUKGg6wBc5iAY4DadGgrQgBOGz1QDzgIne3vRys7wcHeu/N+L76LVv+Le3vBoPRqsz5WTrU40WIuf9F+1v432n0eDx5xboIHAxSYXlIsSTdQAHzDHtzFLQ5oNdBgYAaiWT/+kEtytQxhqJ7y8r91LaGUU4m47+uPH5NfBaPMg6vWjH9ozwxfLw8OtV+3l5KiTHK3EDzeGh7vDwYC4phYU7tbbICnQ96bgePxsP3rZmXlrsD6r4xh2sYmidQ43t5gg5R11UfSz/tG/61F3dfT072Rn+TQ0iup08Pf5NzeiEO+vEf5WZ/T0ebL9e/ykD2FYoYDS91yJkkK8OztLn9Oen30MGpieq9BVdHtbv02fc8BMCEbcuUJHFv57tS/RVKCBL2jgFM+wuFWw4a7Cetqgp7EdUUr7f8ETDlOZ4fvvQUiEbE9cnvbo595x909yyCp+6Us9Wk1+6ZM9NaPkyhOt6lRUs968gG1T2JdjkxFlJpBkq8rUFHQfbkdHg3jzn9HmQYrjW1P7xtsH8UZ/4qvwgapOWdZ4YyXu7Y2LS85cpSP3KYo6FiW0jNKHMCSbBjIrlcsgPUo0m4KrFhjzFQ0cVA0vl2HqFRp/A3Tmc33prp4+hh6kKhbqAR1D3W/attSDTHJD3SY4STOPYimT5coE5T61a9p5Ic3agpcmmbM2bWRu1fJMeS5T0ICCZYd37szemaVa+Z5UDnMpRj7Jx98/i9Y24p8eDQ93S8VlUUq2OnG3Hfe68c5K8tvLswjBZLYILK87PYbu24y7hfbJijIPzOdE6y7kXQoaGGOBN3IRTYtD55ONlNenokHDk4riBEGNSfxC2GFIvzPxoWVmcclq9kWrs8g4F6/Xsv4KWxOLJWY3U00m9bta/Fz63oQxkdEJToUOghPQFZOaKecqe6t0nWX9WqJjkXRbRZLjBPJHulptCjRvvryvQTpruRtyPrPMr0EjbfiwciIw6WNnVx+YJvqq4ES7Kyyqzb0PP4cw/B+nGekf
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取某个 Pull Request 的所有标签"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/repos/{owner}/{repo}/pulls/{number}/labels"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"number","in":"path","description":"第几个PR，即本仓库PR的序数。对应iid","required":true,"example":"","schema":{"type":"string"}},{"name":"owner","in":"path","description":"仓库所属空间地址(企业、组织或个人的地址path)","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"仓库路径(path)","required":true,"example":"","schema":{"type":"string"}},{"name":"page","in":"query","description":"page","required":false,"schema":{"type":"string","description":"当前页码"}},{"name":"per_page","in":"query","description":"pageSize","required":false,"schema":{"type":"string","description":"每页的项目数"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","description":"mr id","format":"int64"},"color":{"type":"string","description":"颜色"},"name":{"type":"string","description":"名称"},"repository_id":{"type":"integer","description":"仓库id","format":"int64"},"url":{"type":"string","description":"url"},"created_at":{"type":"string","description":"创建时间"},"updated_at":{"type":"string","description":"更新时间"},"text_color":{"type":"string","description":"文本颜色"}},"title":"MergeRequestLabelResp"}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

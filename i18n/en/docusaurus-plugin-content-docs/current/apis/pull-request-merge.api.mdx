@@ -1,0 +1,71 @@
+---
+id: pull-request-merge
+title: "合并Pull Request"
+description: "合并Pull Request"
+sidebar_label: "合并Pull Request"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VUFr1EAU/ivlnVRiUwUvual4EBHLWk9lKbPJczc1yczOTNouIbAtIl0otIiWIoII4tEeCmLrgj9mm2hP+xfkzaS72+6KeLC5JDPvzfvmfe+9LxkEKCT6TGMA3nMWKXQgQOXLUOiQJ+BBsbddHH9dTKNorobtFJUGB7hAycjhYQAeiDSKKttjlE0EBzRrKvCWYfKcgroDgkkWo0ZJ5gwSFiN4kKRxAyU4EBKkYLoFl+8BDkhsp6Gkm2qZogO4wWIRoTUqv4UxAy8D3RG0p7QMkybkuTOC4evJFaBIFPw/gdTtSVT6Hg865OHzRGOi6ZMJEYW+KYu7qggpmw7FG6voUwmFpCLqEBVZY6rbSoy6xYNp4Kme2D086/YG3a2qOWo/370s94/Lo7fD/o4JNexvW1vZ65bve+Xu3unJp2G/N+huqnbKVGvY3y57m8XxUbGzX2y/Kt8cWv9hv1e83pHYYMoE2T0oPpwUx19H1kF36+z7wa8vn06/nRioQXeL6AcdakPg4qVurGEb8gsM5+QuUQmeKJv+7YUFel3M8skjcCb5veHe+BdKVWtGCS8zSU65Y+mfJL7BeYQsmfIvDw6Lvc+WDHtQKdbEvwOd/vhYbh7+hSglLDctZIGZ0MwsFfqpDHUHvOU6QdomAZGapKnDPXCZCN21Oy41v3IzM2m5m9Eyd0kglJvZKc/duBIJhXLNCkF9DPKU6DUM5g5QG9fGDf/gvIaXG3Y0ITR2z7mho8rSJx5XAu6rWXNI+HZxa35hfoECCK50zMz0VAM9UwIvhJqYw9neVXE0bmhXRCxMCCmVER21DC4DEyHd6I6RB8Hpvt65YnmVqBgmaT1STEtm3YEWV5rCZBnNzjMZ5Tltt1OUVeXWmAxZg1hZziAIFX3/QfYnE7pWq8Tq+tyfMqk2WdKhDFiUVkr2AjtjdSeJvEJUS90Vg5oy5fXRDBmqrem+Rbm5RAHGR6dUm25sT9z1fRR6wpcUKJ8cwcVnS+BAo/oXxDww/x+2Ti3E1u3FuMnTSJLZyyBiSTM1qgEWkZ7fBtLzOA==
+sidebar_class_name: "put api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"合并Pull Request"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/v5/repos/{owner}/{repo}/pulls/{number}/merge"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+合并Pull Request
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"number","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"owner","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"merge_method":{"type":"string","description":"可选。合并PR的方法，merge（合并所有提交）、squash（扁平化分支合并）和rebase（变基并合并）。默认为merge。"}},"title":"PullRequestMergeReq"},"example":""}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","properties":{"sha":{"type":"string","description":"sha"},"merged":{"type":"boolean","description":"是否合并"},"message":{"type":"string","description":"信息"}},"title":"PullRequestMergeResp"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

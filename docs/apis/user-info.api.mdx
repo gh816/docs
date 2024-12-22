@@ -1,0 +1,71 @@
+---
+id: user-info
+title: "获取一个用户"
+description: ""
+sidebar_label: "获取一个用户"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVcFO3DAQ/ZVqTi1K2W1VesiNA0KolSpBOa1W1SSZTVwS22tPFrarSBx7ai+o34AqVT2yHwSFz6gmWSCUBOgp8TzP89h+frOAhKyjGJkSCCeYewogIR87ZVkZDSFAAMaSQxnuJBBC6cnt6ImBABhTD+EI9j05D+MALDosiGUUjhagsaBVRv0bgBJKi5xBxzqOpqVyUgm7kgKgIyxsTg3o44wKhHABPLcS8+yUTqGqxpLprdGevOCvh0P53KX/8A4CiI1m0izo2mBNPvdYTfSZYoYArJNts2o4cYaMbt/lHQUEQDPS7PvQiclzc0jukQlKp30TUuX76TMu8j5MJZ3h3KRyER1IQUVEbtfIqXfAzYV2AMalqNWXWiW9lTqKSc0o2XrwuBwV6A56IGt68zyjc5T0wmV0o4dejibQAZQ9CZEy3fHcpJ1AbAqLet6NOZKHuMn3URGJK5AhhASZXrIqqFZegeoR1bVQpZlScm02pfntmzsifOJ868yEvK9fV8fytoxyFW+LcJ9KWGfsyhU/MWM67RUCdQu/tMn/nvAhcpz10B1SnGEHVw2pqFsabOx71GmJKbU3is7h/J4rXiyXlyenV79/XZ0ei30yFb6r9geyqkoWVVwb6Z4SRxW/buIZYdJopB56ikuneA7haCxmwJkRy0+pdkSx7RAGaNVgtjEQV/eDxbW5V+LR5GaN949vufbEYuutiiFJ45D6V/XEOaH+lJjYdzUEIWsGr9aH68NaJcZzgbXmVt3l6tvZxfcf58vj8+XPy5PTP1/P/qVa3Bq/sK7OjumIBzZHpVsPvNnjCNAqWX8Dgrp7SXXhTRsbB5AZzzJvsYjQ077Lq0rC05Lc6vBm6BRGssnRAhLl5b+nx7bre767aoIvnvWVei0YLXKZYV6uOuQBzdvNthrf3G9dQwNvxjFZbiVKI6zal7299RGq6i+7lM+7
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取一个用户"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/users/{username}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"username","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","properties":{"avatarUrl":{"type":"string"},"eventsUrl":{"type":"string"},"followersUrl":{"type":"string"},"followingUrl":{"type":"string"},"gistsUrl":{"type":"string"},"htmlUrl":{"type":"string"},"id":{"type":"string"},"login":{"type":"string"},"memberRole":{"type":"string"},"name":{"type":"string"},"organizationsUrl":{"type":"string"},"receivedEventsUrl":{"type":"string"},"remark":{"type":"string"},"reposUrl":{"type":"string"},"starredUrl":{"type":"string"},"subscriptionsUrl":{"type":"string"},"type":{"type":"string"},"url":{"type":"string"},"bio":{"type":"string"},"blog":{"type":"string"},"company":{"type":"string"},"createdAt":{"type":"string","format":"date-time"},"email":{"type":"string"},"followers":{"type":"integer","format":"int64"},"following":{"type":"integer","format":"int64"},"profession":{"type":"string"},"publicGists":{"type":"integer","format":"int64"},"publicRepos":{"type":"integer","format":"int64"},"qq":{"type":"string"},"stared":{"type":"string"},"updatedAt":{"type":"string","format":"date-time"},"watched":{"type":"string"},"wechat":{"type":"string"},"weibo":{"type":"string"},"topLanguages":{"type":"array","description":"常用语言","items":{"type":"string","description":"常用语言"}}},"title":"SimpleUser"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

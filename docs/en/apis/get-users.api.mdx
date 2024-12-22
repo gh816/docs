@@ -1,0 +1,71 @@
+---
+id: get-users
+title: "Get list of users"
+description: "Retrieve a paginated list of users."
+sidebar_label: "Get list of users"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVMFu2zAM/RWBZy9Ji+2iWzcURQ/biqI9BcHA2IzDzpYUic5WGP73gY7dpEmXFfPFkE2+R5GPrwXBMoGdw2OiaL6iw5JqcgKLDApKeeQg7B1YuCeJTFsyaAKW7FCoMBUnMX5lmkQxTSADHyiiZtwWYKEkUdwEGQSMWJPowc5bcFgTWAhYEmTASrBpKD7DMe0dlmRcUy8pmpWPI7f+zCDSpuFIBdgVVokySPmaagTbgjwHJWAnVFLsYVfYVAL2ouuyfQEUf/y7iG87/vGiJlBfCP1vCZezrltobgreJUoafTmb6es18dXrDkMGuXei87EtYAgV530vpk9J49tTdowR9UIsVPc8wlLpDx0MZGOYXz5RLjqnqCMU3hXFxQFUksiuPGnOw5pM43jTkOGCnPCKh1lhXzV0Geh71/F3oQ3Rem8ZzopCNXL1FsTKxxoF7BBxjHmtXw0WRaSUjkHzSCrlHyhnkQsU+iBc02nFXNMLovmFyQyQ0HWH+phrNw9aMd5n0emTwce3BPAZC3NPm4aS9HA1ydoPq9VvlazBwrRXx7QdsTvIIFHcjtvWxAosrEVCstMpBp6ULLkvaJL7Ws/T7SdQRbJb+UOR3LB88QWZ74Hc1d2tGbf5SKV3t/28a7UPduWwJezMmB8qFG0lZKBF7dIuJrPJTEcQfJIae/0Oa3lDcqL8V5ztfhHe6UzDZIV+yzRUyK7XZez1tGvjHEYq+zKkRQZrn0R/tu0SEz3Gquv0884ptLsFJ1xWBxbw10rPmtmbBf6k571NbrFqNATUwN7Pesa9znHunXHPu9BDZCUGO190GawJC4p9H3Z5V3lOQQ6yTmxKUV50fHP9AF33Byp9O/M=
+sidebar_class_name: "get api-method"
+info_path: docs/apis/gitcode-openapi-users
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get list of users"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/users/{username}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve a paginated list of users.sdsd
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"page","in":"query","description":"Page number for pagination","required":false,"schema":{"type":"integer","default":1}},{"name":"per_page","in":"query","description":"Number of users per page","required":false,"schema":{"type":"integer","default":20}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A list of users","content":{"application/json":{"schema":{"type":"array","items":{"title":"User","type":"object","properties":{"id":{"type":"string","description":"The unique identifier for a user"},"username":{"type":"string","description":"The username of the user"},"email":{"type":"string","format":"email","description":"Email address of the user"},"created_at":{"type":"string","format":"date-time","description":"Time the user was created"}},"required":["id","username","email"]}}}}},"400":{"description":"Bad Request"}}}
+>
+  
+</StatusCodes>
+
+
+      

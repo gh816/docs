@@ -1,0 +1,71 @@
+---
+id: repository-compare
+title: "Commits 对比"
+description: ""
+sidebar_label: "Commits 对比"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV0Fr1EAU/ivlHUvYrBUvuWmLIB6UiqeyyGzykowkmXTmpe0SAqUgRahaUETwKhW8FEEEacUfo7v15l+Ql6ztrk26q7Qqsqcw703m+17eN+F9OXiYanQFoQeOLyKDFnhoXC1TkioBB8AClaIWvLzhgQMaU2UkKd1bVHEqNIIFJAIDzgosqjiWBB0LUqFFjISa4zkkIkZwQK0nqMECySengkKogdO4mknNhEhnaAFuiDiNsEoaN8RYgJMD9VKOGdIyCaAorGMUZnjhIF1h8MJBQhTehYMY0kIGIf0AWs1Q904hDV7s93f3jl6+6+9/GOw/GwMeCucEuQzUwXeVilAkU5zuoS+yiIaHj/HNfF9uTGC78/DowevB8+0vB+/7u4+PDje/ftoeHLyqIt8Od/p7W3Mt2qDPm1v9J2/6H9/2nz6a82WE5uzKzvim58mhKDpMw6QqMWgYa6Hd5sc4xK2bYIGrEsKEODtvz/PjFEPVvY8uNzjVfJlJVmeyhodXduLeTEc1MrLAhHXysiCkOLrb8I6r4hgTMmflp+HUhO0JwlrNA0kq2zisurBAZBQqPRmrEl8NGMZC1pcxmcbVCvy4ZMK/z4R/6QmZke1Ca8FXTBLG5vyVYkIxDdox6RHWt0uu47GqtUtI/DEKC2LUAV6bKX2m9P9d6dWX/YP1zJQ/U/4/oPzCgmpq+u1ymmjzsY2tMCQoq2NvgfA8ySPaaFYmhEHpfnylY0FV6PJC2TuM8Ff2u6FIApx2dzdS3aZrqMV68w0t58qmdCrIDWszpLNkaClPDf6jXVySvn9dRlgFp3xp+Wf7uYwmrdTBbqk0nHm5NOhmWlIPnJUOjwEUKvavAZb9ZzflgC1Saa9dsUtTa+elPy3snJeF7VYAds5zctFqtXJGKNgCoF6rrG3nBOcOT91lUwr2Jr4qKxnSdrmQe55yTZ2H48OqxaVWu9WGovgOvpJ8yA==
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Commits 对比"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/repos/{owner}/{repo}/compare/{base}...{head}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"base","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"head","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"straight","in":"query","description":"是否直对比","required":false,"example":"false","schema":{"type":"boolean","description":"是否直对比","default":false}},{"name":"suffix","in":"query","description":"按照文件后缀过滤文件，如 .txt。只影响 files","required":false,"example":"","schema":{"type":"string","description":"按照文件后缀过滤文件，如 .txt。只影响 files"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","properties":{"baseCommit":{"type":"object","properties":{"url":{"type":"string"},"sha":{"type":"string"},"htmlUrl":{"type":"string"},"commentsUrl":{"type":"string"},"commit":{"type":"object","properties":{"sha":{"type":"string"},"date":{"type":"string"}},"title":"Commit"},"author":{"type":"object","properties":{"name":{"type":"string"},"email":{"type":"string"},"date":{"type":"string"}},"title":"Author"},"committer":{"type":"object","properties":{"name":{"type":"string"},"email":{"type":"string"},"date":{"type":"string"}},"title":"Author"},"parents":{"type":"array","items":{"type":"object","properties":{"url":{"type":"string"},"sha":{"type":"string"},"shas":{"type":"array","items":{"type":"string"}}},"title":"Parent"}}},"title":"CommitDetail"},"mergeBaseCommit":{"type":"object","properties":{"url":{"type":"string"},"sha":{"type":"string"},"htmlUrl":{"type":"string"},"commentsUrl":{"type":"string"},"commit":{"type":"object","properties":{"sha":{"type":"string"},"date":{"type":"string"}},"title":"Commit"},"author":{"type":"object","properties":{"name":{"type":"string"},"email":{"type":"string"},"date":{"type":"string"}},"title":"Author"},"committer":{"type":"object","properties":{"name":{"type":"string"},"email":{"type":"string"},"date":{"type":"string"}},"title":"Author"},"parents":{"type":"array","items":{"type":"object","properties":{"url":{"type":"string"},"sha":{"type":"string"},"shas":{"type":"array","items":{"type":"string"}}},"title":"Parent"}}},"title":"CommitDetail"},"commits":{"type":"array","items":{"type":"object","properties":{"url":{"type":"string"},"sha":{"type":"string"},"htmlUrl":{"type":"string"},"commentsUrl":{"type":"string"},"commit":{"type":"object","properties":{"sha":{"type":"string"},"date":{"type":"string"}},"title":"Commit"},"author":{"type":"object","properties":{"name":{"type":"string"},"email":{"type":"string"},"date":{"type":"string"}},"title":"Author"},"committer":{"type":"object","properties":{"name":{"type":"string"},"email":{"type":"string"},"date":{"type":"string"}},"title":"Author"},"parents":{"type":"array","items":{"type":"object","properties":{"url":{"type":"string"},"sha":{"type":"string"},"shas":{"type":"array","items":{"type":"string"}}},"title":"Parent"}}},"title":"CommitDetail"}},"files":{"type":"array","items":{"type":"object","properties":{"sha":{"type":"string"},"filename":{"type":"string"},"status":{"type":"string"},"additions":{"type":"integer","format":"int32"},"deletions":{"type":"integer","format":"int32"},"changes":{"type":"integer","format":"int32"},"blobUrl":{"type":"string"},"rawUrl":{"type":"string"},"contentUrl":{"type":"string"},"patch":{"type":"string"},"truncated":{"type":"boolean"}},"title":"DiffFile"}},"truncated":{"type":"boolean"}},"title":"RepositoryCompareResp"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

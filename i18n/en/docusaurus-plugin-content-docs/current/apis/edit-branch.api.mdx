@@ -1,0 +1,71 @@
+---
+id: edit-branch
+title: "获取代码量贡献"
+description: ""
+sidebar_label: "获取代码量贡献"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vt9vE0cQ/leqeQrohFMqXu6NIlRVrYoE5Smyos3dJN5yd3vs7qVY1kmJlBZDC4lESKSUQtMSiVZqQyWkULsqf0zvzua/qObWdi722TEOffF5f33ftzOzM9MAF0OJDtPogr3MPIUWuKgcyUPNRQA2gAUiRMlo+KkLNqDL9ceSBU4NLNBsRYG9AFeE73MNVQtCJpmPGiXNNyBgPoIN4usAJVjACTJkms6e5Enaj9LWo+zeWvrn086vrbe7r9InL9Mf1+aSv9eT13v/rq132hud9t2suZO8/i1ptTp7G2YHwZ0DCyTejriki2gZoQV4h/mhh+YOyqmhz8BugK6HNKe05MEKxLE1ECkxFFNo7B4dpv9szL032qXcmIv5qMd+O0JZH6FPm99m24fp1oMS1nFE4zGKElika0JOZu9sv8iaR9zNmjvm77CQXvhMq6QUryhKBF59UaG3PFlX9uyge/iziYmz6DmBU9SheOCc4pmk/U33zXb6w9Ps9+fZ7kH25Fm6eT9pH6RbDzt7G9nmVtJ6fhZtU+EXNUeB5t4smv/6Lr334H/UPIQfx1WiUKEIFCoCvTg/T5+TWNc+AwscEWgMNK2er5ynz4gUsfQVOhosCCUlLc0NppNnJ1XYyKRkoyYx+9Lmbnf/RfJmP1s/JBNq9NXpHKpW9swtcJnG0vcPmus8TfRyJ00pzTRXmjuna+2+2u98/4dRaRRPrzWUguYpnQ+28kDjSp6jl4X0mTZTH12kO5gMVXq9SKH8Io+5ksWAO7fGLrJVppm8Kb3yVdf9nAeoplToooca3+WE8fUVEZmIOvVEPJUD+j69oZnxqBaaeaUEpWitVvb4ZTl7H/paiMHlkJuoIZ7rqEKIaUsNmZsX3kY+VOhEkus62AtVC3zUNUEFfAXziKACZ0OFhbyyeqnSyCt0XGlQEYwr9Ku4FrJeMYZaLIQmIctVU+GrxzQ36DXm9o8p8SyL/No91Y6HLFh0RX58pMMgMDP48ML8hXnyTyiU9llAGL2c1n14lG7uJO1fOj+tv727aSw2jNY4ThME3LO6xju6EnqMB3nMmpgzFlgAFnKScAkssPt9it3rBY7tAP2QKVqiakFNKE0ojcYSU3hTenFM0ybnUgfkcsWWvHH9VVHv3PVerj33QbHUl97hFtZHWodV5kV530GFYHraMYV9Au2gXZiRcahkT2Aq9gAzkk1ZmyeI6DcA71XASKGdIKBfzY8FVGkgOSmYPcjO3nKXau6XraBelDzwaP7C3s2CI5qHWvAZZOTvO64OkmZuRbN02XEw1IVD1G3ExQz6ydUvIY7/AxP0Qgo=
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取代码量贡献"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/{owner}/{repo}/repository/commit_statistics"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"仓库所属空间地址(企业、组织或个人的地址path)","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"仓库路径(path)","required":true,"example":"","schema":{"type":"string"}},{"name":"branch_name","in":"query","description":"分支名","required":true,"schema":{"type":"string","description":"分支名"}},{"name":"author","in":"query","description":"用户id或用户名","required":false,"schema":{"type":"string","description":"用户id或用户名"}},{"name":"only_self","in":"query","description":"查询个人","required":false,"schema":{"type":"string","description":"查询个人"}},{"name":"since","in":"query","description":"仅返回此日期及以后的提交","required":false,"schema":{"type":"string","description":"仅返回此日期及以后的提交"}},{"name":"until","in":"query","description":"仅返回此日期及之前的提交","required":false,"schema":{"type":"string","description":"仅返回此日期及之前的提交"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","properties":{"commits":{"type":"array","description":"commit列表信息","items":{"type":"object","properties":{"sha":{"type":"string"},"date":{"type":"string"}},"title":"Commit"}},"statistics":{"type":"array","description":"贡献信息列表","items":{"type":"object","properties":{"projectId":{"type":"integer","format":"int32"},"branch":{"type":"string"},"userName":{"type":"string"},"nickName":{"type":"string"},"avatarUrl":{"type":"string"},"addLines":{"type":"integer","format":"int32"},"deleteLines":{"type":"integer","format":"int32"},"commitCount":{"type":"integer","format":"int32"}},"description":"贡献信息列表","title":"Stat"}},"total":{"type":"integer","description":"贡献人数","format":"int32"}},"title":"OpenApiCommitStatResp"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-commit
+title: "获取仓库的所有提交"
+description: ""
+sidebar_label: "获取仓库的所有提交"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVl1vG0UU/SvWPLXVKrYbFaF9iwBBxUMRoU+RVU3WN96B/erMbIi1WsmgpCSibSIFEhSC1EpFCJCSIvULJ/033rX9xF9Ad3Ztr+l67XyUPtk7s3vPOffO3HsCUgePg0El1Im+Qi0BGqmDMDjzJHMdohOiEdcDTvHxZp3opAHyA9e2mSQakbQhiL5E0oWaRjzKqQ0SOK4HxKE2EJ24XzvAiUYYRvSoNEkODIe7PuNIRHIfNAJr1PYsSDaFYYJNiR4Q2fRwTUjOnAYJQ22IwsFz3zqIRxswALnrA2++gRK93o22HvQfP+8++mYMMc3vELKag8gcCQ2Vq8KgKy63qUzen7+u3l6hviWJXh0jC/zOdMLx8TYGPljvP/67+/NR/OPTQtrzlSxvm64x27eJXq1UtGkqcpEma5mvZMUIk07Rsb3TaT/pPX8Z/fZ992B98ZOFqHUab+71WhvR5r34h+No58FcqX/yU+/oiV7qnOxG7V3kohaSNwqFFx2Rt8Fl/Nip81x07O5vRDt/9o5/jfe+65y86B6sJxwuTdJEgCxP6kvT5bPUqfP6sNfaQM3fHnWP/oo39zqv/ui0293f2/39Z9Hh0+iX1hVfAMfIZcttMOfqJZfnXBTGjiRzjGmXSyF1D9aTsxDvv+jvP/vn9H7yJ350Gp1ud161SzcXb5Xef69SvWSJZwDOCvMdyawZhcWHrWjn4TsQNitwGNYQW3iuI0AgwPVKBX/G4976lGjEcB0JjsTda+Vr+PMGLco5xXQwCbbIrLvLX4KBU9HjODElS7B8buVMFE21s7x1U9rW7QnfGK5tgyNF0T6T0zlNwq5TCbnjj0gmVZ3SSR9qg5s+FSs5UTlgYFOWL2M6jYUEfChZwrtn4lGOtfn/Toow6SxoQ9IZ1p8pruNrSWk/BInJCNWWCbSurFygHgUYPmeySfSlmkZskKabOkLUghNKJ2XqsfLqjTKaMVEOlPMLywE+huWkWAIvO/DVxCTWRnEX8aqpXITYelZcpSKlZ1hAnTt11xB5vg6DJQ/VucpcRdXDFdKmzqjypPfwZbS9Nxy28VYrPtwaTsmxmMGoE2D4NJUS1mTZsyhzECCtVyJ8iVCPIZEbqtF5LtLUB8ZXT73pIAE1jZiukPhZECxTAbe5FYa4nDRb9M51JuiyNcmYZwn+xxzmkv0KmiP3ukotX3VdbPmz4+TatyK0kf08L+KlWLoCiompPCe7AstVWANl5S6UkXOapwJWQ+N2IV5n8jlFZUmN1UXJzO5NCsgMzNCITA0fOEM2Z7yqVz5PPdDV0iTQQTt3mlnMAZmko5wtHRcGVd0rrA0nghKdbC0YBngy8xHapjA7Hj7+6AsShv8Ce8+H9A==
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取仓库的所有提交"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/repos/{owner}/{repo}/commits"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"page","in":"query","description":"当前页码","required":false,"example":1,"schema":{"type":"integer","description":"当前页码","format":"int32","default":1}},{"name":"per_page","in":"query","description":"每页的项目数","required":false,"example":30,"schema":{"maximum":100,"type":"integer","description":"每页的项目数","format":"int32","default":30}},{"name":"sha","in":"query","description":"提交起始的SHA值或者分支名. 默认: 仓库的默认分支","required":false,"example":"","schema":{"type":"string","description":"提交起始的SHA值或者分支名. 默认: 仓库的默认分支"}},{"name":"path","in":"query","description":"包含该文件的提交","required":false,"example":"","schema":{"type":"string","description":"包含该文件的提交"}},{"name":"author","in":"query","description":"提交作者的邮箱或个人空间地址(username/login)","required":false,"example":"","schema":{"type":"string","description":"提交作者的邮箱或个人空间地址(username/login)"}},{"name":"since","in":"query","description":"提交的起始时间，时间格式为 ISO 8601","required":false,"example":"","schema":{"type":"string","description":"提交的起始时间，时间格式为 ISO 8601"}},{"name":"until","in":"query","description":"提交的最后时间，时间格式为 ISO 8601","required":false,"example":"","schema":{"type":"string","description":"提交的最后时间，时间格式为 ISO 8601"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"array","items":{"type":"object","properties":{"url":{"type":"string"},"sha":{"type":"string"},"htmlUrl":{"type":"string"},"commentsUrl":{"type":"string"},"commit":{"type":"object","properties":{"sha":{"type":"string"},"date":{"type":"string"}},"title":"Commit"},"author":{"type":"object","properties":{"name":{"type":"string"},"email":{"type":"string"},"date":{"type":"string"}},"title":"Author"},"committer":{"type":"object","properties":{"name":{"type":"string"},"email":{"type":"string"},"date":{"type":"string"}},"title":"Author"},"parents":{"type":"array","items":{"type":"object","properties":{"url":{"type":"string"},"sha":{"type":"string"},"shas":{"type":"array","items":{"type":"string"}}},"title":"Parent"}}},"title":"CommitDetail"}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

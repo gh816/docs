@@ -1,0 +1,71 @@
+---
+id: get-org
+title: "获取一个组织信息"
+description: ""
+sidebar_label: "获取一个组织信息"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVT1v1EAQ/StoKogs7giEwh0FiiKKk/iootNpzp74lti7m9nxJYdlCSQkOujoaWkoiZSCPxMIPwONbZELsbmksj1v9u2bD89UkJJnSlAohfgA80ARpBQSNl6MsxADROA8MernXgoxZCQTziACwSxAvA8TztCaN41HgGkEHhkLEmKFK7BYEMTgmkNGOT3KAnouYjoqDasU4ZIioBMsfE4tGJIFFQhxBbLyagvCxmZQ11M9GbyzgYLi2+OxPq7ST55BBImzQlYU3Rpt6eMaq5u/pkQgAs8at5iWs5F8/e4IcImCPCs574UTJk3uDKUXvqKxB6cCTT8xWSH2bAL1w0uyEgZlHbg8d8ezxJV2XZixQhkxqAMXqllND7f1yEKKfJDPpBtZHj9Sx9wlOBht7jLTjxRUzJt+upHUzntQbduRPYA7tsSbm+EG0bZChgMalLChn4bs/6lOHYEYaX6jica3Zw+cHmEqkA972TybJQrNmLy7adJ9Oc9NsuY8dy4ntJfYrega38E0tIZb5CczQrS5su1/sVmjNvNaXncb9isWdqVvM63mBWHa9m/zGSgp2cgK4v2ptqssXDdaVVEzamCE3oyWOyPHWRhVjrNahyDxsp2r00uWFzrDGv36J+qdKr8TkmgNZqlLQt/EVbL248H98f1xUysXpMCma7vJ/fvj95+fPp+fvj0//Xpx9v7i7MP5jy+/3n37l7C6nK/K3SVQ6ERGPkdj1+rTxrgP6I2q2NEtw5lKjHVPTCNYuCDqUVVzDPSK87pW81FJ3KVtiWxwrkHuV5CaoO8DW2xd2d3n3Za5d2dIZGdEu1JxmJfdCjqkVbfI6unfojbXt8iTJCEva2d0ydTrFd59+hLq+g+UFozu
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取一个组织信息"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/orgs/{org}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"org","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","properties":{"path":{"type":"string"},"avatar_url":{"type":"string"},"created_at":{"type":"string"},"description":{"type":"string"},"email":{"type":"string"},"enterprise":{"type":"string"},"events_url":{"type":"string"},"follow_count":{"type":"integer","format":"int32"},"html_url":{"type":"string"},"id":{"type":"integer","format":"int64"},"location":{"type":"string"},"login":{"type":"string"},"members":{"type":"integer","format":"int32"},"members_url":{"type":"string"},"name":{"type":"string"},"owner":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"login":{"type":"string"},"name":{"type":"string"},"avatar_url":{"type":"string"},"url":{"type":"string"},"html_url":{"type":"string"}},"title":"OwnerInfo"},"remark":{"type":"string"},"private_repos":{"type":"integer","format":"int32"},"public":{"type":"boolean"},"public_repos":{"type":"integer","format":"int32"},"repos_url":{"type":"string"},"type":{"type":"string"},"url":{"type":"string"},"gitee":{"type":"object","properties":{"follows":{"type":"integer","format":"int64"}},"title":"Gitee"}},"title":"GroupInfo"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

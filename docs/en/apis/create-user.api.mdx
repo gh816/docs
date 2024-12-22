@@ -1,0 +1,71 @@
+---
+id: create-user
+title: "Create a new userddsds"
+description: "Create a new user with the given information."
+sidebar_label: "Create a new user"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVctu2zAQ/BViL70wtlO0F57aBkHhQ5GgTU6GUNDSWmIqkQy5shMI+vdiKfkR203T+mSJs8PhznDVAekyglrAfcQgvmmrS2zQEmQSCox5MJ6Ms6DgKqAmFFpY3IiW0RtDlaAKRWnWaIWxKxcazfAJSHAeQ3qYF6AgT9W8CUgI+NhipC+ueAbVHe2ThLjlA+YkyImhcCwyAQtQFFqUkDtLLFR1oL2vTZ42mz5EZukg5hU2mv/Rs0dQMFCCBB9YGhmMvMonsbrBA2SkYGwJxw24H5GsKmBpImGAXgI22tTnyod2gBoR5/jeRZEWhS6KgDEyn9cxblwoXqXcgc6xit1q3x82brE/rdyJ2mEzCWSoxpFkbn1L0PcDRfTOxqFj72eXf3Bt8Io1vd2cgx1B/sUrc7YnL4XcVShaax5bFKZAS2ZlMIiVC0Kn1HKH3+55Ytv67lYp7VuW//X9+tDwY9KxhT81vcpcaMILMsnII8WGEzoyio2OO1eOs2DYqJNAZIPjH2azU5Pndq1rUwgzRkNCg1Q5vt/exeSXpgoUTJk2Trstew8SIoY1Bp41HbShBgUVkY9qOtXeTEpDuStwkruGn6frj9BnEjgw3/fT4vpJN77Gl/d2357RkbT2CQcsMx6mfAfvJfDEOgzhV0NXrkBx49F+vp0LDmU86TCvcJ4aHpbGlqnTURgrtvW+1sRWgQQ+8lB2OZlNZul+u0iNTvdgPMDJaD3es9tfqH+ew2OGCJ9o6mttbLoBISV3sGsYC3xQtetqJqFiS9UCum6pI96Huu/59WOL4RnUIpOw1sHoJbdukfUSKtQFhmTwL3xmqYPoizuWwPC6ZSknE6GX24rPeY6eXsVmB6m7vflxBxKW44ekcQXXBL3h74XegIL0IeLqNEDSuw5qbctWl4wdOPn3G4x0b1M=
+sidebar_class_name: "post api-method"
+info_path: docs/apis/gitcode-openapi-users
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create a new user"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/users/{username}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Create a new user with the given information.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"User object to create","required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"username":{"type":"string","description":"Username to register"},"email":{"type":"string","format":"email","description":"User's email address"},"password":{"type":"string","format":"password","description":"User password"}},"required":["username","email","password"],"title":"UserInput"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"description":"User created","content":{"application/json":{"schema":{"title":"User","type":"object","properties":{"id":{"type":"string","description":"The unique identifier for a user"},"username":{"type":"string","description":"The username of the user"},"email":{"type":"string","format":"email","description":"Email address of the user"},"created_at":{"type":"string","format":"date-time","description":"Time the user was created"}},"required":["id","username","email"]}}}},"400":{"description":"Invalid input"}}}
+>
+  
+</StatusCodes>
+
+
+      

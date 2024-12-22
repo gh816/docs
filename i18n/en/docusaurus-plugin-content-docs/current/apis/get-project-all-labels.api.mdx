@@ -1,0 +1,71 @@
+---
+id: get-project-all-labels
+title: "获取仓库所有任务标签"
+description: "查询项目所有的标签"
+sidebar_label: "获取仓库所有任务标签"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VM9rE0EU/lfknbQM3Vith731ICIKStRTCGWy+5qM7u5MZyaxYRnwIGgL/oBCC7agLYgntUhRbMC/ptm0/4W83U2api3NRU+78968X9+870shRKUx4BZD8Jd4ZJBBiCbQQlkhE/Ah+/j56Pvu8c7vwda3bPVFtr06+PAy+/Rq8PUPMJAKNaebd0PwoYn2oZZPMbALUXSfNzAywMDypgG/BqWhzkBxzWO0qMmeQsJjBB/k8wQ1MBBUVnHbgslegIHG5bbQ1K3VbWSAKzxWERZOE7Qw5uCnYLuKbMZqkTTBOTaqolHJf1SkTpFGycSgIf9cpUKf0+kf3AMGgUwsJpa8M94Mfc5k5VrzLjVqMTZjdtkgfIGB0gS+FUUtEY7dEYnFZo7lxFvmzyZCYLAkdcxtcffGHDhW4jM51fkp+u/fDL7sUVQgI6mnDTve3T5a/UFh9ApGWKm7i1N1fthb7x+sn+n81k1K1tbRtB3QVepaI638IreXB/Zfb/V7B9nmz+PN/byaCqeOzbb2s429YaxjYIXN96hK8+eEqKJR4Bw5W8jDnBNpfjQYtLWwXfBrdQYx2pYsSUavT6vrg8eV8DrzXo6nl+YUcl5KR+dFQwYa1J2CbPWTtI9o4/LlcUSHJZmPU/YXRMiTxVAG5jx+ULLicH22MlshVJQ0NuYJ5SiJdvT2V//dRvFwhXAc9nr9tZ2RdpxKm55w4hLJKRG3uGI9FXGRjK1AgUoNuBLU5jyUmwYM/KG8+KUCRCM5akljKSpNG9zgEx05R+blNuoS/A7XgjcImVoKoTD0f4Fgjg9ytVoKybUrFzU+ZHtCXO/wqF2qzDPsjiSR1Os/Fs3xcfXRQuZDF66FIEBlx4JIvdz4dt65/Ric+ws1F1cn
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取仓库所有任务标签"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/repos/{owner}/{repo}/labels"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+查询项目所有的标签
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","description":"标签id","format":"int32"},"name":{"type":"string","description":"标签名称"},"color":{"type":"string","description":"标签颜色"},"repository_id":{"type":"integer","description":"仓库id","format":"int64"},"url":{"type":"string","description":"标签url"},"created_at":{"type":"string","description":"创建时间"},"updated_at":{"type":"string","description":"更新时间"}},"title":"ReposLabelResp"}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

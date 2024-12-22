@@ -1,0 +1,71 @@
+---
+id: delete-web-hook
+title: "删除一个仓库WebHook"
+description: ""
+sidebar_label: "删除一个仓库WebHook"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVF1r1EAU/Styn9oyNGulL3kTWrAoCH7Qh2WR2eR2M2ySmc5M1i5hYAsL1ueC4qLigy/6ooJg2Yp/xk3X/gu5Sdxta1uk9SmZmcy555x7T3IIUWkMuMUQ/C0eG2QQogm0UFbIFHwABlKh5rTcCMGHEGO0uIntO1J2gYHlHQN+EzaxHUnZNdBioLjmCVrUdJJDyhMEH+TTFDUwEISruI3gbLHJ4X4x3j96Pii+vJ1+GB+//Fq8/ly8GSxMvu9ODkY/B7vTw+H08NnR3ovJwcfJeDwdDasvCG4RGGjczoQmNVZnyAB3eKJirISYIMKEg5+D7SvaM1aLtAPOsRlJjUr+A8df3z4VP4YL/62sCC8tWps7HQ031i4r1zinmkgtdkrjt6ROuK22bq2Acy2CMkqmBg3dWGk06HG69v27wCCQqcXU0umSt0SPi1U5BhHysOx+Xi4NBpkWtg9+s8UgQRvJ+SgBqzT74HElvN6qRz0wXl7Oi/NyWjqvHC4vF6EjS1H3qulqzdEfEqNSiCMvt2RJTtiyD0GMPH0SysD8ZS4wILBqcXO5sdwAx0BJYxOeEkbdo2Lv3fGr95ODAc1eOQXzFJxCzOd2EXjtj8Ud66mYi5TgMx3Th5XyJnAliMZq2VwliaT/Jy9+PZNVvBj4IqSQRdJYuprnbW7wsY6do+3tDHVtdI9rwdskv5lDKAy9X5Dzk5QXHtTjtXjj+oE8V3y9ydM+ieZxVieli/3Zf4LCcQ3OZwJ6BRql61dmcSaxV6gvQnCtWZbKHlYHt4MAlT1xhRLpTgZrbf3e+qN1cO43Azkwug==
+sidebar_class_name: "delete api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"删除一个仓库WebHook"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/api/v5/repos/{owner}/{repo}/hooks/{id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"仓库所属空间地址(企业、组织或个人的地址path)","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"仓库路径(path)","required":true,"example":"","schema":{"type":"string"}},{"name":"id","in":"path","description":"Webhook的ID","required":true,"example":0,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"string"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: repo-member-permission
+title: "查看仓库成员的权限"
+description: ""
+sidebar_label: "查看仓库成员的权限"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVd1r01AU/1fkPG0jmCrOh7wJDhGRiW5Ppchtctpel+Rm9952qyGwYcGJCJOJH2PTJ/HjxQnCRif+M7aN+y/kJFmXdc2Qzqfknu/P3wnBwUCizTQ6YNWYq9AAB5UteaC58MECMEAEKBk9bztggcRA3EWvivIeSo8rRXIGaFZXYJUhZUHFgIBJ5qFGSfQQfOYhWCBWfJRgACfjAdMNGPXYO9zqd7cGz9b639/HX7pHb370d/b6u2tTvZ/rvYPt32vr8WEnPnw62HjdO/ja63bj7U4qQeamwQCJy00uKSUtm2gArjIvcDHNRtkN9BhYIeh2QDSlJffrEEXGMEjK8R9i/LP/rf+rM/Xf3DYVyuT3PNfxq8+Djf3+5ov4097kTiukqQLhK1TEv1oq0ee0q/k7YIAtfI2+Ju6MOUOfM1ZF9RHaGgwIJM2K5qlN7uRkuK+xnnS+JqTHdEq6fg0iA1xRp3zPRGlkhRnDYC2mmVyU7lhus4De0J5bpCPRY3JpLKsmXFesoFRFuqkA9+tFAnWudKG20kxKdArZzeqwKYU2hKwznz9m5wrRWBcysYV+cYwSbeQtdObOlUoJYxjBCVSM2wDQXCczu6jysHJzYR4iYjeQOQmOhMlTod2UXLfBKlcM8FA3BCFTHZMZpKWxwGQBN1uzZpKzGSawE5khPSPTFq7LqkIyLaQyw+O9i8wgD2kKZStFr8qJzwc0/Ml8R7SlNZEklIVvu8j8h46w1Zm1BQPIWPq4crl0uZTURSjtsaQoGQYMPnyMd55nGLix2X/5Nt7uDHafHL3bHLUZnuwmmc+qqnFVm4HLuJ/bhLQoZWABp0BmIRsGMMA6RmQrQ71TxSF6DpZy9akY0BBKk9UwrDKFi9KNIiIvN1FmvWkxyVmValMOweGK/gsuTT6bqfsZqk1fuvg1GFuXjMj8NtWDuc0MMZewPTxShMwXiHnkOkwQRtKQiaMYORQT+B82PqoMlzDpZMq+YdsY6Jwi3Ycov5G35hYgiv4CKKAfdA==
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"查看仓库成员的权限"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/repos/{owner}/{repo}/collaborators/{username}/permission"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"仓库所属空间地址(企业、组织或个人的地址path)","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"仓库路径(path)","required":true,"example":"","schema":{"type":"string"}},{"name":"username","in":"path","description":"用户名称","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","properties":{"id":{"type":"integer","format":"int64"},"login":{"type":"string"},"name":{"type":"string"},"avatarUrl":{"type":"string"},"url":{"type":"string"},"htmlUrl":{"type":"string"},"remark":{"type":"string"},"followersUrl":{"type":"string"},"followingUrl":{"type":"string"},"gistsUrl":{"type":"string"},"starredUrl":{"type":"string"},"subscriptionsUrl":{"type":"string"},"organizationsUrl":{"type":"string"},"reposUrl":{"type":"string"},"eventsUrl":{"type":"string"},"receivedEventsUrl":{"type":"string"},"type":{"type":"string"},"permission":{"type":"string"}},"title":"UserPermissionDTO"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: delete-user
+title: "Delete a user"
+description: "Delete a user by their ID."
+sidebar_label: "Delete a user"
+hide_title: true
+hide_table_of_contents: true
+api: eJyFUsGO0zAQ/RXrnUCymoKWi2+IVqgSCITYU9WDN540FonttScVUZR/R5NmBbssy8n2eGbevDdvAttzgTnitlBWn22wZ+opME4ajkqdfWIfAwx21BGTsmqQzLtRcUs+q8NuA42YKFtJPDgYuCVVOkIj2Wx7YsoCMyHYnmDgHTS89E2WWzwFO+xUbAThisZRXXtCI9P94DM5GM4DaZS6pd7CTOAxSevC2Ycz5vkkySXFUKjI/9vtjRyPkRbe1+ZOlaGuqZRm6LoRs8bNPytCZNXEITjMs0ZP3MbfzBfW3MKgkvFLNXk3Q6NQvjzoMOQOBi1zKqaqbPKbs+c6OtrUsZd3dXkHoeBDExd2njuh99Hzh+hIfUkU3n89KBmn/CWg/DQxq1426sN50bEoH9RDfeosNzH30JChrmVvNtvNVpinWLi3QYDXjT3a/1O8CXUMLL75j1HWHTH95Cp11gcBW7SYVs2OGFZGxjuxYRsLS3ia7myh29zNs4TvB8ojzPGkcbHZ2ztR5zjB+SJ3B9PYrtALg776tlrptXrBb89OvAZtGEU+2w3ygsYPGq/mnk9/2mK3/7T/vsc8/wLZ5CfZ
+sidebar_class_name: "delete api-method"
+info_path: docs/apis/gitcode-openapi-users
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete a user"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/users/{id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete a user by their ID.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","in":"path","description":"ID of the user to delete","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"204":{"description":"User deleted successfully"},"404":{"description":"User not found"}}}
+>
+  
+</StatusCodes>
+
+
+      

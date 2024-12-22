@@ -1,0 +1,71 @@
+---
+id: search-file-list
+title: "获取文件列表"
+description: ""
+sidebar_label: "获取文件列表"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVE1rFEEQ/StSpyQ0mVXIZW4eVERBiHoKQ+jM1O42zkx3unvXLENDAsHkogYSIogXPag3PYiC+3OS3c3PkOqZzX66bMRTT3X11Htd9V4XkKDSGHOLCYR1nhpkkKCJtVBWyBxCAAZSoeYUPkwgBINcx837IsXHwlhgYHnDQLgFm6ikEVZqgQYiBoprnqFFTdkCcp4hhCBf5qiBgaDiitsmTCMOuoeD7tEK5VaBgcbdltDEz+oWMsA9nqkUS2ombmLGISzAdhTtGatF3gDn2DWiRiUXAl52T3u/T/8nYH3bf1aguy3UnRlUjfWV3vGr/tm3i/0DyxsX+wexzDJhJzlUQ1kGty5SXAL46vNB/+TD4MenwfvD/vnRZfdn7+T14Mv3m8FGdNoomRs0lL9Tq9EyCfXkETCIZW4xt5RdC9ZomanKteZEVFjMzDw05xg0kSdeTIUPDcYtLWwHwq2IQYa2KUmeDSRN+jmHEHAlgvZGQBIwQeG154KCQhf4dqWlhg3qdinUaFT5KdH0t3PU0Lr0zIT1WohT5Pl2ImMz02BgQMXK4PZ6bb0GjoGSxmY8pxrVvK7e/Oq9Pa9GcPzu6uPX6VLFqHlUteqKxT0bqJSLnOq2dEoHyxtvAVeC8Df8NJUkduHQc2FlhdHNIwZNaSz9WBQ73OBznTpH26V2yLiJMHwn/dsDMU5xoaTnkn+BnUnDtHna8lYjXS+PvEDTC3DHDTMCjijQgpBveP+Vzco/q7emHrG5JIbizzvj+ENy5dBu1oYxAlOP2j8Q8GJx0bXzfDPK1N04RmXHfiJju3EbPrj3DJz7Ay72S2I=
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取文件列表"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/repos/{owner}/{repo}/file_list"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"组织(path)","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"仓库(path)","required":true,"example":"","schema":{"type":"string"}},{"name":"ref_name","in":"query","description":"ref(分支、tag、commit)","required":false,"schema":{"type":"string"}},{"name":"file_name","in":"query","description":"要搜索的文件名称","required":false,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"array","items":{"type":"string"}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

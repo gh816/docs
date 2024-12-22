@@ -1,0 +1,71 @@
+---
+id: get-org-issue-labels
+title: "获取企业某个Issue所有评论"
+description: ""
+sidebar_label: "获取企业某个Issue所有评论"
+hide_title: true
+hide_table_of_contents: true
+api: eJytlVtrFEkUx7/KcJ5UCruTXX3oN0GR4ELAdZ/CIDXdJzOlfSmrqoND0zCBEc3DboRolJC9CIKXB6OgOEzcT+P0TPItltPdmekx42yiPjV1qvuc37n9OwEPpUKXG/TAWeW+RgYealcJaUQUggPAIJKoOB2XPHCgiWZZNZe0jvEX3kBfAwPDmxqcFcitGuoMJFc8QIOK7AmEPEBwAEODSiqhERgIci+5acGXMQf7W1l/a7jRyd79NXrVP3zyPtt9m/3ZOTP4tD7o7XzurI/2u6P9+8MH24Pe60G/P9rpFm+Qu7PAQOGdWChKyqgYGeBdHkgfi3y028KAg5OAaUuyaaNE2IQ0ZWPSMA4aqOZS5snWRp+2s82PrJbde5m962SP9ga9zjwAe0Z8ERps5tFWIxVwU5gu/jxFJHlzXLU7Mar2MaDs361s4/fRTvfw2YfRP+usdrj/9ODN89rCFE/Z5RNC/LSYh1nlsW/AWZgCQnXz/6GGe5uEs9MdPn57eH/zCGrRZrXhbid7/mLQ69cWbPvHMdp2mtbJm5ZRqFHT94u2TY9ptOVrwMCNQoOhodtz1jl6HIvKleKUmDAY6Io9atxC1wADqWhFjChiCe9EraXQfqRmjCErKzzjQqGMtDCRai+dNEqs/JmuXIW09pfMzNtYel+9TRkYYfJtujJe6HwbLt9YhjSlF1rIvXz5k/yo0Y2VMG1wVuoMAjStqNQSKh9tlwMWl8Jau2BNREJbyeSQWiJXFyspdjO1/CP50ajWCqWpT0L9Sm3MO5LSgK5GeSYlt+sjD296kauPDSwwIGfFYeG8fd6meshIm4CH5KMc/4M/Pmab24UiDf9+OOi9zksw3OgMdzcO9roHb/pf+k4m00ZhyrIavGss6XMRVtpV1GQFuBQEdAFYRTwJ2pnW0kJ4GThj4SqrU2fQirQhX0nS4Bp/U36akrnYV1JnT2je8L/2C6hSz5OYmencxvZEu9a4H+caTCpy8qCnkJB5DBO5mnDU6aAEgZyyEmeul2p1tvb9v6uZ2EfqE7aryEfpVNp/umpWwOf+wb6BqZy9tD4WgLyoxeUl10VpKp+R3KZVNbh65Qak6X94xkSX
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取企业某个Issue所有评论"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/enterprises/{enterprise}/issues/{number}/labels"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"enterprise","in":"path","description":"仓库所属空间地址(企业、组织或个人的地址path)","required":true,"example":"","schema":{"type":"string"}},{"name":"number","in":"path","description":"Issue 编号, 全局唯一","required":true,"example":0,"schema":{"type":"integer","format":"int64"}},{"name":"page","in":"query","description":"当前的页码, 默认 1","required":false,"schema":{"type":"integer","format":"int32","default":1}},{"name":"per_page","in":"query","description":"每页的数量, 默认20, 最大为 100","required":false,"schema":{"type":"integer","format":"int32","default":100}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int64"},"color":{"type":"string"},"name":{"type":"string"},"repositoryId":{"type":"integer","format":"int64"},"url":{"type":"string"},"createdAt":{"type":"string"},"updatedAt":{"type":"string"}},"title":"EnterpriseIssueDTO"}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

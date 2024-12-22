@@ -1,0 +1,71 @@
+---
+id: delete-commit-comment
+title: "删除commit评论"
+description: "删除仓库的某条Commit评论"
+sidebar_label: "删除commit评论"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVE1rFEEQ/StSpwSazCrkMjfRHERB8OO0LNLpqWQ7zkx3untjlqYhgQXjTQgoLsYP8KIHoyAYdsU/437lX0jNTJJNohI2Xna2a6rrvap6bzwkqA0K7jCBeIWnFhkkaIWR2kmVQwzDnXeHrz4M+rvD3u642xm9fT7ae39DZZl0k/3O5HMPGCiNhlP+rQRiSDBFh2UK/WLugIHjqxbiOpRxaDDQ3PAMHRqKe8h5hhCDepKjAQaSwDV3TTjLqOQyerY1/Ppm/LF3+PLb8PWX4d7W3ODH9uCg+2tre9zvjPtPRzsvBgefBr3euNspM6jcPDAwuN6Shlp2poUMcJNnOiV0YGBFEzMOsQfX1hSzzsh8FUJgxyQNanUBjpPv+8Ofnbn/BiuTf4KW+yiSZoRq0E2rVW7R0vtrtRo9TsPcvQ0MhModLTb2wLVOpSj2H61ZSvHnIdTyGgrSgTakFicLgBBCYNBEnhQq8MXRomgZ6doQ1xsMMnRNdSIrqkC9xxBxLaONxYh2YSNf6CZEno4hEqXubORlEqhlNBul0BonAPeJZMmDxrqiCr7SFXMSKfL8UaKEPTdnYEDFysPVhdpCDQIDrazLeNF9ta7SOuK0V06V8idzvJDRqmE63HSRTrnMCbhlUqpUjqUOXEsiuFioQCuiHx+ZKq6EezQeCsmEzNhU1tFt75e5xYcmDYHC6y001SI2uJF8mWZT95BIS///8tGYbmvuXiXF+SuXN+4f+6+CPG9T3zxtVTJ/jO3j7wmZ6BKczxh5BhrF4GdmMeXsGbBlAqFx7LNif+WL60KgdlNXzlk5TDvw5tKdpQdLEMJvl6dnyg==
+sidebar_class_name: "delete api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"删除commit评论"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/api/v5/repos/{owner}/{repo}/comments/{id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+删除仓库的某条Commit评论
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"仓库所属空间地址(企业、组织或个人的地址path)","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"仓库路径(path)","required":true,"example":"","schema":{"type":"string"}},{"name":"id","in":"path","description":"评论id","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"application/json":{"schema":{"type":"object","properties":{}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

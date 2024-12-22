@@ -1,0 +1,71 @@
+---
+id: get-all-labels
+title: "获取某个企业的所有标签"
+description: ""
+sidebar_label: "获取某个企业的所有标签"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNVEFLG0EU/ivlnVQGN7V42ZuHIqWFgm1PIchk9yWZdndnnJkEwzLQgmA9tBUEBRVaeikUClKkFVP6a5KN/ovydlezRqU5zc6b+d587+33vRRCVBoDbjEEv8UjgwxCNIEWygqZgA/AQCrUnLZPQvChjXYlip7xJkYGGFjeNuDXoQw0GCiueYwWNcVTSHiM4AMmFrXSwiAwEJRZcduB6efGg63xYHuOzuaBgcaNrtBEzuouMsBNHqsIC14m6GDMwU/B9hXFjNUiaYNzDUIaJRODhs6XajVabj71/CkwCGRiMbF0uuAt0HIrK9ea94m0xdhU4rL5GgMLDJSmDllRvCXCyh2RWGyjvlVm9mV7/OOvCIFBS+qY2+LuoyVwrOzYdFV3pxjtfhh/OyFUICOpZ4Vdfj2+2PlJsK6OZgXRVUedVdIIK3V/faZah4O90fnePbUGGkl869z+n8Xo/dFocJ4d/Lo8OM2pq3BmbHZ0mu2fXGEdAytsrqNVLbsqF+8aGgXO0WEHeZjrN823BoOuFrYPfr3BIEbbkaUT6O+TjH3wuBJeb9mb6Nx46WTjvOjKMQZ1rzBHY5L6BakuF5Aje7RkXlLJMYiQJ+uhDMytuoABJSs2DxdrizXqjJLGxjyhHKX9Lj7+Hn3azz7vDs++D/+8G54djg+3sp232fFO8XOnM6cTa9AjZXctblpPRVwkFe0UHagDV4LoLAOruJ0o+zfMH11Pio40loBp2uQGX+nIOQpvdFGXve5xLXiTmlBPIRSGvu+ZVFXCc2vl3Jh/MDVQ7qzjyugJ2bzHo245YN5g/+bkco1rceSMigsrQYDKVqA0SVxVKauPX4Jz/wB6bP02
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取某个企业的所有标签"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/enterprises/{enterprise}/labels"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"enterprise","in":"path","description":"组织(path)","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","description":"标签id","format":"int32"},"name":{"type":"string","description":"标签名称"},"color":{"type":"string","description":"标签颜色"},"url":{"type":"string","description":"标签url"},"repository_id":{"type":"integer","description":"仓库id","format":"int32"},"created_at":{"type":"string","description":"创建时间"},"updated_at":{"type":"string","description":"更新时间"}},"title":"GroupLabelResp"}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

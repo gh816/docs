@@ -1,0 +1,71 @@
+---
+id: update-user
+title: "Update a user"
+description: "Update an existing user's details."
+sidebar_label: "Update a user"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVU1vEzEQ/SvWXADJJAXBZU9AQSgHBELtqYrQdD1JXHZt155tG632v6OxN02ahFCJnLL2zJuP92bcA+MyQXUFl4mi+oYOl9SSY5hrMJTqaANb76CCy2CQSaFT9GATW7dUXaL4IilDjLZJE9DgA0UUh5mBCrrsIsigIWDElpiihOvBYUtQgTWgwQp+QF7BftDZZ+UXileUYyn2qmCChki3nY1koOLYkYZUr6hFqHrgdRDoxNG6JQzDvBhT4k/erMVirzKB9tc3VPPJCLV3LK2pesAQGlvnSqc3SVD6wwQKpJQepS9sKcmtVFKq30/1oOWjpWQVaWkTU4RBA7Vom2PuCx9bZKhGi2N4L5LKlwqNiZSS4AVM6d5HcxLy0egYqnq8HYbdxl1tq9WPST3azjWw5YZGkJkLHcMwFIgUvEulY2/Pzv7CWuFKcno+OTsRQf+DK3u0J08TuRB1OnvbkbKGHNuFpagWPirMqpUOP5/zi1Hrmfcd7f8P7192Cd8HrSNJC38hn0SWPr9mm4ncy9iKQjcjeo9JjZAHWsjDfiCIeWH83TGSZ+4OG2uULdIQq3d/kYLzrBa+cyVsS7zysoPET5flUsFUgqdpb80AGhLFu8066mIDFayYQ6qmUwx2srRce0OT2rfyPb17D7JJRFA/t9vkywO2oaGnc71t38hYvvtAxVYQd6dgu6lkEy78rki/Wj73htT3QO7jj5mSStMBA3IjemtlfW8Wc1LWqY1/aJCFStAgJRe3N5OzyVmef5+4xTwnYwGbZV9Ushev3w7b816FUVRMDzwNDVqXRyJmKRdmyp6Qyiqb98LKJ5bjvr/GRJexGQY5vu0orqG6mmu4w2jxWrp01YOxSf4bqBbYJDqR8MufoyBfqROPy9GMx0N0a2kjNp18gYbftC4v2TAfNKwIDcWcVbk4L7FfX4j71vFgSw164/GxrinwSdv5jsR/XF6AhuvxbWu9EZeI9/KE4X3J0edW5J2Wz3po0C07XIptgZTfH3c+xOw=
+sidebar_class_name: "put api-method"
+info_path: docs/apis/gitcode-openapi-users
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Update a user"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/users/{id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Update an existing user's details.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","in":"path","description":"ID of the user to update","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"User object to update","required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"username":{"type":"string","description":"Username to register"},"email":{"type":"string","format":"email","description":"User's email address"},"password":{"type":"string","format":"password","description":"User password"}},"required":["username","email","password"],"title":"UserInput"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"User updated","content":{"application/json":{"schema":{"title":"User","type":"object","properties":{"id":{"type":"string","description":"The unique identifier for a user"},"username":{"type":"string","description":"The username of the user"},"email":{"type":"string","format":"email","description":"Email address of the user"},"created_at":{"type":"string","format":"date-time","description":"Time the user was created"}},"required":["id","username","email"]}}}},"400":{"description":"Invalid input"},"404":{"description":"User not found"}}}
+>
+  
+</StatusCodes>
+
+
+      

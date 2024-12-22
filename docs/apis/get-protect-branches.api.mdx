@@ -1,0 +1,71 @@
+---
+id: get-protect-branches
+title: "获取保护分支规则列表"
+description: ""
+sidebar_label: "获取保护分支规则列表"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWFtvG0UU/ivRPEG1qkOhPPiNUoQqKlEVqj5E1mq8e2IP9V46M3YaWSslJaVJRHAqcoOkhaCoqSoRB5E2IRTyZ7xr+4m/gM7sOl4nvqwTwUOVJ2tnz/m+c+acOeP9ysQEl4NBJZgkPU4LAjRigjA4cyVzbJImRCOOC5zi4w2TpEkO5C3uSDDkNU5tIw+CaETSnCDpMRIukYxGXMqpBRI4rpeJTS0gaeJM2MCJRhhCu1TmSRc+DveLjGNEkhdBI/CAWm4BwpfCyINFSbpM5KSLa0JyZueI52nHLBxc5z8nKTGYaJHcLwKfPMXiP38YPNuoHRwKhtD/vPnWn/3Br7xsHC3568/8xYX69m5HJFEBerGfCT8esgDKjXz/oIPFjfreL/6j35tLO43qwnniOwkVD8WlORiwe399788tNDdf1X+ePtcuxXE6QgCuDw4jqFbQ98eZ5uYf9fWdYPlcJeuC5nkZBBSuYwsQCHFldBR/Oj0//4xoxHBsCbbEt5dSl/DnFDHlnGIWTIIlYutO9iswJNGIy/E8SxZyhXsxcA+jXtJI0TVxWOhUJkh2fS9Y2Q1WXzdX99DXLYq8XhRqJJw1XmbGbJgtIafmSSdxfelFMLt/4zrRyLjDLYwVbT/8AKNIlnEIEctbAB/SE90YtfSOkHs4MWqNMBM9hKQyCcv862BqGh1oiUrK9SIvJKjj1p7/deXO7ZsxRzUgE3o29qv+3zPoDBZlCQibD3fqO7+1tl037MEutYNfg5XH0f5NQDZZZnch62/s+k+nFBcz7unJqhWsvYoqLMGmtkzoVt/+qaM9mNANx4Twemt7Zx2nANTuwlr1F5/XDg5H0GskdIu6LFG/hE0WdgwTugVWdgjiYK0azC76T9ZwHp6waHy371dW/IXl2sHLkKV2tBlMV/GSZ1JdkHcE8GtUMOO6dBRC+2Dr1DBACL0AJSjohlO05eAzbaIxLpxy6HXA/TdTfuVJY+pRsLzbfFw5cc7fv6IcxmmxIEl61MO5aVlMyiEYgspi7XArOYNFmS0ps4egqP+5F8wPQaG6JHkCc1PBxlxSdK+zuuIjVcabWJiPkVBVWiMW8BxcjPCLEX4xwt+yER472Rcz/O2f4WaXRvNUTfHDvtfr4yIL3aC2jtd+IkNF2d0yVtW+iJ12fQAtKgajxYz6QrX7YQBch2EfyKj+fdHaNn2AbEd3bBiAFDPqCRXrmlut6ocqTjga0CAP1AyvfPUowChyJidJeiyD/STzTiQM4VhQdxFJUZelSldTKMWIVFnl5KXK+OilojbTs20BSQAvhVpRpk3wBX7cqvmCM9Ied1QCUbQGxq+bjiG6yTsIFj68d3n08qhqbkdIi9rtr95oUNaOngbzW/7sN8FStbE9gxrK7Gpj88VJ2HL78xsZoo2U8ECm3AJlasejiy7chDFCXYaxXFWSgetgpOmWBJaOVKpTm5HRSN4REv3L5SwVcIcXPA+XQ4UC5TSTCZot9BLt4pEmFKG6ZnMPJttCV4kWikoeQwklOf9pPakP1bFAdUayE5pRH6ZI+DlrUt1EoX5sbampzZjBB86QcsiavnM70p/eHenF2/prbk/GOVvxtP6t/K+kqt+9zPE8UUmHr/CqcmXMCdUtLz5cPv3kS+J5/wK2drLB
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取保护分支规则列表"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/repos/{owner}/{repo}/protect_branches"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"view","in":"query","description":"如果为simple，则只返回名称","required":false,"schema":{"type":"string","description":"如果为simple，则只返回名称"}},{"name":"search","in":"query","description":"搜索关键词","required":false,"schema":{"type":"string","description":"搜索关键词"}},{"name":"page","in":"query","description":"当前页码","required":false,"schema":{"type":"string","description":"当前页码"}},{"name":"per_page","in":"query","description":"每页的项目数","required":false,"schema":{"type":"string","description":"每页的项目数"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"array","items":{"type":"object","properties":{"name":{"type":"string","description":"名称"},"updated_at":{"type":"string","description":"更新时间"},"push_users":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","description":"用户ID","format":"int64"},"name":{"type":"string","description":"用户名称"},"username":{"type":"string","description":"用户名"},"iam_id":{"type":"string","description":"iam id"},"state":{"type":"string","description":"状态"},"avatar_url":{"type":"string","description":"头像URL"},"avatar_path":{"type":"string","description":"头像路径"},"email":{"type":"string","description":"邮箱"},"name_cn":{"type":"string","description":"中文名"},"web_url":{"type":"string","description":"Web地址"},"nick_name":{"type":"string","description":"昵称"},"tenant_name":{"type":"string","description":"租户名称"},"is_codeowner":{"type":"boolean","description":"是否为 code owner"},"user_id":{"type":"string","description":"用户id"},"is_member":{"type":"boolean","description":"是否是成员"}},"description":"获取单个用户信息","title":"UserBasicDto"}},"push_users_access_level_count":{"type":"object","properties":{"developer_count":{"type":"integer","description":"开发者数量","format":"int32","default":0},"committer_count":{"type":"integer","description":"提交者数量","format":"int32","default":0},"maintainer_count":{"type":"integer","description":"维护者数量","format":"int32","default":0},"owner_count":{"type":"integer","description":"所有者数量","format":"int32","default":0}},"title":"UsersAccessLevelCountDto"},"merge_users":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","description":"用户ID","format":"int64"},"name":{"type":"string","description":"用户名称"},"username":{"type":"string","description":"用户名"},"iam_id":{"type":"string","description":"iam id"},"state":{"type":"string","description":"状态"},"avatar_url":{"type":"string","description":"头像URL"},"avatar_path":{"type":"string","description":"头像路径"},"email":{"type":"string","description":"邮箱"},"name_cn":{"type":"string","description":"中文名"},"web_url":{"type":"string","description":"Web地址"},"nick_name":{"type":"string","description":"昵称"},"tenant_name":{"type":"string","description":"租户名称"},"is_codeowner":{"type":"boolean","description":"是否为 code owner"},"user_id":{"type":"string","description":"用户id"},"is_member":{"type":"boolean","description":"是否是成员"}},"description":"获取单个用户信息","title":"UserBasicDto"}},"merge_users_access_level_count":{"type":"object","properties":{"developer_count":{"type":"integer","description":"开发者数量","format":"int32","default":0},"committer_count":{"type":"integer","description":"提交者数量","format":"int32","default":0},"maintainer_count":{"type":"integer","description":"维护者数量","format":"int32","default":0},"owner_count":{"type":"integer","description":"所有者数量","format":"int32","default":0}},"title":"UsersAccessLevelCountDto"},"merged":{"type":"boolean"},"protected":{"type":"boolean"},"developers_can_push":{"type":"boolean"},"developers_can_merge":{"type":"boolean"},"committer_can_push":{"type":"boolean"},"committer_can_merge":{"type":"boolean"},"master_can_push":{"type":"boolean"},"master_can_merge":{"type":"boolean"},"maintainer_can_push":{"type":"boolean"},"maintainer_can_merge":{"type":"boolean"},"owner_can_push":{"type":"boolean"},"owner_can_merge":{"type":"boolean"},"no_one_can_push":{"type":"boolean"},"no_one_can_merge":{"type":"boolean"}},"title":"ProtectedBranchDto"}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

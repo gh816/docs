@@ -1,0 +1,71 @@
+---
+id: get-trees
+title: "获取仓库目录树"
+description: ""
+sidebar_label: "获取仓库目录树"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVk1v20YQ/SvBnOyACGUXvvAWFP1CCzRw0pMhGGtyJG5DcpndlRNVIEADauOgTZzGjVuoaZECLYr2UKVAgxiy3T8TUbJP/QvFkFRMS5Tl2D4RO8Od93Z25s22wMFQos00OmDVmKfQAAeVLXmouQjAAjBAhCgZLT9ywII66lsSUYEBmtUVWCuwjKFQXAvJUUHVgJBJ5qNGSd4WBMxHsEDcDVCCAZzChky7MI7V39tOetuDB3Hy98/DP3pH3/+TPHuR/BTP9fc3+rud1/HGcK893Ls/2Nzp7/7Z7/WGnXb2B4WbBwMk3mlwSYfRsoEG4D3mhx5m51C2iz4DqwW6GZJNacmDOkSR8YakxFCcgePhq27yb3vu0mCVy05FTba6/b3fBj90k82vBt91k8cP53zGg/nX8ca7wve5HmzuHMZfDn/8Kzl4Stcz7LRvfng9ifcvJyl2Qyq+jiOOdxoomxMkD19+ncT7/d3ewlH8JDl4cvjoVbK1k3E6QSMvtAloHmispzVSE9JnOjO9s3iCTMjqM3gkB9vJg4fDTvvol5fD5xsXg6bgNdbwNFgLJ2igXJ1NZdDdIhKd9uDpi6P7W//tfzN4Fie//t7f7V1ZqFQujdpiJYqqFEyFIlCoaPtipUKfk4Q+/RgMsEWgMdDkvWpepc8EqFj7HG0NBoSS2l/zLKaWiIW/mJSMDs01+mr27gLuWLEZuaHEofgX5Y7sIkocaQeVOXzhTMFwyzrAgIb0Su2u9r3VaU5H3A08wZypP/jOUqm9jnrV48HtM2RSoVebyqy0mUFznfb8JylC0XJDCgJ5n3u4jCpMfeUZKWwizb/BtEtik+8ieGROKvutdKlIOLhugrVSNcBH7Yp8hMDomsBkITfXl0xSXmW20ikRmS1aRmada5NqTpkt5bKI9ArlejZYqsfxb1L5ppmJqB1rIuWeM7U9ZMGqI2w10Z5gAAXLFgvXKtcqaf0IpX0WUIy82TMly6Q/07PB82/HoxXqmwLnqdN4T5uhx3hQKKjs6CvAQk4UllIdCAURtEZj0spHUZ1TsnQ+ci26mKoBrlCaIrRaa0zhZ9KLIjJnKkRD1+GKrXnTxnqR6wzZLj3HbWyOzYV15jXSkUIaeXbwSa0+BS/X23NCzdbi06CP5f4YvkoLyQn/LXM+t5zL/vyViz96SmmPFDpoFimPjpMV2dvlb4Lz2CPoHDTSEj83iws9is7Bllovqr5RufTKM89128ZQF/bQWI2KkvfBe7cgiv4HuSJd+w==
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取仓库目录树"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/repos/{owner}/{repo}/git/trees/{sha}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"仓库所属空间地址(企业、组织或个人的地址path)","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"仓库路径(path)","required":true,"example":"","schema":{"type":"string"}},{"name":"sha","in":"path","description":"可以是分支名(main)、Commit或者目录Tree的SHA值","required":true,"example":"","schema":{"type":"string"}},{"name":"recursive","in":"query","description":"赋值为1递归获取目录","required":false,"schema":{"type":"integer","format":"int32"}},{"name":"page","in":"query","description":"当前的页码","required":false,"schema":{"type":"integer","format":"int32","default":1}},{"name":"per_page","in":"query","description":"每页的数量，最大为 100","required":false,"schema":{"type":"integer","format":"int32","default":20}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","properties":{"tree":{"type":"array","items":{"type":"object","properties":{"content":{"type":"string"},"type":{"type":"string"},"size":{"type":"string"},"name":{"type":"string"},"path":{"type":"string"},"mode":{"type":"string"},"sha":{"type":"string"},"url":{"type":"string"},"html_url":{"type":"string"},"download_url":{"type":"string"},"md5":{"type":"string"},"get_links":{"type":"object","properties":{"self":{"type":"string"},"html":{"type":"string"}},"title":"Links"}},"title":"ProjectFileResp"}},"sha":{"type":"string"}},"title":"RepoPathTreeResp"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

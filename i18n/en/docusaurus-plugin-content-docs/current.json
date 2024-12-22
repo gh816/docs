@@ -1,0 +1,738 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Tutorial - Basics": {
+    "message": "Tutorial - Basics",
+    "description": "The label for category Tutorial - Basics in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tutorial - Basics.link.generated-index.description": {
+    "message": "5 minutes to learn the most important Docusaurus concepts.",
+    "description": "The generated-index page description for category Tutorial - Basics in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tutorial - Extras": {
+    "message": "Tutorial - Extras",
+    "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.apis": {
+    "message": "apis",
+    "description": "The label for category apis in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.en": {
+    "message": "en",
+    "description": "The label for category en in sidebar tutorialSidebar"
+  },
+  "sidebar.openApiSidebar.category.API文档": {
+    "message": "APItext",
+    "description": "The label for category API文档 in sidebar openApiSidebar"
+  },
+  "sidebar.openApiSidebar.category.API文档.link.generated-index.title": {
+    "message": "API文档 标题",
+    "description": "The generated-index page title for category API文档 in sidebar openApiSidebar"
+  },
+  "sidebar.openApiSidebar.category.API文档.link.generated-index.description": {
+    "message": "这是一个示例 Petstore 服务器。您可以在 http://swagger.io 或 irc.freenode.net 的 #swagger 频道了解更多关于 Swagger 的信息。对于这个示例，您可以使用 API 密钥 special-key 来测试授权过滤器。",
+    "description": "The generated-index page description for category API文档 in sidebar openApiSidebar"
+  },
+  "sidebar.openApiSidebar.category.Repositories": {
+    "message": "Repositories",
+    "description": "The label for category Repositories in sidebar openApiSidebar"
+  },
+  "sidebar.openApiSidebar.category.Branch": {
+    "message": "Branch",
+    "description": "The label for category Branch in sidebar openApiSidebar"
+  },
+  "sidebar.openApiSidebar.category.Commit": {
+    "message": "Commit",
+    "description": "The label for category Commit in sidebar openApiSidebar"
+  },
+  "sidebar.openApiSidebar.category.Tag": {
+    "message": "Tag",
+    "description": "The label for category Tag in sidebar openApiSidebar"
+  },
+  "sidebar.openApiSidebar.category.Issues": {
+    "message": "Issues",
+    "description": "The label for category Issues in sidebar openApiSidebar"
+  },
+  "sidebar.openApiSidebar.category.Pull Requests": {
+    "message": "Pull Requests",
+    "description": "The label for category Pull Requests in sidebar openApiSidebar"
+  },
+  "sidebar.openApiSidebar.category.Labels": {
+    "message": "Labels",
+    "description": "The label for category Labels in sidebar openApiSidebar"
+  },
+  "sidebar.openApiSidebar.category.Milestone": {
+    "message": "Milestone",
+    "description": "The label for category Milestone in sidebar openApiSidebar"
+  },
+  "sidebar.openApiSidebar.category.Webhooks": {
+    "message": "Webhooks",
+    "description": "The label for category Webhooks in sidebar openApiSidebar"
+  },
+  "sidebar.openApiSidebar.category.Member": {
+    "message": "Member",
+    "description": "The label for category Member in sidebar openApiSidebar"
+  },
+  "sidebar.openApiSidebar.category.Users": {
+    "message": "Users",
+    "description": "The label for category Users in sidebar openApiSidebar"
+  },
+  "sidebar.openApiSidebar.category.Organizations": {
+    "message": "Organizations",
+    "description": "The label for category Organizations in sidebar openApiSidebar"
+  },
+  "sidebar.openApiSidebar.category.Search": {
+    "message": "Search",
+    "description": "The label for category Search in sidebar openApiSidebar"
+  },
+  "sidebar.openApiSidebar.category.Oauth2.0": {
+    "message": "Oauth2.0",
+    "description": "The label for category Oauth2.0 in sidebar openApiSidebar"
+  },
+  "sidebar.openApiSidebar.doc.更新仓库设置": {
+    "message": "更新仓库设置",
+    "description": "The label for the doc item 更新仓库设置 in sidebar openApiSidebar, linking to the doc apis/update-repo-settings"
+  },
+  "sidebar.openApiSidebar.doc.删除一个仓库": {
+    "message": "删除一个仓库",
+    "description": "The label for the doc item 删除一个仓库 in sidebar openApiSidebar, linking to the doc apis/delete-project"
+  },
+  "sidebar.openApiSidebar.doc.获取仓库目录树": {
+    "message": "获取仓库目录树",
+    "description": "The label for the doc item 获取仓库目录树 in sidebar openApiSidebar, linking to the doc apis/get-trees"
+  },
+  "sidebar.openApiSidebar.doc.获取文件列表": {
+    "message": "获取文件列表",
+    "description": "The label for the doc item 获取文件列表 in sidebar openApiSidebar, linking to the doc apis/search-file-list"
+  },
+  "sidebar.openApiSidebar.doc.新建文件": {
+    "message": "新建文件",
+    "description": "The label for the doc item 新建文件 in sidebar openApiSidebar, linking to the doc apis/create-project-file"
+  },
+  "sidebar.openApiSidebar.doc.更新文件": {
+    "message": "更新文件",
+    "description": "The label for the doc item 更新文件 in sidebar openApiSidebar, linking to the doc apis/update-file"
+  },
+  "sidebar.openApiSidebar.doc.删除文件": {
+    "message": "删除文件",
+    "description": "The label for the doc item 删除文件 in sidebar openApiSidebar, linking to the doc apis/delete-file"
+  },
+  "sidebar.openApiSidebar.doc.获取文件blob": {
+    "message": "获取文件blob",
+    "description": "The label for the doc item 获取文件blob in sidebar openApiSidebar, linking to the doc apis/get-blobs-sha"
+  },
+  "sidebar.openApiSidebar.doc.获取仓库的语言": {
+    "message": "获取仓库的语言",
+    "description": "The label for the doc item 获取仓库的语言 in sidebar openApiSidebar, linking to the doc apis/get-repo-languages"
+  },
+  "sidebar.openApiSidebar.doc.获取仓库贡献者": {
+    "message": "获取仓库贡献者",
+    "description": "The label for the doc item 获取仓库贡献者 in sidebar openApiSidebar, linking to the doc apis/contributors"
+  },
+  "sidebar.openApiSidebar.doc.设置项目模块": {
+    "message": "设置项目模块",
+    "description": "The label for the doc item 设置项目模块 in sidebar openApiSidebar, linking to the doc apis/module-setting"
+  },
+  "sidebar.openApiSidebar.doc.修改项目代码审查设置": {
+    "message": "修改项目代码审查设置",
+    "description": "The label for the doc item 修改项目代码审查设置 in sidebar openApiSidebar, linking to the doc apis/code-reviewer-setting"
+  },
+  "sidebar.openApiSidebar.doc.仓库归档": {
+    "message": "仓库归档",
+    "description": "The label for the doc item 仓库归档 in sidebar openApiSidebar, linking to the doc apis/repo-archiving"
+  },
+  "sidebar.openApiSidebar.doc.转移仓": {
+    "message": "转移仓",
+    "description": "The label for the doc item 转移仓 in sidebar openApiSidebar, linking to the doc apis/repo-transfer"
+  },
+  "sidebar.openApiSidebar.doc.获取项目的权限模式": {
+    "message": "获取项目的权限模式",
+    "description": "The label for the doc item 获取项目的权限模式 in sidebar openApiSidebar, linking to the doc apis/transition-1"
+  },
+  "sidebar.openApiSidebar.doc.更新仓库的权限模式": {
+    "message": "更新仓库的权限模式",
+    "description": "The label for the doc item 更新仓库的权限模式 in sidebar openApiSidebar, linking to the doc apis/transition"
+  },
+  "sidebar.openApiSidebar.doc.设置项目推送规则": {
+    "message": "设置项目推送规则",
+    "description": "The label for the doc item 设置项目推送规则 in sidebar openApiSidebar, linking to the doc apis/update-push-config"
+  },
+  "sidebar.openApiSidebar.doc.获取项目推送规则": {
+    "message": "获取项目推送规则",
+    "description": "The label for the doc item 获取项目推送规则 in sidebar openApiSidebar, linking to the doc apis/get-push-config"
+  },
+  "sidebar.openApiSidebar.doc.Fork一个仓库": {
+    "message": "Fork一个仓库",
+    "description": "The label for the doc item Fork一个仓库 in sidebar openApiSidebar, linking to the doc apis/fork-repositories"
+  },
+  "sidebar.openApiSidebar.doc.查看仓库的Forks": {
+    "message": "查看仓库的Forks",
+    "description": "The label for the doc item 查看仓库的Forks in sidebar openApiSidebar, linking to the doc apis/get-fork-repositories"
+  },
+  "sidebar.openApiSidebar.doc.上传图片": {
+    "message": "上传图片",
+    "description": "The label for the doc item 上传图片 in sidebar openApiSidebar, linking to the doc apis/upload-attachment-file-with-base-64"
+  },
+  "sidebar.openApiSidebar.doc.上传文件": {
+    "message": "上传文件",
+    "description": "The label for the doc item 上传文件 in sidebar openApiSidebar, linking to the doc apis/upload-attachment-file"
+  },
+  "sidebar.openApiSidebar.doc.获取仓库设置": {
+    "message": "获取仓库设置",
+    "description": "The label for the doc item 获取仓库设置 in sidebar openApiSidebar, linking to the doc apis/get-repo-settings"
+  },
+  "sidebar.openApiSidebar.doc.获取 Pull Request 设置": {
+    "message": "获取 Pull Request 设置",
+    "description": "The label for the doc item 获取 Pull Request 设置 in sidebar openApiSidebar, linking to the doc apis/get-pull-request-settings"
+  },
+  "sidebar.openApiSidebar.doc.更新 Pull Request 设置": {
+    "message": "更新 Pull Request 设置",
+    "description": "The label for the doc item 更新 Pull Request 设置 in sidebar openApiSidebar, linking to the doc apis/update-pull-request-settings"
+  },
+  "sidebar.openApiSidebar.doc.更新项目成员角色": {
+    "message": "更新项目成员角色",
+    "description": "The label for the doc item 更新项目成员角色 in sidebar openApiSidebar, linking to the doc apis/update-member-role"
+  },
+  "sidebar.openApiSidebar.doc.仓库转移": {
+    "message": "仓库转移",
+    "description": "The label for the doc item 仓库转移 in sidebar openApiSidebar, linking to the doc apis/transfer-repo"
+  },
+  "sidebar.openApiSidebar.doc.获取项目自定义角色": {
+    "message": "获取项目自定义角色",
+    "description": "The label for the doc item 获取项目自定义角色 in sidebar openApiSidebar, linking to the doc apis/project-customized-role-list"
+  },
+  "sidebar.openApiSidebar.doc.下载次数统计": {
+    "message": "下载次数统计",
+    "description": "The label for the doc item 下载次数统计 in sidebar openApiSidebar, linking to the doc apis/get-download-statistics"
+  },
+  "sidebar.openApiSidebar.doc.列出 watch 了仓库的用户": {
+    "message": "列出 watch 了仓库的用户",
+    "description": "The label for the doc item 列出 watch 了仓库的用户 in sidebar openApiSidebar, linking to the doc apis/watch-list"
+  },
+  "sidebar.openApiSidebar.doc.列出 star 了仓库的用户": {
+    "message": "列出 star 了仓库的用户",
+    "description": "The label for the doc item 列出 star 了仓库的用户 in sidebar openApiSidebar, linking to the doc apis/star-list"
+  },
+  "sidebar.openApiSidebar.doc.获取 raw 文件": {
+    "message": "获取 raw 文件",
+    "description": "The label for the doc item 获取 raw 文件 in sidebar openApiSidebar, linking to the doc apis/get-raw-file"
+  },
+  "sidebar.openApiSidebar.doc.获取项目所有分支": {
+    "message": "获取项目所有分支",
+    "description": "The label for the doc item 获取项目所有分支 in sidebar openApiSidebar, linking to the doc apis/get-branches"
+  },
+  "sidebar.openApiSidebar.doc.创建分支": {
+    "message": "创建分支",
+    "description": "The label for the doc item 创建分支 in sidebar openApiSidebar, linking to the doc apis/create-branches"
+  },
+  "sidebar.openApiSidebar.doc.获取单个分支": {
+    "message": "获取单个分支",
+    "description": "The label for the doc item 获取单个分支 in sidebar openApiSidebar, linking to the doc apis/get-branch-detail"
+  },
+  "sidebar.openApiSidebar.doc.新建保护分支规则": {
+    "message": "新建保护分支规则",
+    "description": "The label for the doc item 新建保护分支规则 in sidebar openApiSidebar, linking to the doc apis/create-protect-branch-setting"
+  },
+  "sidebar.openApiSidebar.doc.删除保护分支规则": {
+    "message": "删除保护分支规则",
+    "description": "The label for the doc item 删除保护分支规则 in sidebar openApiSidebar, linking to the doc apis/delete-protect-branch-setting"
+  },
+  "sidebar.openApiSidebar.doc.获取保护分支规则列表": {
+    "message": "获取保护分支规则列表",
+    "description": "The label for the doc item 获取保护分支规则列表 in sidebar openApiSidebar, linking to the doc apis/get-protect-branches"
+  },
+  "sidebar.openApiSidebar.doc.更新保护分支规则": {
+    "message": "更新保护分支规则",
+    "description": "The label for the doc item 更新保护分支规则 in sidebar openApiSidebar, linking to the doc apis/update-protect-branches"
+  },
+  "sidebar.openApiSidebar.doc.获取仓库的所有提交": {
+    "message": "获取仓库的所有提交",
+    "description": "The label for the doc item 获取仓库的所有提交 in sidebar openApiSidebar, linking to the doc apis/get-commit"
+  },
+  "sidebar.openApiSidebar.doc.仓库的某个提交": {
+    "message": "仓库的某个提交",
+    "description": "The label for the doc item 仓库的某个提交 in sidebar openApiSidebar, linking to the doc apis/get-commit-detail"
+  },
+  "sidebar.openApiSidebar.doc.Commits 对比": {
+    "message": "Commits 对比",
+    "description": "The label for the doc item Commits 对比 in sidebar openApiSidebar, linking to the doc apis/repository-compare"
+  },
+  "sidebar.openApiSidebar.doc.创建commit的评论": {
+    "message": "创建commit的评论",
+    "description": "The label for the doc item 创建commit的评论 in sidebar openApiSidebar, linking to the doc apis/create-commit-comment"
+  },
+  "sidebar.openApiSidebar.doc.删除commit评论": {
+    "message": "删除commit评论",
+    "description": "The label for the doc item 删除commit评论 in sidebar openApiSidebar, linking to the doc apis/delete-commit-comment"
+  },
+  "sidebar.openApiSidebar.doc.获取仓库的某条Commit评论": {
+    "message": "获取仓库的某条Commit评论",
+    "description": "The label for the doc item 获取仓库的某条Commit评论 in sidebar openApiSidebar, linking to the doc apis/get-commit-comment"
+  },
+  "sidebar.openApiSidebar.doc.更新Commit评论": {
+    "message": "更新Commit评论",
+    "description": "The label for the doc item 更新Commit评论 in sidebar openApiSidebar, linking to the doc apis/update-commit-comment"
+  },
+  "sidebar.openApiSidebar.doc.获取仓库的Commit评论": {
+    "message": "获取仓库的Commit评论",
+    "description": "The label for the doc item 获取仓库的Commit评论 in sidebar openApiSidebar, linking to the doc apis/get-project-commit-comment"
+  },
+  "sidebar.openApiSidebar.doc.获取代码量贡献": {
+    "message": "获取代码量贡献",
+    "description": "The label for the doc item 获取代码量贡献 in sidebar openApiSidebar, linking to the doc apis/edit-branch"
+  },
+  "sidebar.openApiSidebar.doc.获取单个commit的评论": {
+    "message": "获取单个commit的评论",
+    "description": "The label for the doc item 获取单个commit的评论 in sidebar openApiSidebar, linking to the doc apis/commit-comment"
+  },
+  "sidebar.openApiSidebar.doc.列出项目所有的tags": {
+    "message": "列出项目所有的tags",
+    "description": "The label for the doc item 列出项目所有的tags in sidebar openApiSidebar, linking to the doc apis/get-project-tags"
+  },
+  "sidebar.openApiSidebar.doc.创建一个仓库的Tag": {
+    "message": "创建一个仓库的Tag",
+    "description": "The label for the doc item 创建一个仓库的Tag in sidebar openApiSidebar, linking to the doc apis/create-project-tag"
+  },
+  "sidebar.openApiSidebar.doc.列出项目保护 tags": {
+    "message": "列出项目保护 tags",
+    "description": "The label for the doc item 列出项目保护 tags in sidebar openApiSidebar, linking to the doc apis/project-tag-list"
+  },
+  "sidebar.openApiSidebar.doc.删除项目保护 tag": {
+    "message": "删除项目保护 tag",
+    "description": "The label for the doc item 删除项目保护 tag in sidebar openApiSidebar, linking to the doc apis/delete-protected-tags"
+  },
+  "sidebar.openApiSidebar.doc.获取项目保护 tag 详情": {
+    "message": "获取项目保护 tag 详情",
+    "description": "The label for the doc item 获取项目保护 tag 详情 in sidebar openApiSidebar, linking to the doc apis/get-protected-tags-info"
+  },
+  "sidebar.openApiSidebar.doc.创建项目保护 tag": {
+    "message": "创建项目保护 tag",
+    "description": "The label for the doc item 创建项目保护 tag in sidebar openApiSidebar, linking to the doc apis/create-protected-tags"
+  },
+  "sidebar.openApiSidebar.doc.修改项目保护 tag": {
+    "message": "修改项目保护 tag",
+    "description": "The label for the doc item 修改项目保护 tag in sidebar openApiSidebar, linking to the doc apis/update-protected-tags"
+  },
+  "sidebar.openApiSidebar.doc.创建 issue": {
+    "message": "创建 issue",
+    "description": "The label for the doc item 创建 issue in sidebar openApiSidebar, linking to the doc apis/create-issue-1"
+  },
+  "sidebar.openApiSidebar.doc.更新 issue": {
+    "message": "更新 issue",
+    "description": "The label for the doc item 更新 issue in sidebar openApiSidebar, linking to the doc apis/update-issue-1"
+  },
+  "sidebar.openApiSidebar.doc.获取仓库某个 issue": {
+    "message": "获取仓库某个 issue",
+    "description": "The label for the doc item 获取仓库某个 issue in sidebar openApiSidebar, linking to the doc apis/get-project-issue"
+  },
+  "sidebar.openApiSidebar.doc.获取仓库所有 issue": {
+    "message": "获取仓库所有 issue",
+    "description": "The label for the doc item 获取仓库所有 issue in sidebar openApiSidebar, linking to the doc apis/list-project-issues"
+  },
+  "sidebar.openApiSidebar.doc.获取仓库某个Issue所有的评论": {
+    "message": "获取仓库某个Issue所有的评论",
+    "description": "The label for the doc item 获取仓库某个Issue所有的评论 in sidebar openApiSidebar, linking to the doc apis/list-issue-comments"
+  },
+  "sidebar.openApiSidebar.doc.创建 issue 评论": {
+    "message": "创建 issue 评论",
+    "description": "The label for the doc item 创建 issue 评论 in sidebar openApiSidebar, linking to the doc apis/create-issue-comments"
+  },
+  "sidebar.openApiSidebar.doc.获取仓库所有issues的评论": {
+    "message": "获取仓库所有issues的评论",
+    "description": "The label for the doc item 获取仓库所有issues的评论 in sidebar openApiSidebar, linking to the doc apis/list-all-issue-comments"
+  },
+  "sidebar.openApiSidebar.doc.获取 issue 关联的 Pull Requests": {
+    "message": "获取 issue 关联的 Pull Requests",
+    "description": "The label for the doc item 获取 issue 关联的 Pull Requests in sidebar openApiSidebar, linking to the doc apis/get-issue-pull-requests"
+  },
+  "sidebar.openApiSidebar.doc.获取企业某个Issue所有评论": {
+    "message": "获取企业某个Issue所有评论",
+    "description": "The label for the doc item 获取企业某个Issue所有评论 in sidebar openApiSidebar, linking to the doc apis/get-org-issue-labels"
+  },
+  "sidebar.openApiSidebar.doc.创建 issue 标签": {
+    "message": "创建 issue 标签",
+    "description": "The label for the doc item 创建 issue 标签 in sidebar openApiSidebar, linking to the doc apis/create-project-issue"
+  },
+  "sidebar.openApiSidebar.doc.删除issue 标签": {
+    "message": "删除issue 标签",
+    "description": "The label for the doc item 删除issue 标签 in sidebar openApiSidebar, linking to the doc apis/delete-project-issue"
+  },
+  "sidebar.openApiSidebar.doc.获取某个Issue下的操作日志": {
+    "message": "获取某个Issue下的操作日志",
+    "description": "The label for the doc item 获取某个Issue下的操作日志 in sidebar openApiSidebar, linking to the doc apis/get-issue-operate-logs"
+  },
+  "sidebar.openApiSidebar.doc.获取某个企业的所有Issues": {
+    "message": "获取某个企业的所有Issues",
+    "description": "The label for the doc item 获取某个企业的所有Issues in sidebar openApiSidebar, linking to the doc apis/list-group-issues"
+  },
+  "sidebar.openApiSidebar.doc.获取当前授权用户的所有Issues": {
+    "message": "获取当前授权用户的所有Issues",
+    "description": "The label for the doc item 获取当前授权用户的所有Issues in sidebar openApiSidebar, linking to the doc apis/list-user-issues-alise"
+  },
+  "sidebar.openApiSidebar.doc.更新Issue某条评论": {
+    "message": "更新Issue某条评论",
+    "description": "The label for the doc item 更新Issue某条评论 in sidebar openApiSidebar, linking to the doc apis/update-issue-comment"
+  },
+  "sidebar.openApiSidebar.doc.删除Issue某条评论": {
+    "message": "删除Issue某条评论",
+    "description": "The label for the doc item 删除Issue某条评论 in sidebar openApiSidebar, linking to the doc apis/delete-issue-comment"
+  },
+  "sidebar.openApiSidebar.doc.获取仓库Issue某条评论": {
+    "message": "获取仓库Issue某条评论",
+    "description": "The label for the doc item 获取仓库Issue某条评论 in sidebar openApiSidebar, linking to the doc apis/get-issue-comment"
+  },
+  "sidebar.openApiSidebar.doc.获取当前用户某个组织的Issues": {
+    "message": "获取当前用户某个组织的Issues",
+    "description": "The label for the doc item 获取当前用户某个组织的Issues in sidebar openApiSidebar, linking to the doc apis/user-org-issues"
+  },
+  "sidebar.openApiSidebar.doc.获取企业某个Issue所有标签": {
+    "message": "获取企业某个Issue所有标签",
+    "description": "The label for the doc item 获取企业某个Issue所有标签 in sidebar openApiSidebar, linking to the doc apis/get-enterprise-issue-tag"
+  },
+  "sidebar.openApiSidebar.doc.获取Pull Request列表": {
+    "message": "获取Pull Request列表",
+    "description": "The label for the doc item 获取Pull Request列表 in sidebar openApiSidebar, linking to the doc apis/get-pulls"
+  },
+  "sidebar.openApiSidebar.doc.创建Pull Request": {
+    "message": "创建Pull Request",
+    "description": "The label for the doc item 创建Pull Request in sidebar openApiSidebar, linking to the doc apis/create-pull"
+  },
+  "sidebar.openApiSidebar.doc.合并Pull Request": {
+    "message": "合并Pull Request",
+    "description": "The label for the doc item 合并Pull Request in sidebar openApiSidebar, linking to the doc apis/pull-request-merge"
+  },
+  "sidebar.openApiSidebar.doc.判断Pull Request是否已经合并": {
+    "message": "判断Pull Request是否已经合并",
+    "description": "The label for the doc item 判断Pull Request是否已经合并 in sidebar openApiSidebar, linking to the doc apis/get-pull-request-merge"
+  },
+  "sidebar.openApiSidebar.doc.获取pr关联的issue": {
+    "message": "获取pr关联的issue",
+    "description": "The label for the doc item 获取pr关联的issue in sidebar openApiSidebar, linking to the doc apis/get-pull-request-issues"
+  },
+  "sidebar.openApiSidebar.doc.提交pull request 评论": {
+    "message": "提交pull request 评论",
+    "description": "The label for the doc item 提交pull request 评论 in sidebar openApiSidebar, linking to the doc apis/create-pull-request-comments"
+  },
+  "sidebar.openApiSidebar.doc.获取某个Pull Request的所有评论": {
+    "message": "获取某个Pull Request的所有评论",
+    "description": "The label for the doc item 获取某个Pull Request的所有评论 in sidebar openApiSidebar, linking to the doc apis/get-pull-comments"
+  },
+  "sidebar.openApiSidebar.doc.Pull Request Commit文件列表": {
+    "message": "Pull Request Commit文件列表",
+    "description": "The label for the doc item Pull Request Commit文件列表 in sidebar openApiSidebar, linking to the doc apis/get-pulls-1"
+  },
+  "sidebar.openApiSidebar.doc.更新Pull Request信息": {
+    "message": "更新Pull Request信息",
+    "description": "The label for the doc item 更新Pull Request信息 in sidebar openApiSidebar, linking to the doc apis/update-pull-request"
+  },
+  "sidebar.openApiSidebar.doc.获取单个Pull Request": {
+    "message": "获取单个Pull Request",
+    "description": "The label for the doc item 获取单个Pull Request in sidebar openApiSidebar, linking to the doc apis/get-pull-request"
+  },
+  "sidebar.openApiSidebar.doc.获取某Pull Request的所有Commit信息": {
+    "message": "获取某Pull Request的所有Commit信息",
+    "description": "The label for the doc item 获取某Pull Request的所有Commit信息 in sidebar openApiSidebar, linking to the doc apis/get-pull-request-commits"
+  },
+  "sidebar.openApiSidebar.doc.创建 Pull Request 标签": {
+    "message": "创建 Pull Request 标签",
+    "description": "The label for the doc item 创建 Pull Request 标签 in sidebar openApiSidebar, linking to the doc apis/create-pull-request-labels"
+  },
+  "sidebar.openApiSidebar.doc.获取某个 Pull Request 的所有标签": {
+    "message": "获取某个 Pull Request 的所有标签",
+    "description": "The label for the doc item 获取某个 Pull Request 的所有标签 in sidebar openApiSidebar, linking to the doc apis/get-pull-request-label"
+  },
+  "sidebar.openApiSidebar.doc.替换 Pull Request 所有标签": {
+    "message": "替换 Pull Request 所有标签",
+    "description": "The label for the doc item 替换 Pull Request 所有标签 in sidebar openApiSidebar, linking to the doc apis/update-pr-labels"
+  },
+  "sidebar.openApiSidebar.doc.删除 Pull Request 标签": {
+    "message": "删除 Pull Request 标签",
+    "description": "The label for the doc item 删除 Pull Request 标签 in sidebar openApiSidebar, linking to the doc apis/delete-pull-request-labels"
+  },
+  "sidebar.openApiSidebar.doc.处理 Pull Request 测试": {
+    "message": "处理 Pull Request 测试",
+    "description": "The label for the doc item 处理 Pull Request 测试 in sidebar openApiSidebar, linking to the doc apis/handler-pull-request-test"
+  },
+  "sidebar.openApiSidebar.doc.处理 Pull Request 审查": {
+    "message": "处理 Pull Request 审查",
+    "description": "The label for the doc item 处理 Pull Request 审查 in sidebar openApiSidebar, linking to the doc apis/handler-pull-request-review"
+  },
+  "sidebar.openApiSidebar.doc.获取某个Pull Request的操作日志": {
+    "message": "获取某个Pull Request的操作日志",
+    "description": "The label for the doc item 获取某个Pull Request的操作日志 in sidebar openApiSidebar, linking to the doc apis/get-mr-system-notes"
+  },
+  "sidebar.openApiSidebar.doc.重置 Pull Request 测试 的状态": {
+    "message": "重置 Pull Request 测试 的状态",
+    "description": "The label for the doc item 重置 Pull Request 测试 的状态 in sidebar openApiSidebar, linking to the doc apis/reset-pull-request-test"
+  },
+  "sidebar.openApiSidebar.doc.指派用户测试 Pull Request": {
+    "message": "指派用户测试 Pull Request",
+    "description": "The label for the doc item 指派用户测试 Pull Request in sidebar openApiSidebar, linking to the doc apis/update-pr-testers"
+  },
+  "sidebar.openApiSidebar.doc.重置 Pull Request 审查 的状态": {
+    "message": "重置 Pull Request 审查 的状态",
+    "description": "The label for the doc item 重置 Pull Request 审查 的状态 in sidebar openApiSidebar, linking to the doc apis/reset-pull-request-review"
+  },
+  "sidebar.openApiSidebar.doc.指派用户审查 Pull Request": {
+    "message": "指派用户审查 Pull Request",
+    "description": "The label for the doc item 指派用户审查 Pull Request in sidebar openApiSidebar, linking to the doc apis/set-pr-assignees"
+  },
+  "sidebar.openApiSidebar.doc.取消用户审查 Pull Request": {
+    "message": "取消用户审查 Pull Request",
+    "description": "The label for the doc item 取消用户审查 Pull Request in sidebar openApiSidebar, linking to the doc apis/delete-pull-request-assignees"
+  },
+  "sidebar.openApiSidebar.doc.pr提交的文件变更信息": {
+    "message": "pr提交的文件变更信息",
+    "description": "The label for the doc item pr提交的文件变更信息 in sidebar openApiSidebar, linking to the doc apis/get-pull-request-files"
+  },
+  "sidebar.openApiSidebar.doc.企业 Pull Request 列表": {
+    "message": "企业 Pull Request 列表",
+    "description": "The label for the doc item 企业 Pull Request 列表 in sidebar openApiSidebar, linking to the doc apis/get-enterprise-pr-2"
+  },
+  "sidebar.openApiSidebar.doc.获取Pull Request某条评论": {
+    "message": "获取Pull Request某条评论",
+    "description": "The label for the doc item 获取Pull Request某条评论 in sidebar openApiSidebar, linking to the doc apis/get-pr-comment"
+  },
+  "sidebar.openApiSidebar.doc.编辑评论": {
+    "message": "编辑评论",
+    "description": "The label for the doc item 编辑评论 in sidebar openApiSidebar, linking to the doc apis/update-pr-comment"
+  },
+  "sidebar.openApiSidebar.doc.删除评论": {
+    "message": "删除评论",
+    "description": "The label for the doc item 删除评论 in sidebar openApiSidebar, linking to the doc apis/delete-pull-comment"
+  },
+  "sidebar.openApiSidebar.doc.组织 Pull Request 列表": {
+    "message": "组织 Pull Request 列表",
+    "description": "The label for the doc item 组织 Pull Request 列表 in sidebar openApiSidebar, linking to the doc apis/get-enterprise-pr-1"
+  },
+  "sidebar.openApiSidebar.doc.获取文件内容": {
+    "message": "获取文件内容",
+    "description": "The label for the doc item 获取文件内容 in sidebar openApiSidebar, linking to the doc apis/get-file-content"
+  },
+  "sidebar.openApiSidebar.doc.删除Issue所有标签": {
+    "message": "删除Issue所有标签",
+    "description": "The label for the doc item 删除Issue所有标签 in sidebar openApiSidebar, linking to the doc apis/delete-all-issue-labels"
+  },
+  "sidebar.openApiSidebar.doc.替换Issue所有标签": {
+    "message": "替换Issue所有标签",
+    "description": "The label for the doc item 替换Issue所有标签 in sidebar openApiSidebar, linking to the doc apis/update-issue-labels"
+  },
+  "sidebar.openApiSidebar.doc.更新一个仓库的任务标签": {
+    "message": "更新一个仓库的任务标签",
+    "description": "The label for the doc item 更新一个仓库的任务标签 in sidebar openApiSidebar, linking to the doc apis/update-project-label"
+  },
+  "sidebar.openApiSidebar.doc.获取仓库所有任务标签": {
+    "message": "获取仓库所有任务标签",
+    "description": "The label for the doc item 获取仓库所有任务标签 in sidebar openApiSidebar, linking to the doc apis/get-project-all-labels"
+  },
+  "sidebar.openApiSidebar.doc.创建仓库任务标签": {
+    "message": "创建仓库任务标签",
+    "description": "The label for the doc item 创建仓库任务标签 in sidebar openApiSidebar, linking to the doc apis/create-project-label"
+  },
+  "sidebar.openApiSidebar.doc.删除一个仓库任务标签": {
+    "message": "删除一个仓库任务标签",
+    "description": "The label for the doc item 删除一个仓库任务标签 in sidebar openApiSidebar, linking to the doc apis/delete-project-label"
+  },
+  "sidebar.openApiSidebar.doc.获取某个企业的所有标签": {
+    "message": "获取某个企业的所有标签",
+    "description": "The label for the doc item 获取某个企业的所有标签 in sidebar openApiSidebar, linking to the doc apis/get-all-labels"
+  },
+  "sidebar.openApiSidebar.doc.分页查询某个企业的标签": {
+    "message": "分页查询某个企业的标签",
+    "description": "The label for the doc item 分页查询某个企业的标签 in sidebar openApiSidebar, linking to the doc apis/query-group-labels"
+  },
+  "sidebar.openApiSidebar.doc.获取仓库所有里程碑": {
+    "message": "获取仓库所有里程碑",
+    "description": "The label for the doc item 获取仓库所有里程碑 in sidebar openApiSidebar, linking to the doc apis/get-project-milestones"
+  },
+  "sidebar.openApiSidebar.doc.创建仓库里程碑": {
+    "message": "创建仓库里程碑",
+    "description": "The label for the doc item 创建仓库里程碑 in sidebar openApiSidebar, linking to the doc apis/create-project-milestone"
+  },
+  "sidebar.openApiSidebar.doc.获取仓库单个里程碑": {
+    "message": "获取仓库单个里程碑",
+    "description": "The label for the doc item 获取仓库单个里程碑 in sidebar openApiSidebar, linking to the doc apis/get-project-milestone"
+  },
+  "sidebar.openApiSidebar.doc.删除仓库单个里程碑": {
+    "message": "删除仓库单个里程碑",
+    "description": "The label for the doc item 删除仓库单个里程碑 in sidebar openApiSidebar, linking to the doc apis/delete-project-mile-stone"
+  },
+  "sidebar.openApiSidebar.doc.更新仓库里程碑": {
+    "message": "更新仓库里程碑",
+    "description": "The label for the doc item 更新仓库里程碑 in sidebar openApiSidebar, linking to the doc apis/update-project-milestone"
+  },
+  "sidebar.openApiSidebar.doc.列出仓库的WebHooks": {
+    "message": "列出仓库的WebHooks",
+    "description": "The label for the doc item 列出仓库的WebHooks in sidebar openApiSidebar, linking to the doc apis/list-all-web-hooks"
+  },
+  "sidebar.openApiSidebar.doc.创建一个仓库WebHook": {
+    "message": "创建一个仓库WebHook",
+    "description": "The label for the doc item 创建一个仓库WebHook in sidebar openApiSidebar, linking to the doc apis/create-issue"
+  },
+  "sidebar.openApiSidebar.doc.获取仓库单个WebHook": {
+    "message": "获取仓库单个WebHook",
+    "description": "The label for the doc item 获取仓库单个WebHook in sidebar openApiSidebar, linking to the doc apis/get-web-hook"
+  },
+  "sidebar.openApiSidebar.doc.更新一个仓库WebHook": {
+    "message": "更新一个仓库WebHook",
+    "description": "The label for the doc item 更新一个仓库WebHook in sidebar openApiSidebar, linking to the doc apis/update-issue"
+  },
+  "sidebar.openApiSidebar.doc.删除一个仓库WebHook": {
+    "message": "删除一个仓库WebHook",
+    "description": "The label for the doc item 删除一个仓库WebHook in sidebar openApiSidebar, linking to the doc apis/delete-web-hook"
+  },
+  "sidebar.openApiSidebar.doc.测试WebHook是否发送成功": {
+    "message": "测试WebHook是否发送成功",
+    "description": "The label for the doc item 测试WebHook是否发送成功 in sidebar openApiSidebar, linking to the doc apis/test-web-hook"
+  },
+  "sidebar.openApiSidebar.doc.邀请组织成员": {
+    "message": "邀请组织成员",
+    "description": "The label for the doc item 邀请组织成员 in sidebar openApiSidebar, linking to the doc apis/add-member-from-group"
+  },
+  "sidebar.openApiSidebar.doc.添加项目成员或更新项目成员权限": {
+    "message": "添加项目成员或更新项目成员权限",
+    "description": "The label for the doc item 添加项目成员或更新项目成员权限 in sidebar openApiSidebar, linking to the doc apis/put-project-member"
+  },
+  "sidebar.openApiSidebar.doc.移除项目成员": {
+    "message": "移除项目成员",
+    "description": "The label for the doc item 移除项目成员 in sidebar openApiSidebar, linking to the doc apis/delete-project-member"
+  },
+  "sidebar.openApiSidebar.doc.判断用户是否为仓库成员": {
+    "message": "判断用户是否为仓库成员",
+    "description": "The label for the doc item 判断用户是否为仓库成员 in sidebar openApiSidebar, linking to the doc apis/is-project-member"
+  },
+  "sidebar.openApiSidebar.doc.获取仓库的所有成员": {
+    "message": "获取仓库的所有成员",
+    "description": "The label for the doc item 获取仓库的所有成员 in sidebar openApiSidebar, linking to the doc apis/get-project-members"
+  },
+  "sidebar.openApiSidebar.doc.查看仓库成员的权限": {
+    "message": "查看仓库成员的权限",
+    "description": "The label for the doc item 查看仓库成员的权限 in sidebar openApiSidebar, linking to the doc apis/repo-member-permission"
+  },
+  "sidebar.openApiSidebar.doc.获取用户的某个仓库": {
+    "message": "获取用户的某个仓库",
+    "description": "The label for the doc item 获取用户的某个仓库 in sidebar openApiSidebar, linking to the doc apis/get-project"
+  },
+  "sidebar.openApiSidebar.doc.创建个人项目仓库": {
+    "message": "创建个人项目仓库",
+    "description": "The label for the doc item 创建个人项目仓库 in sidebar openApiSidebar, linking to the doc apis/create-user-project"
+  },
+  "sidebar.openApiSidebar.doc.列出授权用户的所有仓库": {
+    "message": "列出授权用户的所有仓库",
+    "description": "The label for the doc item 列出授权用户的所有仓库 in sidebar openApiSidebar, linking to the doc apis/user-repos"
+  },
+  "sidebar.openApiSidebar.doc.获取一个用户": {
+    "message": "获取一个用户",
+    "description": "The label for the doc item 获取一个用户 in sidebar openApiSidebar, linking to the doc apis/user-info"
+  },
+  "sidebar.openApiSidebar.doc.获取授权用户的全部邮箱": {
+    "message": "获取授权用户的全部邮箱",
+    "description": "The label for the doc item 获取授权用户的全部邮箱 in sidebar openApiSidebar, linking to the doc apis/user-emails-1"
+  },
+  "sidebar.openApiSidebar.doc.获取授权用户个人动态": {
+    "message": "获取授权用户个人动态",
+    "description": "The label for the doc item 获取授权用户个人动态 in sidebar openApiSidebar, linking to the doc apis/user-events"
+  },
+  "sidebar.openApiSidebar.doc.获取某个用户的公开仓库": {
+    "message": "获取某个用户的公开仓库",
+    "description": "The label for the doc item 获取某个用户的公开仓库 in sidebar openApiSidebar, linking to the doc apis/query-user-public-repos"
+  },
+  "sidebar.openApiSidebar.doc.添加一个公钥": {
+    "message": "添加一个公钥",
+    "description": "The label for the doc item 添加一个公钥 in sidebar openApiSidebar, linking to the doc apis/add-user-keys"
+  },
+  "sidebar.openApiSidebar.doc.列出授权用户的所有公钥": {
+    "message": "列出授权用户的所有公钥",
+    "description": "The label for the doc item 列出授权用户的所有公钥 in sidebar openApiSidebar, linking to the doc apis/user-keys-page"
+  },
+  "sidebar.openApiSidebar.doc.删除一个公钥": {
+    "message": "删除一个公钥",
+    "description": "The label for the doc item 删除一个公钥 in sidebar openApiSidebar, linking to the doc apis/delete-user-key-by-id"
+  },
+  "sidebar.openApiSidebar.doc.获取一个公钥": {
+    "message": "获取一个公钥",
+    "description": "The label for the doc item 获取一个公钥 in sidebar openApiSidebar, linking to the doc apis/get-user-key-by-id"
+  },
+  "sidebar.openApiSidebar.doc.创建组织仓库": {
+    "message": "创建组织仓库",
+    "description": "The label for the doc item 创建组织仓库 in sidebar openApiSidebar, linking to the doc apis/create-org-project"
+  },
+  "sidebar.openApiSidebar.doc.获取组织项目列表": {
+    "message": "获取组织项目列表",
+    "description": "The label for the doc item 获取组织项目列表 in sidebar openApiSidebar, linking to the doc apis/get-group-projects"
+  },
+  "sidebar.openApiSidebar.doc.移除授权用户所管理组织中的成员": {
+    "message": "移除授权用户所管理组织中的成员",
+    "description": "The label for the doc item 移除授权用户所管理组织中的成员 in sidebar openApiSidebar, linking to the doc apis/remove-member-from-group"
+  },
+  "sidebar.openApiSidebar.doc.列出用户所属的组织": {
+    "message": "列出用户所属的组织",
+    "description": "The label for the doc item 列出用户所属的组织 in sidebar openApiSidebar, linking to the doc apis/user-orgs"
+  },
+  "sidebar.openApiSidebar.doc.列出授权用户所属的组织": {
+    "message": "列出授权用户所属的组织",
+    "description": "The label for the doc item 列出授权用户所属的组织 in sidebar openApiSidebar, linking to the doc apis/auth-user-orgs"
+  },
+  "sidebar.openApiSidebar.doc.获取组织成员详情": {
+    "message": "获取组织成员详情",
+    "description": "The label for the doc item 获取组织成员详情 in sidebar openApiSidebar, linking to the doc apis/org-user-info-1"
+  },
+  "sidebar.openApiSidebar.doc.获取一个组织信息": {
+    "message": "获取一个组织信息",
+    "description": "The label for the doc item 获取一个组织信息 in sidebar openApiSidebar, linking to the doc apis/get-org"
+  },
+  "sidebar.openApiSidebar.doc.获取企业的一个成员": {
+    "message": "获取企业的一个成员",
+    "description": "The label for the doc item 获取企业的一个成员 in sidebar openApiSidebar, linking to the doc apis/get-enterprise-member"
+  },
+  "sidebar.openApiSidebar.doc.获取授权用户在一个组织的成员资料": {
+    "message": "获取授权用户在一个组织的成员资料",
+    "description": "The label for the doc item 获取授权用户在一个组织的成员资料 in sidebar openApiSidebar, linking to the doc apis/org-user-info"
+  },
+  "sidebar.openApiSidebar.doc.列出一个组织的所有成员": {
+    "message": "列出一个组织的所有成员",
+    "description": "The label for the doc item 列出一个组织的所有成员 in sidebar openApiSidebar, linking to the doc apis/org-members"
+  },
+  "sidebar.openApiSidebar.doc.列出企业的所有成员": {
+    "message": "列出企业的所有成员",
+    "description": "The label for the doc item 列出企业的所有成员 in sidebar openApiSidebar, linking to the doc apis/enterprise-members"
+  },
+  "sidebar.openApiSidebar.doc.列出指定组织的所有关注者": {
+    "message": "列出指定组织的所有关注者",
+    "description": "The label for the doc item 列出指定组织的所有关注者 in sidebar openApiSidebar, linking to the doc apis/org-followers"
+  },
+  "sidebar.openApiSidebar.doc.获取 issue 扩展配置": {
+    "message": "获取 issue 扩展配置",
+    "description": "The label for the doc item 获取 issue 扩展配置 in sidebar openApiSidebar, linking to the doc apis/get-issue-extend-settings"
+  },
+  "sidebar.openApiSidebar.doc.搜索用户": {
+    "message": "搜索用户",
+    "description": "The label for the doc item 搜索用户 in sidebar openApiSidebar, linking to the doc apis/search-users"
+  },
+  "sidebar.openApiSidebar.doc.搜索 Issues": {
+    "message": "搜索 Issues",
+    "description": "The label for the doc item 搜索 Issues in sidebar openApiSidebar, linking to the doc apis/search-issues"
+  },
+  "sidebar.openApiSidebar.doc.搜索仓库": {
+    "message": "搜索仓库",
+    "description": "The label for the doc item 搜索仓库 in sidebar openApiSidebar, linking to the doc apis/search-repositories"
+  },
+  "sidebar.openApiSidebar.doc.使用访问令牌访问用户信息API": {
+    "message": "使用访问令牌访问用户信息API",
+    "description": "The label for the doc item 使用访问令牌访问用户信息API in sidebar openApiSidebar, linking to the doc apis/user-info-1"
+  },
+  "sidebar.openApiSidebar.doc.认证接口": {
+    "message": "认证接口",
+    "description": "The label for the doc item 认证接口 in sidebar openApiSidebar, linking to the doc apis/auth-api"
+  },
+  "sidebar.openApiSidebar.doc.重定向": {
+    "message": "重定向",
+    "description": "The label for the doc item 重定向 in sidebar openApiSidebar, linking to the doc apis/redirect"
+  },
+  "sidebar.openApiSidebar.doc.刷新access_token": {
+    "message": "刷新access_token",
+    "description": "The label for the doc item 刷新access_token in sidebar openApiSidebar, linking to the doc apis/refresh-access-token"
+  }
+}

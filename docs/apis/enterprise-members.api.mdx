@@ -1,0 +1,71 @@
+---
+id: enterprise-members
+title: "列出企业的所有成员"
+description: ""
+sidebar_label: "列出企业的所有成员"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVVl9rE0EQ/yoyTypHk1r6cm+KRUSkUNunEsrmbnJZe3e7zu7FxnBgoWD7ICoiSvXBfgH1RVDRb9Ok+C1k7tLk0t4m9unYndmZ3/z93QBC1ISBsBiC3xGxQQ9CNAFJbaVKwQfwQGkkwcf7IfiAqUXSJA0+xKSNZMADKyID/jasUyRS+axQNtDyQAsSCVrW8rcHkIoEZ0yAB5K9aGG7UOOa8EkmicFZytAD3BOJjrEUmqCLiQB/ALav+c5YkmkEee5NXGkRTZw8yZD6l7wM/7wdHr38e/L97PP+jMdxOiYul2s8ytRihLTIaEdRImypv3Kr0O6ILLbgL8+ARdpZDHj09RUbPj74e/Lz7OOX0btvc2GvNKu4E7EnkywBf7nZ9BZFUevJHctKsxoMqXhBIHNhzy9wi58arVKDhuW3mk3+zNpffwAeBCq1mFqW3mzc5M8lq4JIMDppMTGVe9V+jIEFDzTxCFhZ+soM0mIt0RNW0BbFNfA9wB6m1rikHRXH6inSAgWZRi6FSBq3+a5NYpdMhrXXsYq4kDWSpFgCG1zsOnHZDDUCVV0VLjSEAcoehmtz00WYCNp1iLRyvjNWEGHoFGftSTc5bZQXNYKs9gG/kLbo7zvC4Ba3klPZAxFY2avabysVo0gXRe2qhsqsURkFGNbbrCzmhQ0+0ynTDXJhPeReuduv1BvOdMydqXlt7ShTpRxrk9Dvbq47JCXhbaDRkOes0kURFtw2KI4Gg4yk7YO/3eLJsF3FjBlhkb0iDdAQWjZ6q41pqk1jMD3kjWTCqgapVzJna2r7EW+vogI8rWlHFWGNoQZcyJ1QBaZu2bKx8rC81FxqFrVRxiaimOzx2h4evh+++HX6e//0x/HZ8cHo6Pno09Ho8PXwzYeLNgfT5crmx7m1uGcbOhYyrZSyDH4bhJYMZBWqvcZg/Zl/gvMctDzoKmP55WDQ5oGhOM/5umQU/qcIpRHt2PX/UsV4gZRr8e5if/rX0BNxVlAR09r/+6mlzXneprQ/32OpPibWqWqLDyRZ94oZub4x5t8b11wQzzky7Vd9nmOpVC1vTQaiQFEq3A4C1LbylEk4r07HvbVNyPN/4B28nQ==
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"列出企业的所有成员"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/enterprises/{enterprise}/members"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"enterprise","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"page","in":"query","description":"当前页码","required":false,"example":1,"schema":{"type":"integer","description":"当前页码","format":"int32","default":1}},{"name":"per_page","in":"query","description":"每页的项目数","required":false,"example":30,"schema":{"maximum":100,"type":"integer","description":"每页的项目数","format":"int32","default":30}},{"name":"role","in":"query","description":"","required":false,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"array","items":{"type":"object","properties":{"user":{"type":"object","properties":{"avatarUrl":{"type":"string"},"eventsUrl":{"type":"string"},"followersUrl":{"type":"string"},"followingUrl":{"type":"string"},"gistsUrl":{"type":"string"},"htmlUrl":{"type":"string"},"id":{"type":"string"},"login":{"type":"string"},"memberRole":{"type":"string"},"name":{"type":"string"},"organizationsUrl":{"type":"string"},"receivedEventsUrl":{"type":"string"},"remark":{"type":"string"},"reposUrl":{"type":"string"},"starredUrl":{"type":"string"},"subscriptionsUrl":{"type":"string"},"type":{"type":"string"},"url":{"type":"string"}},"title":"BaseUser"},"url":{"type":"string"},"active":{"type":"boolean"},"remark":{"type":"string"},"role":{"type":"string"},"outsourced":{"type":"boolean"},"enterprise":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"path":{"type":"string"},"name":{"type":"string"},"url":{"type":"string"},"avatarUrl":{"type":"string"},"htmlUrl":{"type":"string"},"type":{"type":"string"}},"title":"EnterpriseDTO"}},"title":"EnterpriseMemberResp"}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

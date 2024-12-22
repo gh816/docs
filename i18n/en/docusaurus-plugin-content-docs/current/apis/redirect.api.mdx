@@ -1,0 +1,71 @@
+---
+id: redirect
+title: "重定向"
+description: ""
+sidebar_label: "重定向"
+hide_title: true
+hide_table_of_contents: true
+api: eJylUj1v3DAM/SsFpxYQ7tyM3joURacA/ZgORsCTmbNS21IkOoghaO5UoF37I/qvMvRfFJR9Oad3FxToJFAk3yP5XoSanCeNTDWU19gGUlBT0N44NraHEkCBdeRRwvc1lOCpNp40gwLGXYByA5c4cHOxKqBS4NBjR0xeMhF67GjRdDV4AwqMIDvkBk7QebodjJeB2A+kIOiGOoQyAo9OwAJ70+8gJfWIr21Ne9zbgfz4PPC8Kd1j51rpjwKQ4N/IAiP/H1tGeJ6uEoTgbB8oSP6iKOQ5otG2Z+pZcuhca3RWan0TpCAeE9jtzSSe86IrmwyfUkoKGsI6CxdzGEgP3vAI5aZS0BE3Vgywo9wu6pWwjktp80rk7yb1qwPERxljYpK7Xds8keF8Dt0S9le11eHUHQVsCl6vilUBSYGzgTvM+82S/P767eHXz4fvP/5GiIcDCdh8BKZ7XrsWTS9wg2+lcNpoA+UTs1YKGhtYEjFuMdBn36Yk35PyYvLaBNy2C6m/0Hgw5R22g5CCWOhM6d5Sh9pKAm+k+DTH2TVffpid9+rFuY3nT+zHJed+mCf7p+rRGHmOqeSN1uR40XzkvbS0zLu3nyClP5KPgY0=
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"重定向"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/{redirect_uri}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"redirect_uri","in":"path","description":"","required":true,"schema":{"type":"string"}},{"name":"code","in":"query","description":"","required":false,"example":"{code}","schema":{"type":"string"}},{"name":"state","in":"query","description":"","required":false,"example":"{state}","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"","content":{"application/json":{"schema":{"type":"object","properties":{}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-project-milestones
+title: "获取仓库所有里程碑"
+description: "获取仓库所有里程碑"
+sidebar_label: "获取仓库所有里程碑"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vl1vG0UU/SvWFQ9JtarXgfKwbzwghBACFXiKjDXZvbEH9qszsyGWs5KLipJAUwsinNAGqUSVQEilkSgtJEH8GLrr+Im/AHd3ba/j2OsEeFrtzNw559w7M/e0wEJfoMkUWmCsMluiBhZKU3Bfcc8FA87uPY863Rcnu9Hxbrzdjg+2+5t3ez980Tv8EjTwfBSMVr5pgQF1VO8K7yM01dvcRqk8FyVooFhdgrEMw0GoauAzwRxUKGiqBS5zEAzwPnFRgAacoH2mGnCeD2gg8FbABTFWIkANcJ05vo3ppDQb6DAwWqCaPo1JJbhbhzDUhigCfe9/B5GKKRyg3ApQNCdghpnsff4sbt82SsxUfA21kml7Ei2txGz7z/an/ZP9s58eDWbHuGUlG5EbrhlR9JlSKAjvwwXPR3cj3X2D2fbiS1SeMQn/FUd0A4eKPhxI14MGzLbpAFi4ygJbjTiPJc8Tanbu4ntfRceduPtbdNoxSlaANc+dnZqpSUmD58jFFMyB1GygmhdicYFmEj5TTbSzGR13Fpg0F+Otbrz/pP/NDg3QqsV8eqVZUP9kwcU6mTQ3kg2LlV6Oz7DWyR+tOVdgaY5V12f1gpsR/b4bbe/07t/pf/dL7+HtmZoreb0Od7lDbCpDidxVWE9elSKMVU84TKUhLy9BTkJljD6KWrGE+EmHNr5/J/76qL/Z+ev0bnzQjh59/+LX41JF12dKWtLHNLH1TJOuF6oqhp2uckkPwyrxkr7nSpQEvqTr9BkHeectutCeq9BVNHutfI0+E88iE4JRZrhCR+bGvRVqEqCBL6iDKJ5ipU9EjUsZYH751Ap+9nN/7/E/FUwiUsGTAkMNTIHU4mpMTb7ZE5tuPYhOjuO9Z/29pxQ7NlsUHHc6Z38cJWHpY1AcsfVj/PhwBNdQjl0LhF0cSSujg6Po2zbFuYGzgmKOpPVOu1Hn+bk0vfoK7cGtOeK5dWEsdZb5Kxdv70an7TkqR61acuWJZm0udqlRmcIxbcmFiU07HQUoruw5AuKHm/3DfQoIfGvugxY/eBp3j0aVn6votCgcMRt5qpsofQhDmmsgsxJf1Up+JZqB4KoJxnJVAwdVw8vMGl1Asj8GlJnPy2s3ykm6y63EhoXlFv2GZSdv5iSKtdS0VUdbv0cXPyk8nSJ31UuEZBRNG5lbszxTXuSzaLP0p3Jdv65TInxPKocldyd7cWeb0HM3dPguFYRliVa4rsq+zbibK0KalmVgPieONyA7iaCBMfCoRmYjc+mpatDwpKLIVmuFSfxA2GFIw2mPIKdrcclW7Gl+O0//qtbrQmEfYzNnSteYHSSeiNra/IymGKBZgKmRuyLe5WzIDBp5G3ZVLhN2YQZeZg+umubCHj4LeuRORvBV+hGc8C95CBduZi5lsTQNd9Ds3WYec8AnvS6XS8C/Bk2uZlgdPoaJ6HTqNdNEP38mybyE+ZfxjdffhzD8G40qwLU=
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取仓库所有里程碑"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/repos/{owner}/{repo}/milestones"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+获取仓库所有里程碑
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"state","in":"query","description":"里程碑状态: active, closed, all。默认: active","required":false,"example":"active","schema":{"pattern":"^(open|closed|all)$","type":"string","description":"里程碑状态: active, closed, all。默认: active","enum":["active","closed","all"],"default":"active"}},{"name":"sort","in":"query","description":"排序方式: due_on","required":false,"example":"","schema":{"pattern":"^(due_on)$","type":"string","description":"排序方式: due_on","enum":["due_on"]}},{"name":"direction","in":"query","description":"升序(asc)或是降序(desc)。默认: asc","required":false,"example":"asc","schema":{"pattern":"^(asc|desc)$","type":"string","description":"升序(asc)或是降序(desc)。默认: asc","enum":["asc","desc"],"default":"asc"}},{"name":"page","in":"query","description":"当前的页码","required":false,"example":1,"schema":{"minimum":1,"type":"integer","description":"当前的页码","format":"int32","default":1}},{"name":"per_page","in":"query","description":"每页的数量，最大为 100","required":false,"example":20,"schema":{"maximum":100,"type":"integer","description":"每页的数量，最大为 100","format":"int32","default":20}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"array","items":{"type":"object","properties":{"closed_issues":{"type":"integer","description":"关闭的issue数量","format":"int32"},"created_at":{"type":"string","description":"创建时间"},"description":{"type":"string","description":"描述"},"due_on":{"type":"string","description":"截止时间"},"html_url":{"type":"string","description":"html地址"},"number":{"type":"integer","description":"编号","format":"int64"},"id":{"type":"integer","description":"id","format":"int64"},"open_issues":{"type":"integer","description":"打开的issue数量","format":"int32"},"repository_id":{"type":"integer","description":"仓库id","format":"int64"},"state":{"type":"string","description":"状态"},"title":{"type":"string","description":"标题"},"updated_at":{"type":"string","description":"更新时间"},"url":{"type":"string","description":"url"}},"title":"MilestoneResp"}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

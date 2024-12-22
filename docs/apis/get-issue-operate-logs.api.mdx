@@ -1,0 +1,71 @@
+---
+id: get-issue-operate-logs
+title: "获取某个Issue下的操作日志"
+description: ""
+sidebar_label: "获取某个Issue下的操作日志"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVt+LHEUQ/ldCPSVhyJyRvMxbxCCHYuDMPR3LUTtTO9tmpnvS3bPJugxc4MCIaISDOziiPvlgnhSEHHcR/xj3h/4XUt1ze7N3M65G8cmnYaq6q776uqr7m0BChaYYLSUQDTAzFEBCJtaisEJJiAACUAVp5N/NBCJIyW4aU9J9Z6UPVGogAIupgWgHnMtAL4ACNeZkSbN9AhJzggjUY0kaAhAcu0A7hMsJp2cHs9OD+Wd7sx+/WXx/+vvRT7MXP8y+3rs+ff10enL8697Txdn+4uzT+bPD6cnL6enp4njfr+BwNyAATY9Kobkiq0sKgJ5gXmTkizHxkHKEaAJ2XLDNWC1kClUVLEHKMu+vQenqvLZ4fTh7/urfSGmUtucJH5Wkx1cyrmSpj6o7co9Xm0JJQ4b9tzc2+LMa8v77EECspCVp2XszvMmfK1FRa2RAwlJuGnbV/5hihl1o7hErfC6RNNYIaSl1ZA6UztF609u3oQqgNKTXh8MRWtTbOmupMwAakbSmyztQWaYek16zQMi0a0EqTHf4oc2zLt8KCxfmTKV8yC2enLjrthS3TYvbN0qLQ+kUpfjETWgnUk0xiREl9/6ULk056ocdrkJ17jMWtaak0132l23XGcMbWhxl6wbeIawbsXfQ0Da3UrXSzVcCxZr4orvb7sWY4T3oRFEkaKljb42kxdNXybi9dQiT9b2vadDO6LBt6v0prY/qbrS/1WODMst2O7zNk9Ao4+G7aHGLgTCrxohU/pUx7x6M9Xk/xJwfIiF9G7QicqeBhv4n/T8mXfBTudl2Gza2XJIUUFVVPSROQEzcr6G41MKOIdrp8X1ph6pWJFyY4xdCLEQ4uhO6+yqcOL1RhQ6DCSf+Za9CL2loN/PqxZAeeaHSu8jyET+DjiYuQg78Gdd444xQ7iYqNm0PNQfzP2/d2ri1wSwUytgcHdf1k//bl69mzw/n3341PXnpyp+efL443p8ffDH9+cX86LvZL0eXY08u7jdOU9Np6YkNiwyFbFyXno4dwEIwoDtQX+EQQLQUYV6sBRAtFc8KMb0AhspYDjOZ8Oxs66yq2OwlCuu6RBjsZw1N8pDGF3pmhFnpVBALkhFqwWvb93UWen2rlj03rv1zbdhK2bnMkeMm5PNSPFus1d4I8yWl+AYA6sOpesuJcAx65904pqJJNYu4qjke7917AFX1ByjqR/A=
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取某个Issue下的操作日志"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/repos/{owner}/issues/{number}/operate_logs"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"仓库所属空间地址(企业、组织或个人的地址path)","required":true,"example":"","schema":{"type":"string"}},{"name":"number","in":"path","description":"Issue 编号","required":true,"example":"","schema":{"type":"string"}},{"name":"sort","in":"query","description":"","required":false,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"user":{"type":"object","properties":{"avatarUrl":{"type":"string"},"eventsUrl":{"type":"string"},"followersUrl":{"type":"string"},"followingUrl":{"type":"string"},"gistsUrl":{"type":"string"},"htmlUrl":{"type":"string"},"id":{"type":"string"},"login":{"type":"string"},"memberRole":{"type":"string"},"name":{"type":"string"},"organizationsUrl":{"type":"string"},"receivedEventsUrl":{"type":"string"},"remark":{"type":"string"},"reposUrl":{"type":"string"},"starredUrl":{"type":"string"},"subscriptionsUrl":{"type":"string"},"type":{"type":"string"},"url":{"type":"string"}},"title":"BaseUser"},"content":{"type":"string"},"createdAt":{"type":"string"},"actionType":{"type":"string"},"updateAt":{"type":"string"},"title":{"type":"string"},"body":{"type":"string"},"head":{"type":"object","properties":{"ref":{"type":"string"},"sha":{"type":"string"},"repo":{"type":"object","properties":{"path":{"type":"string"},"name":{"type":"string"},"full_name":{"type":"string"}},"title":"BranchDataRepo"},"assigner":{"type":"object","properties":{"login":{"type":"string"},"name":{"type":"string"}},"title":"NameLoginUser"}},"title":"BranchData"},"base":{"type":"object","properties":{"ref":{"type":"string"},"sha":{"type":"string"},"repo":{"type":"object","properties":{"path":{"type":"string"},"name":{"type":"string"},"full_name":{"type":"string"}},"title":"BranchDataRepo"},"assigner":{"type":"object","properties":{"login":{"type":"string"},"name":{"type":"string"}},"title":"NameLoginUser"}},"title":"BranchData"},"issueId":{"type":"string"}},"title":"IssueOperateLog"}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-repo-settings
+title: "获取仓库设置"
+description: ""
+sidebar_label: "获取仓库设置"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vltv3EQU/ivRPEFluqFQHvYNKRBVtCLa0KdoZc3aZ71DbY8zM94mWllKpAZWai5bkrZK+1ACtAmXJCChlubWP7Nje/8FOraT7JJLl0rwNJrbd8755ptzTovYEAiwqAKblOvUlWAQG6QlWKAY90mZEIPwAATF6Q2blIkDqgIBnwSlmO9IYhBFHUnKUwSXJVNcMJCkapCACuqBAoG7LeJTD0iZ8Ls+CGIQhugBVQ1yjkkB0yET6JQSIRgEZqgXuJBvSqsBHiXlFlGzAa5JJZjvkCgyTqwICPh/ZKSKN2XAfQkS96+NjuIwCP/lF8QgFvcV+Ap3r5Su4HAGlde+BksRgwQCaVYsx7SZpDUXzDoXd/pO1zh3gfpngklezMfbP8R/HiVrz3obr5OnOyQySJ2LGrNt8E0bmuAivmkJoArMmqC+1RgaWR/M6ZUH6dyCbj/V+3u6/U28tjuUCTOU2fufGKJC0NkzZvTh6iWW4scvkyf3kvVD3VnSSw/xXRV48u00MrvvDPMVOJn0Bm3fGCNZIB5V+alPPsbQglA2TBG6YA6FEi9v9ebm0817ur1+BvGja4iIVAwHlqxtxe1XFziWweQy/6c4z8fRnSX8G5c4fMJ6981GPL+Lf5qp7CdMhLJRCV0YO35eOaZ4hnbJ0yvqvKu04u+/TbaPBqVlcc9jSr2zeuOVTnfvp3PUW0gUuTQFODDzdkbzy7qzlGz+Hm//qNvr6cZWenSkD1YQUVHnX8Hl4V4I54CPqRfMQIDpgXAQuD5M4GvP4nbnFt6owHQIUo1MCPggWxipQH2QYIcpl9ZMalkg5dC0jjN1k9bSnTe9x1m6EVCjEszj1KUEcxwQ5l2oNTgfPovdqozkSOnmC73yoLje3bvf3X+JZniAHgeO2QTB6gzsIZBRZJ3d8YlxvfBb77vnvV8W0915BGO+5YY2mG5dmnkOGSZ+vXw/OfhZLy50/7qfHh7qxQXd+fXm55N693X6x8Y5f6039yRZ20q2HyUPn/cWlpLDnb4vNp49sjvBXWYxkBWQAYkQowHUzpNnNpVghYKpWVKeqhrEA9XgRT3GvIc1rkxKNGCl5vUSlj9ZamW1Niq1cBpli6Y8rdsSRDMvztVT9EmsUFn2zOip84yPwlUL6TBtbsnz6imC5ZMPr45eHc2SKJfKoz5iFIU5XX6lVx5191f13mq6c5RTMQDVOq2biFq8hYIZVQpcyvwsBwoXD+ZRTxEaMLR/PSvqAUfvysd9RrloBQajrxqkwaXCy60Wqu22cKMIl6dDEAXHTSoYajlrXwpdX9An9Tv9XqVoLN4fucj/42LoYylsUjcsuo47MHvSImE38z8azWiKqie6y4LOtz61LAhU3yXsZqJ+EY5/9hWJor8BrJ0POw==
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取仓库设置"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/repos/{owner}/{repo}/repo_settings"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","properties":{"disable_fork":{"type":"boolean","description":"禁止派生项目"},"forbidden_developer_create_branch":{"type":"boolean","description":"禁止开发者创建分支"},"forbidden_developer_create_branch_users":{"type":"array","description":"当禁止开发者创建分支时的白名单","items":{"type":"object","properties":{"id":{"type":"integer","description":"ID","format":"int64"},"push_rule_id":{"type":"integer","description":"推送规则ID","format":"int32"},"user_id":{"type":"integer","description":"用户ID","format":"int64"},"user_name":{"type":"string","description":"用户名"}},"description":"推送规则开发者信息","title":"PushRuleDevelopersDto"}},"forbidden_developer_create_tag":{"type":"boolean","description":"禁止开发者创建标签"},"forbidden_committer_create_branch":{"type":"boolean","description":"禁止提交者创建分支"},"branch_name_regex":{"type":"string","description":"分支名称正则表达式"},"tag_name_regex":{"type":"string","description":"标签名称正则表达式"},"generate_pre_merge_ref":{"type":"boolean","description":"生成MergeRequest Pre-Merge Ref"},"forbidden_gitlab_access":{"type":"boolean","description":"禁止GitLab访问"},"rebase_disable_trigger_webhook":{"type":"boolean","description":"禁止MR rebase触发webhook事件"},"open_gpg_verified":{"type":"boolean","description":"开启GPG公钥验证"},"include_lfs_objects":{"type":"boolean","description":"压缩包下载包含LFS对象"}},"description":"通用策略配置","title":"GeneralPoliciesResp"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

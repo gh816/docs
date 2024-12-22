@@ -1,0 +1,71 @@
+---
+id: get-commit-comment
+title: "获取仓库的某条Commit评论"
+description: "获取仓库的某条Commit评论"
+sidebar_label: "获取仓库的某条Commit评论"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vs+P20QU/lfQO20rq14K5eBbaSuoOBQt21MUVRP7rTPU9sy+GacNlqWtFAm4UKRKRVpRUI/tgYKE1CqL+GdINst/gd7YzSat7Y225bJZv2/ej3nzvZmvgAg1YSgsRhDsicSgBxGakKS2UmUQwMkPL+cPH8+OHs2njxaHk+Nffzx+8vSaSlNpT15MTn6bggdKIwlefzOCAGK0Fc5/MbPggRWxgaAHlR36HmhBIkWLxPYCMpEiBKDuZUjggeTMWtghvFlOVcjx9wfzP35ZPJv++9Of859/nz852Jr99WD26vCfgweLo8ni6Nvj7x7PXj2fTaeLw0m1gsNdAA8I93NJvF9LOXqA90WqE84OHphwiKmAoAA71mwzlmQWQ1l6yyIJtdqgxpOXL+Z/T7beW1oZdSatDsMtOmeqPnsarTKDhvHL29v8s57m1hfgQagyywcbFHDRv8g/b0VVg68x5KPXxOywsoo5UNG4IbfngM9tmjSCISEz9KptRGW0YpaZxdhxaE9RKmxl+uiyW5jtoE7Gu+rm2R6ffLzmcdsgnb07MRJW0G1q3gWOMLOmDd1TSaLuIZ2xQGZx24JYmvbwQ5smbdhaA0/NiYqZbg1IiukAaUcxpxrgirANgKJYZPIbd1W0VkoYohxhdKOzXYSpoLstkFatfsYKIoxa4XywZHtrjMrQAOSNDuwhrZu/T4VBRyVOpXIKm+NYQTHas/kmjcmbI+g8SXZwP0fTNDMrFe1Wqbh4HXUMWb7RAGwwitVgtXOrlTzdw9Xc+m7ed3Dof57G98HCDYepYxa6L6TN5rB1FjRSKo1xr0YXAXkcvlyuvb57aw1dExLXrYKS0SGKyCmHwn0aDHOSdgxBr8+Xkx2qWocwQfmxDMAXWvqjK75riF84oVH6BX+WfljFN34ho5LfSKRRpUz6p9G/4ifO0dw9DHvK7auuM0xQZHciFZq3HmbwgINVHx9e2r607dqjjE2F6039vm8itNYiF6fv8EbO9RlYvG99nQiZrcxN1aUeCC253itQUwc8CF6LsqAWPq+7xSYZsZgbKr5melAUA77gKClLNu/nSPWhjARJMeBW9QqIpOH/WxTn6ra2dmopc+GDdxd+jfuvjSIb875Fktcy6S6Ol3qURdg71PyGEDxHGa7x565iRRmeI7eMoOwvZ86dXwVcDUPUdsWFpWC5OoCf3diFsvwP+x+PGQ==
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取仓库的某条Commit评论"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/repos/{owner}/{repo}/comments/{id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+获取仓库的某条Commit评论
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"仓库所属空间地址(企业、组织或个人的地址path)","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"仓库路径(path)","required":true,"example":"","schema":{"type":"string"}},{"name":"id","in":"path","description":"评论id","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","properties":{"body":{"type":"string"},"bodyHtml":{"type":"string"},"createdAt":{"type":"string"},"id":{"type":"integer","format":"int32"},"inReplyToId":{"type":"integer","format":"int64"},"inReplyToUser":{"type":"object","properties":{"avatarUrl":{"type":"string"},"eventsUrl":{"type":"string"},"followersUrl":{"type":"string"},"followingUrl":{"type":"string"},"gistsUrl":{"type":"string"},"htmlUrl":{"type":"string"},"id":{"type":"string"},"login":{"type":"string"},"memberRole":{"type":"string"},"name":{"type":"string"},"organizationsUrl":{"type":"string"},"receivedEventsUrl":{"type":"string"},"remark":{"type":"string"},"reposUrl":{"type":"string"},"starredUrl":{"type":"string"},"subscriptionsUrl":{"type":"string"},"type":{"type":"string"},"url":{"type":"string"}},"title":"BaseUser"},"source":{"type":"string"},"target":{"type":"object","properties":{"issue":{"type":"string"},"pullRequest":{"type":"string"}},"title":"Target"},"updatedAt":{"type":"string"},"user":{"type":"object","properties":{"id":{"type":"integer","format":"int64"},"login":{"type":"string"},"name":{"type":"string"},"avatarUrl":{"type":"string"},"url":{"type":"string"},"htmlUrl":{"type":"string"},"remark":{"type":"string"},"followersUrl":{"type":"string"},"followingUrl":{"type":"string"},"gistsUrl":{"type":"string"},"starredUrl":{"type":"string"},"subscriptionsUrl":{"type":"string"},"organizationsUrl":{"type":"string"},"reposUrl":{"type":"string"},"eventsUrl":{"type":"string"},"receivedEventsUrl":{"type":"string"},"type":{"type":"string"},"permission":{"type":"string"}},"title":"UserPermissionDTO"}},"title":"CommitCommentDto"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

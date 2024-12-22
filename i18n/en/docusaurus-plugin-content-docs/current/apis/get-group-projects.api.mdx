@@ -1,0 +1,71 @@
+---
+id: get-group-projects
+title: "获取组织项目列表"
+description: ""
+sidebar_label: "获取组织项目列表"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VltvE0cU/ivReWrRCjtQ+rBvlVpRVFqqFJ4iyxrvTtZTdneWmdk0wVrJoXEgLWCkFGIRVEhviaqSDWoKLe7lx5Rdr5/6F6qZcWI7ieNNWp5Wcznn+87Zc858NbBxwLCFBLbBnEEuxwbYmFuMBIJQH0wAA2iAGZLLCzaY4GBxntEw+JjRT7ElOBggkMPBnIZLzEE+ua7ucigZECCGPCwwk8c18JGHwQTKHDCASO8BElU4BJLhayFhkpRgITYAzyEvcLE+5FYVewjMGoj5QO5xwYjvQBQZexjqpAdyLcRs/gBK5+lat778qr2SvFzpPFzsPGsnX3/5z++3k2b8qv192oonkOsaE0FYcYllTASMzCKB/67f6LZb2dZ3pjweYtpL3yh2rwV/MOQAOWNCTv5YSZbvdNd/6TxZ+C/U9/mx8QwKXQEmTA4Twqw8nlQaN6Wnh4vd9d86a1vp/e2jqXlojnihB+ZksWiMIXqo7z7ds0WIopJE4wH1OebS/5liUX6GHV36AAywqC+wL+TpqcIp+TmQMMQYkiESgT0+sE8rslfAgIDJbhJEYxF74A7xBXYwOxDEhXfBgBnKPCT0rbffgsiAmdB1yzrTY//X1u30/k5y705nY1uaSiseIAu/XobaamwfqMLfpZUjmL0w1PAYez97ESd/Lsr7VeG55ZC5423ev/zhxYkrUxdlOYMgQk2ej/aydgLs48Y2tD/OLG02s7+UmfxDzEeDIVYodTHyD2ItNbqfb6pKouxqDoO0FSf3fkhbsbyvG+qkWdWYvGzRUPfTmAJLbi2lX8W6fQfr7OwZ6YsLxBx0HbP8DtPW4/TJzVEOP0PCqh7HXbZxI4kfZ/XGKI+9mVOuMORbOQpHz3gdtrSnAfbLhPMQHyPGRz9mG98mSz93V7e637RGUXOJhX2eozizrV+TZpzFC6r+9etfthhGgrIcEamCSW6tJe2XWb2hfIS8iu0yEjkq/O5mt76Qrj7vru5IUwWb01Zj9m3DwM5tm67tpA+2+7ZcIBHyHEPti+dpXSXKRb4TykdwfH7jp9lmXSdXvfU5erKzsZA+WtbJlDohT983fkoaz4Ym25Cem8I8gCiS51WMbKXdamrJsRUyIubBnC4Z4GFRpT1BCLsDEQooIIXZcwXKHF6oUeZEBYYDKlUix2xWK8FS39cn8gVVT42aXjNURdDjZckAyja1+GEaUTrTi8nTxdNFlQTKhYfUxOxpkOzui6T5oNNe7LRv7pbgara+ud9hrf+6S9+9HAo8JwqBi4ivCkcPOR3pNKCASBbnpEJmjqRoamWrAy4ZUKVcyJu1WgVxfIW5USS3tQ6SgtgmHFXcUdp7kNP/pFYPjesqnu8r5lnkhkpnSyGXn98+SXgETk8RnhDnUEV3FFpfg/YRS3LBiIQ85m94Y6onTN+cGIW7qwT9+UHMXT6yQqLSXm8peH3yjmXhQAzYSI0ZDTba+fcuQxT9C6WuRC0=
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取组织项目列表"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/orgs/{org}/repos"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"org","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"type","in":"query","description":"筛选仓库的类型，可以是 all, public, private。默认: all","required":false,"schema":{"type":"string","description":"筛选仓库的类型，可以是 all, public, private。默认: all"}},{"name":"page","in":"query","description":"当前页码","required":false,"schema":{"type":"string","description":"当前页码","default":"1"}},{"name":"per_page","in":"query","description":"每页的项目数","required":false,"schema":{"maximum":100,"type":"string","description":"每页的项目数","default":"30"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","description":"ID","format":"int64"},"full_name":{"type":"string","description":"完整名称"},"namespace":{"type":"object","properties":{"id":{"type":"integer","description":"ID","format":"int64"},"type":{"type":"string","description":"类型"},"name":{"type":"string","description":"名称"},"path":{"type":"string","description":"路径"},"html_url":{"type":"string","description":"HTML URL"}},"title":"Namespace"},"path":{"type":"string","description":"路径"},"name":{"type":"string","description":"名称"},"description":{"type":"string","description":"描述"},"internal":{"type":"boolean","description":"内部"},"fork":{"type":"boolean","description":"是否是fork项目"},"html_url":{"type":"string","description":"HTML URL"},"forks_count":{"type":"integer","description":"分支数","format":"int32"},"stargazers_count":{"type":"integer","description":"星标数","format":"int32"},"watchers_count":{"type":"integer","description":"观察者数","format":"int32"},"default_branch":{"type":"string","description":"默认分支"},"open_issues_count":{"type":"integer","description":"未解决问题数","format":"int32"},"license":{"type":"string","description":"许可证"},"project_creator":{"type":"string","description":"项目创建者"},"pushed_at":{"type":"string","description":"推送时间"},"created_at":{"type":"string","description":"创建时间"},"updated_at":{"type":"string","description":"更新时间"},"status":{"type":"string","description":"状态"},"language":{"type":"string","description":"语言"},"private":{"type":"boolean","description":"私有"},"public":{"type":"boolean","description":"公共"}},"title":"GroupProjectsResp"}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

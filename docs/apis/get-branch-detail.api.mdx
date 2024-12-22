@@ -1,0 +1,71 @@
+---
+id: get-branch-detail
+title: "获取单个分支"
+description: ""
+sidebar_label: "获取单个分支"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vl9rHFUU/yrlPGkZurHSl33TRkQUhNQ+hTDcnTnZvXZm7vTeM2uXYSBRkhah2RRiE6hilRiLqCta2poo/TI7m823kDN3NrvZTNIN0j7N3HvP+Z3/9/5S8DHW6AlCH+rLIjDogI/G0zImqSKoAzigYtSClx/5UIcm0vtaRF5rHknIABwg0TRQXwS7DUsOxEKLEAk176cQiRChDuqLCDU4IBk3FtSCCmMabydSszukE3QA74gwDtAeGq+FoYB6CtSJec+QllETssw5tqIxVq/dSMOG+nrMLLGmiVVk0PD51bk5/pyE//RjcMBTEWFEfHq5dpk/p1BV43P0CByINdeRpMW0cUzbno4hv7c+2Orlm/cPf/4DMrYXhpJejS79irgcCNEY0aywmxUtgxG50jcTx0Jr0eEsE4amsiIgEmopjb7rC6pGthJudcTjcwy5m88RSAyeg2JTQ+c5MhKZAeU8d8Yy53ukYozcZtx026jlssTJmjSUClBELGZPvWLAXUOCkslMy4iwWUztstKhILv17lXWZOxYy1DojnsLO+4ZVS/TJ0VYKTHdc6Vc5szYo4VU5oBpKU0zWTj8/rd8q9d/sTJ4fHfYWz/8da9Iq0a+Bl1Bs8zFo/xgf7D97Gj7KeuSpGAGVweP7x79uDORE9EWJLSb6IpKTyv3//12uLKW7z7Nv+peurnwyclWuAjSoLvZ3989BaYxEIRTEKMJnPLlYO1o5cvDrSf9/Y15bF8PVOJXjOkZt4M15M9Uq3ztr+Hq1olCjdRnitXq2xCzGcMoqwkL1tD1Isk3JF/d86QgOw1kM9p/+cNgtTcBYDULHb78dLNyBk+B7fTyzb38+Z/55r3872fFpCG5sVaEHl0Eorvdf/nd4OtdKBxuY8BVMK4nIjdOTGsGoPyflbz7oL+/nz/YGYH2+gc/DTaeHK2sVuAWUf4P4HHMF/Cy2jNOmo/LIgloZoyjg53h77sVrWJfwmFv7/Bg/VSdJ/nQAprYtkgLhV8woLRYGvQSLakD9cUl7gZqqZJO8YAwg6hDTcSy1r5WYw5jamlBmLJaysusZjkHmlpq/zImEajblmUtjS3cYA5QjFrGBGVZFeGXvnocvesrz1QxFgazi3euzF2ZKx5mZSgU0Zg0wHDjed59mN//pv/iF5uXaah0zEwYtUw94R2qxYGQxbtTjq+NfBFELNn+tYI2xYq9q48IY73kdKMM8FbjmGy2lCFGSNOGMHhTB1nG27cT1GWy20JL0eDwF1PwpeH/M/jupOdvLZT87e1LZwUxuiUjviPbIkhKcncLO8eEl2njGzRa5OoN2yyLkS0dt32Ranv4nudhTBNqTFWzyRn48IPPIMv+A6nSsL0=
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取单个分支"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/repos/{owner}/{repo}/branches/{branch}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"branch","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","properties":{"name":{"type":"string","description":"分支名称"},"commit":{"type":"object","properties":{"id":{"type":"string"},"message":{"type":"string"},"parent_ids":{"type":"array","items":{"type":"string"}},"authored_date":{"type":"string"},"author_name":{"type":"string"},"author_email":{"type":"string"},"author_user_name":{"type":"string"},"committed_date":{"type":"string"},"committer_name":{"type":"string"},"committer_email":{"type":"string"},"committer_user_name":{"type":"string"},"open_gpg_verified":{"type":"boolean"},"verification_status":{"type":"integer","format":"int32"},"gpg_primary_key_id":{"type":"string"},"author_iam_id":{"type":"string","description":"iam_id"},"name":{"type":"string","description":"name"},"short_id":{"type":"string","description":"短唯一标识符"},"created_at":{"type":"string","description":"创建时间"},"title":{"type":"string","description":"标题"},"author_avatar_url":{"type":"string","description":"作者头像 URL"},"committer_avatar_url":{"type":"string","description":"提交者头像 URL"},"relate_url":{"type":"array","description":"仅适用于DevCloud","items":{"type":"object","properties":{"related_id":{"type":"string","description":"关联标识符"},"related_url":{"type":"string","description":"关联 URL"}},"description":"仅适用于DevCloud","title":"RelatedCommitSimpleDto"}}},"description":"提交信息","title":"CommitDto"},"merged":{"type":"boolean","description":"是否已合并"},"get_protected":{"type":"boolean","description":"是否受保护"},"developers_can_push":{"type":"boolean","description":"开发人员是否可以推送"},"developers_can_merge":{"type":"boolean","description":"开发人员是否可以合并"},"can_push":{"type":"boolean","description":"是否可以推送"},"get_default":{"type":"boolean","description":"是否默认"}},"description":"分支详细信息","title":"BranchDetailResp"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

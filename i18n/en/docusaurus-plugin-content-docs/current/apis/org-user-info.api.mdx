@@ -1,0 +1,71 @@
+---
+id: org-user-info
+title: "获取授权用户在一个组织的成员资料"
+description: ""
+sidebar_label: "获取授权用户在一个组织的成员资料"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVEFr1FAQ/isyJy2PZhXrITcPIsVDodrTsshsMpt9Nsl7nfeydA0BwYI9VQtSVPRevEsL/Tvd3f4MmSS2sd2CoqeXzPdm3jcz30wJMVmmCD3FEI4wdaQgJhextl6bHEIABcYSo/yuxxCC4WTLEa/nIwMKPCYOwj5scIK5fl1fczBQYJExI08scAk5ZtQ4gwItgS36MSx5jWmn0Cx8PBekgHYxsyk1oIvGlCGEJfipFZvzrPMEqmogns6a3JET/EGvJ8fv4TeegYLI5J5yL+hKsCLHjahm+IoiDwosS/JeNzF13Lmjc08JMSgYGc7QN6ZHD6FSTW43Saq2DEuAgtOldpygR966BS0c8V/SvnJOTSKN+HOWlQKvfd0KUUBNL/J60r07NCYlzAVjky7PlSlD3l4KmY6M/mM//iXVrrKvA78GYZOchUrAMWFca76sfx1FBWs/hbA/UJCRHxuZoYTqZGqVQIBWB5O1QJoZZJQNid1YWxcYTlxQGk4qUT7xpBmmwVXY5yLcuhaVTNXI1Km0/CJpxMvYRG7ZmEmw5uf+am+1V6vWOJ9hXad2XC8OTmbvj+YH+/Nvbxcfj+f7J7Ovx+enb85Pvy/O9hZn7xZf9ub7H2aHny5+7M2PPl9/qLwaNnmzLbKnXR/YFHXeUX5TjD6g1cJuDVp1S9UuSwK1QuQIZZMMFIyN8+JWlkN0tMVpVYl5pyBuiz5B1jiUivRLiLWT71uWXZfu3c12D927cxvz1oj5VBhjWrRLapum7aqrBpeSqJ9vkMdRRNZ3fGQNVV19PH3yAqrqJ+uX85w=
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取授权用户在一个组织的成员资料"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/user/memberships/orgs/{org}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"org","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","properties":{"id":{"type":"integer","format":"int64"},"path":{"type":"string"},"name":{"type":"string"},"url":{"type":"string"},"avatarUrl":{"type":"string"},"user":{"type":"object","properties":{"id":{"type":"string"},"login":{"type":"string"},"name":{"type":"string"}},"title":"User"},"active":{"type":"boolean"},"role":{"type":"string"},"remark":{"type":"string"},"organization":{"type":"object","properties":{"id":{"type":"integer","format":"int64"},"login":{"type":"string"},"name":{"type":"string"}},"title":"Organization"}},"title":"OrgUserInfoResp"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

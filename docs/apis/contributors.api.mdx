@@ -1,0 +1,71 @@
+---
+id: contributors
+title: "获取仓库贡献者"
+description: ""
+sidebar_label: "获取仓库贡献者"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vt2LFEcQ/1dCPakMzp7Bl3kLKiIJBvx4OhapnanbbZ2ZbrtrzluGhggRFE18OFRIQNw3n/wAQ0gk5J9x787/Qmpmv+5udu72xKehu7rr96vqqvpNCQkZSzEyJRBtYOoogIRcbJVhpXOIAALQhizK8koCEcQ6Z6t6BWvrIADGvoNoHa6R0U6xtoocdAMwaDEjJivWEnLMCCLQ93KyEIAS1wZ5AA14lu4WygojtgUFQFuYmZRqo4sHlCFEJfDQyJ5jq/I+eB/MUCwZ/c1BDPZpCnK3IDs8hDL+b3v86LfPo792X93fhzhJ9AxyrQFR5Uz9KletTje0zZDr89+fq05vYJEyRGv7yJK9dTThnbdPxfEfv34e/bP755udZ+/aaXc6i8Qz3FJZkU32jwijEaolmE5nMZzKeWsoex9Gu0/e7P3yYPf9x/HLx6dinWWKpRxDLHigrTvdGltbFZwEy/uuwDmjc0dOfJ7rdOSz39XPP0JQdRjlLNYz4Rn5HGKC1qIErZgyt7Cve7cpZgjAWOlaVjVWnbZD1RxAruI7V5cZC0d26c3ZGFA6d411e+A1fQCYJGqV8wmltJL/TWS0N23ayJgyVM0Wx8jKsYrdyVNsrJZ9GZHH4tqzmMeDpXlf+iitL9aeAEySn1ROK2WfVrlRF/4FXdTFe+QN39xJn/4f7dx/O374Ym/0WhRGcdWR1xkZvFya7lxYkKKLrMXoAxgQJpXslNXSUVxYxUOI1rsBZMQDLTLWp+oNRR0iCNGocPN8KMLhwrJSKR+WsvThAcFzZDdrVevOnV+XBq3y5GUsbegq/gnNOCXMbyU6dk1CJM7qxdrZztmO5NFoxxnm886Fvd//Hj99/unj9vjf7dm4OeitnE8OcTxJP9MWhyZFlVe1VddGHfc6oFFC4Xw1C40WgtFUo6OJjO6LvxvAQDuWu2XZQ0c3beq9bNdzWLQ+UQ576bI/ikWWB8SskfEdGs7VdhPToprOIgbHx2lUmza0uVyeEPF4+tNCYSJxc/iuLKwS/BWzfOraROZOf7cMczrz8uEi5pRLXRGrJeCrQavq891ZQ1dB16Yf4pgML1wSmfSL3X350g3w/gsZsuc7
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取仓库贡献者"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/repos/{owner}/{repo}/contributors"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"page","in":"query","description":"当前页码","required":false,"example":1,"schema":{"type":"integer","description":"当前页码","format":"int32","default":1}},{"name":"per_page","in":"query","description":"每页的项目数","required":false,"example":100,"schema":{"maximum":100,"type":"integer","description":"每页的项目数","format":"int32","default":100}},{"name":"type","in":"query","description":"贡献者类型(committers/authors)","required":false,"example":"","schema":{"type":"string","description":"贡献者类型(committers/authors)"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"array","items":{"type":"object","properties":{"name":{"type":"string"},"nickName":{"type":"string"},"username":{"type":"string"},"contributions":{"type":"integer","format":"int32"},"additions":{"type":"integer","format":"int32"},"deletions":{"type":"integer","format":"int32"},"avatarUrl":{"type":"string"},"email":{"type":"string"},"statistics":{"type":"array","items":{"type":"object","properties":{"projectId":{"type":"integer","format":"int32"},"branch":{"type":"string"},"userName":{"type":"string"},"nickName":{"type":"string"},"avatarUrl":{"type":"string"},"addLines":{"type":"integer","format":"int32"},"deleteLines":{"type":"integer","format":"int32"},"commitCount":{"type":"integer","format":"int32"}},"description":"贡献信息列表","title":"Stat"}}},"title":"ContributorsDto"}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

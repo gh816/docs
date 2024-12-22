@@ -1,0 +1,71 @@
+---
+id: get-user-key-by-id
+title: "获取一个公钥"
+description: ""
+sidebar_label: "获取一个公钥"
+hide_title: true
+hide_table_of_contents: true
+api: eJyFU01rFEEQ/StSJw1tZo3Gw9wURZcVhF1zWpbQO12722Y+Ot01S4ahwYsfJ4UcjOBFhFxE8CIa9O9kg/svpGaG7CbZsKeZru736lXVqxIUGouRJFQQjmTsUIBCF1ltSGcphAACMoNW8rGtIIQx0o5D28HiYdFWIIDk2EHYB446GAgw0soEiU9hv4RUJgghaH6rmdJImsCKPBb3c21ZCdkcBeCBTEyMELYEuGiCiYSwBCpMRZcSjtGCgFFmE0l16O4WeD9gKmey1KFjxFarxZ+L+Z53QECUpYQp8e1GsMGfK3my4UuMCAQYy30gXXNqtVLLxRztR5fk3b8HXgBp4qrO4Y6sTsdX0Gdf3s6/fmLAHhbrn/d6T2c/3swPjztYMCiyyGPdlbQeO3v3efb3z9nRr/nRz2XJShLeJp0gE+Y2Xs+0030GflEjNFbpojPg+WKCUlXOKKujwyi3mgoI+wMBCdIka0zGLWejhBBIo4PpdpA7tMEeFi4otfLAYDutXTZYMPV4gtWQPPttlFWiGzlRjDLdVVnkVhmQyerDnc3WZouLNpmjRKbM0fj43/vfsw8fT09enZ58m73+Pj88vkxVLnzFrE3DCA8oMLHU6VIz6wr7II3m/NsggKuEauasMdSKV2qSOeJ3ZTmUDnds7D2H93O0Teum0mo55CL7JSjt+P+anV7Wd7PbLN2tG9dJbYIyLViijHOs66pcyYvgB+dzrbLXFw+iCA0tQXjD/PKQnzx+Ad7/B3Rfjh0=
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取一个公钥"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/user/keys/{id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","in":"path","description":"","required":true,"example":0,"schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","properties":{"id":{"type":"integer","description":"ID","format":"int64"},"title":{"type":"string","description":"标题"},"key":{"type":"string","description":"SSH密钥Key"},"created_at":{"type":"string","description":"创建时间","format":"date-time"},"url":{"type":"string","description":"URL"}},"title":"UserKeyResp"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

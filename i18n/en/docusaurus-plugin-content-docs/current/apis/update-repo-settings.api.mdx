@@ -1,0 +1,73 @@
+---
+id: update-repo-settings
+title: "更新仓库设置"
+description: ""
+sidebar_label: "更新仓库设置"
+hide_title: true
+hide_table_of_contents: true
+api: eJzlWF1vE0cU/SvRPLXI4JSWPvitbUqECmpkQH1A0Wq8e70eWO8sM7MJkWUpkUjrCkJMCaCEB5q2QNqShEqIQnDCn/F67af+herO+GMTO7VBFKQ2T9n5OGfmzr3n3usScSAQYFMFDsnkqSchRRyQtmCBYtwnGUJShAcgKH6eckiGhIFDFWQh4GdBKea7kqSIoq4kmQsEhyVTXDCQZDpFAipoERQInC0RnxaBZAif9UGQFGFIEFBVIANYBVwOmcBzKRFCisAVWgw8MJPSLkCRkkyJqLkAx6QSzHdJuZzqsggI+L9EMm12glSfc2cOV9jcV+Ar/JcGgcdsbbD0RYlMpX4onrsItiIpEgg0r0J7ZUrEYZLmPLDyXFxKrM5x7gH1+24QP1xobP7UeLoXr9xvrb+I7239VauYwZNcXOoMfU/KKZLnIsccB3zLgRnwkNWyBVAFVk5Q3y6MzBfV5qPlm835xahyL3q5E1W+baxsD6FQ1H1T/MaP38Wbe/vxbV4sMqXe+AqN5Wp955fXu4KhsEIJwmKO7PeL17BWvHY1Xt2NqkvR0u14ZaNR+fPUBNK3OdCDLQEuXBnOYgCj6lL86Elj8+eostpc32ju7UW1ZURU1H0tOGPtQ+Fc8FEMwAoEWEUQLgLnR7H7yv1GpXoGd2RN6MRrV6cEHNVDUQ3NgAQCclSC1QkEJZjrgrBmIVfgfJSYOJMdMxj150vNRw+j5ZvfmL31nWv1l8+QgwfgW27gWjMgWJ5h+A+FjRYfR7X5yanJaPFx64cHrd+uN7cXEIz5thc6YHl5aZmolqPA3bgW136Nri/Wn19r7u5G1xej6u+nT56Ntl80/1hHHTv4LveeNu48ac2vxSsb8ead+PaD+qv1xsI2ii9TWrLOa2We1C/kTXGP2QxkFi7jKRPCVi5rM8uA+9KozvHxcS0++wi//oqkkrJ2JH3knSrZ+9esRMAnn5QKQef6H3T31j8wNe4+S4Y8piUFRTncjCzpm8xX4OrMuZ/71ATRFylSZVZ9+gleLQhlwRKhB9ZIKI0bG635heajq1FltQ/x4+OI2Na+EcC6ojboYBrGZOmhGqpxourSoJBIHLhr9b6omAplIRt6MNF5XjmhuEb7D6Sr/1O+GOtmi7Es5Pcb2GXKozmL2jbIUeTXmHWSqdM019x61bq79VZyj4HtZiCTfmbfSvqpzUfV7feXfpKJp7W4FO9uJUKsL+XIwGSZAlDHiKf+lGCHgqk5krkwnSJFUAWOHUUQat3DEj1D0jRg6ZkTaazeZbqkW4VyuoSfZT1oyV7bIUHMmN5iuod+FjOUVs9yimABnu2V6l920uDBBGXK/xHyzdCFWjoOrjpUAEbkTVSdvUAcEPy9yYNx3Js5LCTNUYbFgFk1wIXNxEB3xCntqnmufbPtNja6puVwWw5qzfBhzcdHx8aPjeuExqUqUt1QtXs8UxXVX96Kdm41t/aMW+6DSrRmiNqOCwVXVDrwKPN1PhIeLjQeeIHQgCH/Cd0fBhxPl+m0rJl2V7nfE6dTpMClws2lEtrvvPDKZRy+HIJo+/sMFQxtqjvhtn0P6bqTh/4g2+5RPxw77PydwsTHsmSGemG7gb0Ec91uGxvjd0iqzVSe7mqAvrSZ+sKwHD2HAL2tfW0zntjs+My2IVCJtViLlpMSMnX+HAZEuxkvckf/AEBn8aXobOdnDMTW6qjHSsSjvhtSF9caRvz7G41x7/k=
+sidebar_class_name: "put api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"更新仓库设置"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/v5/repos/{owner}/{repo}/repo_settings"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"disable_fork":{"type":"boolean","description":"禁止派生项目（禁止Fork项目）"},"forbidden_developer_create_branch":{"type":"boolean","description":"禁止开发者创建分支"},"forbidden_developer_create_tag":{"type":"boolean","description":"禁止开发者创建标签"},"forbidden_committer_create_branch":{"type":"boolean","description":"禁止提交者创建分支"},"forbidden_developer_create_branch_user_ids":{"type":"string","description":"禁止开发者创建分支的白名单用户ID"},"branch_name_regex":{"type":"string","description":"分支名称正则表达式"},"tag_name_regex":{"type":"string","description":"标签名称正则表达式"},"generate_pre_merge_ref":{"type":"boolean","description":"生成MergeRequest的Pre-Merge引用"},"rebase_disable_trigger_webhook":{"type":"boolean","description":"MR rebase不触发Webhook事件"},"open_gpg_verified":{"type":"boolean","description":"公开GPG公钥验证"},"include_lfs_objects":{"type":"boolean","description":"压缩包下载包含LFS对象"}},"description":"更新通用策略信息","title":"UpdateGeneralPoliciesReq"},"example":""}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","properties":{"disable_fork":{"type":"boolean","description":"禁止派生项目"},"forbidden_developer_create_branch":{"type":"boolean","description":"禁止开发者创建分支"},"forbidden_developer_create_branch_users":{"type":"array","description":"当禁止开发者创建分支时的白名单","items":{"type":"object","properties":{"id":{"type":"integer","description":"ID","format":"int64"},"push_rule_id":{"type":"integer","description":"推送规则ID","format":"int32"},"user_id":{"type":"integer","description":"用户ID","format":"int64"},"user_name":{"type":"string","description":"用户名"}},"description":"推送规则开发者信息","title":"PushRuleDevelopersDto"}},"forbidden_developer_create_tag":{"type":"boolean","description":"禁止开发者创建标签"},"forbidden_committer_create_branch":{"type":"boolean","description":"禁止提交者创建分支"},"branch_name_regex":{"type":"string","description":"分支名称正则表达式"},"tag_name_regex":{"type":"string","description":"标签名称正则表达式"},"generate_pre_merge_ref":{"type":"boolean","description":"生成MergeRequest Pre-Merge Ref"},"forbidden_gitlab_access":{"type":"boolean","description":"禁止GitLab访问"},"rebase_disable_trigger_webhook":{"type":"boolean","description":"禁止MR rebase触发webhook事件"},"open_gpg_verified":{"type":"boolean","description":"开启GPG公钥验证"},"include_lfs_objects":{"type":"boolean","description":"压缩包下载包含LFS对象"}},"description":"通用策略配置","title":"GeneralPoliciesResp"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

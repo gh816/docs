@@ -1,0 +1,71 @@
+---
+id: delete-protect-branch-setting
+title: "删除保护分支规则"
+description: ""
+sidebar_label: "删除保护分支规则"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Uz1v1EAQ/StoKohW8YGUxh2IFAgkEIHqZKG59SReYe9udseXnKztEDpR06RAoohEyU/gz3AR/As0tu8DSMqkWu+M972Z92Y6KMkH0shUQn6MdSQFJUUdjGfjLOQACpyngHJ9VkIOJdXE9Co4Js1PAlpdHRGzsSeggPEkQj6FIQ6FAo8BG2IKEu/AYkOQgzuzFECBEQqPXME1vIFOWxOkMg4tKaBzbHxNQzLqihqEvANeeIlFDlJDSmrDEsi7Wyc5M3WpMZS3RFTIy+idjRQl/2gykeNv+JfPQYF2lsmyZPeyPTn+Q505VxNaSCkpqAjL3pauv0bSbTC8gHxaKGiIK7e1G9TQVw4ZepPNDzLRNmZdb2TKOrmmbNbbTjHr1qqkLG6GI1KYD3NQbOmOpMa+tSQCHru+XMO9MlqqfVc6Ha9TVMCGy8P9yf4EkgLvIjdoBWO0Z7X8+vvi8uePL1efLlfLj1efv//69mG1vPgXsNvqJ9ijYEznnPkajRX0NtTy46DEFNAbqeKgN9c7qTFfD3Y+zt5aEQntTMpalEJB5SILWtfNMNLbUKck4dOWwujFHIPBmQgy7aA0Ub5vWNfdLu6/Hifuwb2bGhqDaBfSCNbtOI7vabFZUhn1OyTtdbtjzo0xqdjsRS/2kH6sNXneeSjrlXaX5Onhi8M3h5DSH9EWzjc=
+sidebar_class_name: "delete api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"删除保护分支规则"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/api/v5/repos/{owner}/{repo}/branches/{wildcard}/setting"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"wildcard","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"boolean"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

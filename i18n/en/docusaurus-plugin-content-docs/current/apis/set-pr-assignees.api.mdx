@@ -1,0 +1,71 @@
+---
+id: set-pr-assignees
+title: "指派用户审查 Pull Request"
+description: ""
+sidebar_label: "指派用户审查 Pull Request"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVc9PE0EU/lfIOwFZWTThsjd/HYwHmoqnpjHT3Uc7uN0dZmaBZrMJGhIwwXgANSH462CihAhGErAQ/hm7rZ78F8ybXUpbNJpiL92ZffPe97753rcxeCgkukyjB84s8xVa4KFyJReahwE4ABaEAiWj5R0PHFCoC/K6UrwaICqwQLOqAqcEhcj3R4o4H6HSCsoWCCZZHTVKeh1DwOoIDoSLAUqwgFN2wXQNBku2jjfS5kb7yXL6+XXnY/PHy4N0ez99tTzaOnnUOtr6tvyoc7zSOV5tr71oHe20ms3O1koWQenGwAKJ8xGX1JOWEVqAS6wufMzaUW4N6wycGHRD0J7SkgdVSBKrC1KiCP8B4/fDvfR0ZfS/lQ2ieuUv5HR2d9PVt62jnULx58l6+vRLe3s3A1MoEg/NZ+3n+9+WH6d7X9PmJufe8LjK2UlU+kboNSjCDQONgaZHJoTPXSMLe04RtLgn1XnFErCuVsrWWY2wMoeuBguEJHVpjsok7Yb+jibQXBvUXfXd0iEkff0kFCdRiTBQWZprk5P018/i9F2wersZt8f7GxjEyTyP01nmF/oQ98clAw0lBk4NmWeGIDZLhW4kuW6AUypbUEddC2muRKgMIXTpDthMcHthyiYhKjs2Q5PYMS0TW0S+r+w4U0tis55hVCgXsoErn1e6R21lgCygyyqeX+vtM+762O+yTlKcDU2nOfmujyx44IWuuqBNsICKZ4urE5MTk4aRUOk6MwLJZd5eX20fnHY2P7TXDtNP79pv3o/0msdg3h7dUYmcco1L2hY+4wEViaRPgRl7JWCCE5gpI34RElTnzHicfLgNi7TuTl2fUmt0H04J4rjCFN6XfpLQ9nyEMr+6BSY5qxAppRg8ruj5Dzba28JoMR+OsZHLO91vycg3WdAgEpgf5aP+EBtdAybXuQTmAecbAoa5haFRDGODQ4DMpZGUu2NsLjt7eTMDdmWGUpwfvuCM1GR24rrrotA9seQ7Sa8LFKbvzYAFldxw66FnPkdskZTMFs8+yJTc+I/Zi8FnQTViVYrNStLvFxedAxE=
+sidebar_class_name: "post api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"指派用户审查 Pull Request"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/v5/repos/{owner}/{repo}/pulls/{number}/assignees"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"仓库所属空间地址(企业、组织或个人的地址path)","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"仓库路径(path)","required":true,"example":"","schema":{"type":"string"}},{"name":"number","in":"path","description":"第几个PR，即本仓库PR的序数。对应iid","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"required":["assignees"],"type":"object","properties":{"assignees":{"type":"string"}},"title":"AssigneesDto"},"example":""}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","additionalProperties":{"type":"object"},"properties":{}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-pull-comments
+title: "获取某个Pull Request的所有评论"
+description: ""
+sidebar_label: "获取某个Pull Request的所有评论"
+hide_title: true
+hide_table_of_contents: true
+api: eJytls1u20YQx18lmJMTEKGaIhfegqItih5iuMnJEIwVOZbZ8mO9u3QjEATkQIArJK4KGE0Rx01t9NTAtRO0RVw57ctYFK1TX6EYUpYom6FlOSdid7kzv5ndnf+EYCEXaDKFFhjLzJGogYXSFDZXtu+BAaCBz1EwGn5hgQF1VPOB43ziuy56SoIGitUlGItA0zcWcDVAqSRUNeBMMBcVCloOwWMuggH+tx4K0MAm85ypFTjvs3e8FXe3+u1m/OZl8lt38NOf8c7r+OfmXO/deu9o+6S5nhy3kuON/nfPekevet1ust3K/iBzN0EDgauBLSgoJQLUAB8xlzuYxSPNFXQZGCGoBqc5qYTt1SGKtBGkQO5PwXj69jD+tzX3wdx6gVu7JDnJ/n68sds7ejW/8N+7p/HmH/2d/QxmfoHy0O30f3xdxlIpQLE9hfXU8bIvXKayqY/vTMBxVscztNUAReMCW/zPVtzeHOz9leyuTyAMr9aUDKVGywBRLF0O2T/skLHt1mDv7+TFwflsXQe10HQJsGULNNO95WntHA6a7ZPm43hzI+529MHzzbjbKaUuu3BTm0cvcOlhM2kON0E1j29mNWApNT9dBMnvLwbN9ulh6/Sgm7w5jl8+OWk+7h3/muyun+49zeZ1LvrPDwbN7Wz44eOcDeIsG5a9vLw0DB004GI0mEiO5yt8cGliZg4uiqq0VXLfkyhp/U6lQp9J+/e/BA1M31PEZ4RwS79FnwtWmRCM6GyFrszN+7Wv0czCJBlQdubLtqYqHhrUfKtRAK+BKZBUZ4mpwuWAW6XLEsUVKcebHb9OJ1Kwkh1dQYEGZav0RB6SY8LPjjw94CJLAqXvrGEeoOb7DjKPVukKfWY7l/i6z9G7x+2c2i6g5BBF9NMKMisV1jAdSjQDYasGGItVDVxUK/5QrCkrpCMG6Izb+tpdnbRN6mGqw5Ee0jDSeeA4Ug8zAYp0cyzvEsVaJuHVsZ+v6AKlWY7ofi/7aShDcJPiXLJ8UxbddzKWDT66XbldoXxwXyqXpWcyfD2n37+NO8/6v/xAQpfrK5LtVr/d7O+0R89ywn44vuvkaphbhY+Uzh1mp8kPhEM/ZklZBMZtgrqbvkTuE7Jx1qIYwzYgTQ6NR/o8yk9VgxVfKrIUhjUm8aFwooimswdPjY9lS1Zz3tdi5ZnPaV0h/zfYGIvxGnOCtFJQ5ZneT6FQlXkbK+uMHt8rMiVe8/J4Xbez1fwSuHPiV86XbclJwvj3Kg2ETf9f8bLMLQyV4+aN63fMhZGeiYPXyCOfhZO9kqudxwXmcx30DBjpG52ZYtp2egawYbGIqqNynR5wtnjPNJGr3DZS5ihfuz//9AFE0f8Fi17K
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取某个Pull Request的所有评论"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/repos/{owner}/{repo}/pulls/{number}/comments"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"仓库所属空间地址(企业、组织或个人的地址path)","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"仓库路径(path)","required":true,"example":"","schema":{"type":"string"}},{"name":"number","in":"path","description":"第几个PR，即本仓库PR的序数","required":true,"example":0,"schema":{"type":"integer","format":"int32"}},{"name":"page","in":"query","description":"当前页码","required":false,"example":0,"schema":{"type":"integer","description":"当前页码","format":"int32"}},{"name":"per_page","in":"query","description":"每页的项目数","required":false,"example":0,"schema":{"type":"integer","description":"每页的项目数","format":"int32"}},{"name":"direction","in":"query","description":"可选。升序/降序","required":false,"example":"","schema":{"type":"string","description":"可选。升序/降序","enum":["asc","desc"]}},{"name":"comment_type","in":"query","description":"可选。筛选评论类型。代码行评论/pr普通评论","required":false,"example":"","schema":{"type":"string","description":"可选。筛选评论类型。代码行评论/pr普通评论","enum":["diff_comment","pr_comment"]}},{"name":"noteType","in":"query","description":"","required":false,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int32"},"body":{"type":"string"},"created_at":{"type":"string"},"updated_at":{"type":"string"},"user":{"type":"object","properties":{"id":{"type":"string"},"login":{"type":"string"},"name":{"type":"string"}},"title":"User"},"commentType":{"type":"string"},"resolved":{"type":"boolean"},"diffFile":{"type":"string"}},"title":"OpenApiPullCommentResp"}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

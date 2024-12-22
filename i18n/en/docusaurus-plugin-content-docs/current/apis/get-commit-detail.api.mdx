@@ -1,0 +1,71 @@
+---
+id: get-commit-detail
+title: "仓库的某个提交"
+description: ""
+sidebar_label: "仓库的某个提交"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vb1u1EAQfhU0FURWfASlcYf4E6JASkgVnaI5e+68YHs3u+NLTtZ29ERKR0NDxROg8DpHeA00a19yJHYSiqRa7czsN7/7TQMZGUspMmWQTLFwFEFGLrXKsNIVJAARaEMW5fo2gwRmxC90WSp+SYyqgAgYZw6SfWjFMI7AoMWSmKzIG6iwJEhAH1VkIQIluAY5hx5nlg5rZSUctjVFQMdYmoJapUtzKhGSBnhhRObYqmoG3kcXXiwZfe9OXI4P4EMfHWRqOl15OqzJLm521bXwGvxE64KwAu/HYu6Mrhw5MdgajeT4F/P9O4gg1RVTxaLdiDfkuAarJx8pZYjAWBkSVi1mbYue1KJQtT55zmWxN/Am1WVJFbub9Ipvj2nId4ZMvX0AVhza1Y21xM/I7nZXmGVKCrluqiqmWZj+qbYlcit6thVCoIL+x541Y3En27UsdkPsPoKpKmjdE1qLMlWKqbxDckN1FNh2cPsaz8i161Xdd7HSHKsZ3dV6UujJ0KRZPBoewvBVhtQGOc17NWzrqmPfnr962b3XqiDw16ey5eAdcqbV5oRZYN0mXB2ltVW8gGR/HEFJnOuOwiFqiSuBGI2K59ux8KaLm0DSPm7k6uP2d7m4cTl64S2y85bVx5fou0ILocRemGqqQzJdnKnkcpDp1PUxl4C1l6ebo81RKJZ2XGIlGB0RLn+d/j47/fP18/m3k+XPH+dfTpZn36+iNZd8JcBdLZmOOTYFqkqgO15qE98HNEpC2A4MarQEmKx2VNKtka4AIpHJH0eQa8fyumkm6GjPFt6LuCVn2XaZcjgp1tj4Ey2u0PkcizpsAqHjOVolD/ofDyb5eKdj/SePhvJd/fBqse5zFVCbqiycB3QayvrAPqVxfnzxO0KdW83zNCXDa29k0fn1r/Lm1Qfw/i+8XBiC
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"仓库的某个提交"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/repos/{owner}/{repo}/commits/{sha}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"sha","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"show_diff","in":"query","description":"","required":false,"schema":{"type":"boolean"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","properties":{"url":{"type":"string"},"sha":{"type":"string"},"htmlUrl":{"type":"string"},"commentsUrl":{"type":"string"},"commit":{"type":"object","properties":{"sha":{"type":"string"},"date":{"type":"string"}},"title":"Commit"},"stats":{"type":"object","properties":{"additions":{"type":"integer","format":"int32"},"deletions":{"type":"integer","format":"int32"},"total":{"type":"integer","format":"int32"}},"title":"Stats"},"files":{"type":"array","items":{"type":"object","properties":{"sha":{"type":"string"},"filename":{"type":"string"},"status":{"type":"string"},"additions":{"type":"integer","format":"int32"},"deletions":{"type":"integer","format":"int32"},"changes":{"type":"integer","format":"int32"},"blobUrl":{"type":"string"},"rawUrl":{"type":"string"},"contentUrl":{"type":"string"},"patch":{"type":"string"},"truncated":{"type":"boolean"}},"title":"File"}}},"title":"CommitDetailResp"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

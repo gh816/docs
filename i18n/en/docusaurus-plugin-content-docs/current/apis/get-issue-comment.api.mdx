@@ -1,0 +1,71 @@
+---
+id: get-issue-comment
+title: "获取仓库Issue某条评论"
+description: "获取 issue 评论"
+sidebar_label: "获取仓库Issue某条评论"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vc1u00AQfpVqTlBZOCDKwbcCFaqQAIX2FEVo4504S+3d7ew6bbB84wxIlbghxAvAEam8Dq36GGjWbpqC3XJpT4nn252/nfm+CiRawlR4lJBMRe4wAokuJWW9MhoSOPvw8+Tj5zXlXIlrZz/en30/hgiMRRJ8YltCAhn6bcafmKJA7SECLzIHyQiC2cE4AitIFOiR2F6BFgVCAuZAI0EEikNZ4Wfwd3yIgHC/VMQZeioxAjwUhc2xAV06w0JAUoFfWLY5T0pnUNfRMgqhNTceRMkbCjHmm84a7dAx/mAw4J/L7l8+hwhSoz33P6lgPV7nn3+8mslbTPmFLPEbetX4VHLljNIes/AsU0OF8I3p0UOoI5gYuehIkmOHt98J9g585ot8l/JOzJZ5PsT9Ep3vO1I6pOvLEHPhBfX5wDlq7/rQqclzc4B0zQGls74DmXL97q+q/1L3L8y5yXieOpACiwnS0OTdvW4msgMwlAmt3oXN7c2UMEU1R7l1ZbsIC0F7PZA1vfecF0Qoe+FyshzrXh++b8jKzgt8Q/mwaI+Fw10eJQ5lSkq7/XhBGfr/WBumt+tG+uqMdppQvEGEzMObXRciKK3sRVfcvSLDmb4wHofo7FNvoGZ8hkIG7q3Cp8O0JOUXkIzGPE5+Zloi5xqZvxKIhVXxfCMOzxlXgarruOLPOg6Vu7jdehdXStbMYkjzhuLHF0FeMwmFhvGs66kJJbQJpzkK/Uaa1HVRJjtrPu7fG9wbhM4a5wsR9qJl3kaifv86Ojk+CoJz+vXT6ZdvS7G65LW6YMkebWub6/HQxzYXSq9MVtOaEQirOLsNaKcdIkjOtSw5l5tG+5bUGA4pyWI4MzwWI6iqCQ8k5XXN5v0SqX2SuSAlJtyhUQVSOf7fI9GrFd0Zthpzd62vktYo9IIrEHnZCtAeLpaCzLJ2i0FDw245ppJQj5eLEdrcAJtpitavXGEprVe35NnWDtT1H76AMv8=
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取仓库Issue某条评论"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/repos/{owner}/{repo}/issues/comments/{id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+获取 issue 评论
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"id","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","properties":{"id":{"type":"integer","format":"int64"},"body":{"type":"string"},"commentType":{"type":"string"},"htmlUrl":{"type":"string"},"pullRequestUrl":{"type":"string"},"user":{"type":"object","properties":{"avatarUrl":{"type":"string"},"eventsUrl":{"type":"string"},"followersUrl":{"type":"string"},"followingUrl":{"type":"string"},"gistsUrl":{"type":"string"},"htmlUrl":{"type":"string"},"id":{"type":"string"},"login":{"type":"string"},"memberRole":{"type":"string"},"name":{"type":"string"},"organizationsUrl":{"type":"string"},"receivedEventsUrl":{"type":"string"},"remark":{"type":"string"},"reposUrl":{"type":"string"},"starredUrl":{"type":"string"},"subscriptionsUrl":{"type":"string"},"type":{"type":"string"},"url":{"type":"string"}},"title":"BaseUser"},"source":{"type":"string"},"target":{"type":"object","properties":{"issue":{"type":"string"},"pullRequest":{"type":"string"}},"title":"Target"},"createdAt":{"type":"string"},"updatedAt":{"type":"string"}},"title":"ProjectNoteRespDto"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

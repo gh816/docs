@@ -1,0 +1,71 @@
+---
+id: auth-user-orgs
+title: "列出授权用户所属的组织"
+description: ""
+sidebar_label: "列出授权用户所属的组织"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNVE1v00AQ/S9zrFaN01IOviGEKsShB+ipiqqJPXEWbO92dx0aIksgKrU9AAdASEUgeuPExwEhqPg5SdR/gWZdiEmdlNNqd97MvPnYN4KYtKEIHcUQ9jC1JCAmGxmpnVQ5hAAClCaDfL0dQwhYuP62JbNlEgsCHCYWwh3YMgnm8pHHWegI0GgwI0eGzSPIMSMIQWNCIEBy6L2CzBDmE45/vRwfPzs//Tb98AQEGNorpKnRo33MdEoQtgXYqE8ZQjgCN9QcXuaOEjJXBe0pk6Gr8OtrHt3DInUQtstSzMiS2b2a8OTzCw58cnB++mP69tPk9ZeltNeDOu8M92VWZBC2g0BcVUVjpsW1rAf1YjDOZL68kqW82Xqp312lUsIcyrLDvlar3JJlwFoQ8PFvgq07ICBSuaPcsXWltcLHpbBoDDI96SiztXfVvU+RAwHa8FI6WeXCATo02yatQa0zMk+gnKuxwU4Dyp1d5N1Taaoe3lRFxfiSXcaN61efyvVrDExVIpsJaHT9RkNGWZfMQmrVYBsMhrRa6FU0vpcCnHR+zvy5N40qNJQlv/cJY/+LR/5qKSqMdEMIdzpM0fUVy0JCfi6+FGihlq3BRquwZGxLVUphyQwqNejMotzl0fspci/znvLcLphEvFu7sYps06pysOrSXg1WA99JZV2GvssXWz8+ejM+/Dl5fjR593T66uPk6Pvk+PH46/vpycH07GB6djgfeTTbT05y0SZH+66lU5R5rYVVsTuAWjKdDRDgC2bJ5JI7AvrKOoaMRl20tG3SsuTn6vuxLMbSYjddpL51MnMS1kjsAQ1nGjvAtPD/lkXg//M0isyybDORXJ6xgv+RoRm2wxcjGcy78XfjfH8qpxtRRNrVvFg4yvr6bd66B2X5G/JPc30=
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"列出授权用户所属的组织"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/users/orgs"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"page","in":"query","description":"当前页码","required":false,"example":1,"schema":{"type":"integer","description":"当前页码","format":"int32","default":1}},{"name":"per_page","in":"query","description":"每页的项目数","required":false,"example":30,"schema":{"maximum":100,"type":"integer","description":"每页的项目数","format":"int32","default":30}},{"name":"admin","in":"query","description":"","required":false,"example":"","schema":{"type":"boolean"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"array","items":{"type":"object","properties":{"avatarUrl":{"type":"string"},"description":{"type":"string"},"eventsUrl":{"type":"string"},"followCount":{"type":"string"},"id":{"type":"integer","format":"int64"},"login":{"type":"string"},"path":{"type":"string"},"membersUrl":{"type":"string"},"name":{"type":"string"},"reposUrl":{"type":"string"},"url":{"type":"string"}},"title":"UserGroup"}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

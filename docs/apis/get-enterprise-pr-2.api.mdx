@@ -1,0 +1,71 @@
+---
+id: get-enterprise-pr-2
+title: "企业 Pull Request 列表"
+description: ""
+sidebar_label: "企业 Pull Request 列表"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWF1rG0cU/StinuKwRLLb9EFvoYQSSlLj1E9BiPHutTTNfoxnZk2EWHDAxXaxK6hpnDopJCHQUnBiaL6Q3fbPeNfWU/5Ce3dX3pW0Wq1FSPvQJ7Ezc+85c2fuvXPUJgZwATpVYJDqMjUlaMQAqQvGFXNsUiVEIw4HQfHzhkGqpAHquq1AcMEkzIv6HNGIog1JqnfIvGuapQVYcUEqSWoa4VRQCxQInG4Tm1pAqgTO7YlGGKJwqppkGPrk+P7Ju/3T/fWzty/9P9cv4aKy6TSYPUM0ImDFZQJ5K+GCRuAetbgJEWWpN8GipNomqsVxTCrB7AbxPO2cBZPShbrtWksg+jxWXBCtESI3cGWJGQOocbRGkJitoBF6XHaERVU09NmnA9gCuJOPeXK063d3UzufKYSesU+pqIJ8sPS5lU6/exOs3Z8azREqHyz4/ge/2/EP9oIXr98fb/eOHp69eB5sb/mbj/yjbrD3prf3alp0gwnQQ5xcCv7Oht/tlHs/7fjdzrRYnDYmhNX/Y9ff2jndX+89fX36pFhIs6/PJ3Oh82XqmopUZwdogKhPphK87CCJ/fXgx8PeRuf98XbweM1//svJu25ptlL5YNTmKp5XQ2eSO7YEieZzlQr+DBL66kuiEd2xFdgKZy+XL+PPCCgVguJ2mAJLpsadpW9Ax5vGBdYnxSIsZhRKRY24wsw4Xo00lWUujpmLa0WBiHhanHZZbqiUrGEDyFsX8adAYh29kM050gcKaLKHsAxnBym8lhmJQxRTYX1elCCigWhL/01yFogG0CUzvX7JcUygNnrSqX0TV3zeBP1u9pImUGPyHgQsZ1KVzaz6o0WtY6LXsKGOi4DkVIepfaSCdYtacDt0llw28S/fqXhgAcOUHpgXTkjG08gSlQW2///BfPSD0QXgU/SaygRzuZEzG+br2ElmglSOXSC4uulIMOrh6zBdgpI6O9Tkv/29t3fwT5MPLaL2mlmM483VaQbFEafpt5A3NDvJOOh0zv46DM1cqBey2PwtOHiWwGETrGd2yGFLXOk/PvR/XpvQIAfNTo8f+J23mY15TAcftA/f4qO2Dge7+MkFW7v+8VqBk8PMlkw5olUvxC56u4/hOOZdMBKh6BWe5MnEM3yy0Xv2MJUnhS5a8OhV8OAwOflCh46L0hl8s59dCyD5YG67pom6Qqp4yov7YtT2w08JuiuYapHqnRqmsWo6sc7E3AxLHSlTzsqrV8uJcpTldvLhlblrmnXRV57oVKxGqrOWINzGx2V4NfCe2ctRuY6p6ti264ajy5H9Eo2gs+hj9krlSgVDxR2pLBpmV/wUjwRraUBN+Zt7Z09/HXbZTp6+6D0Ot4J7qsxNyuzUUUQRuEMoZ8jjKtFS+hm5Vgfk9GAgahppOlKhfbuNbW9RmJ6Hw5FMQFFuMInPnDF/AKSZpnRwJuO70BrV1avUdENVjpqlOFam/s1BjRX1lGjZAjgHri+qp8QrqIHzCEQ6e0r8YQGcA5SW1NOijejgHLxYy04b2Ik6Nw86kdIJfA0/BIuUwIXS5dJCLKlnSvl/ZWVS6isiu5Wm06eaynmvdl5TQ4LRgmu6Djx9Q1Bge+kC+8X1r4nn/Q3yh0nF
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"企业 Pull Request 列表"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/enterprises/{enterprise}/pull_requests"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"enterprise","in":"path","description":"企业的路径(path/login)","required":true,"example":"","schema":{"type":"string"}},{"name":"issue_number","in":"query","description":"Issue id","required":false,"schema":{"type":"integer","format":"int64"}},{"name":"repo","in":"query","description":"仓库路径(path)","required":false,"schema":{"type":"string"}},{"name":"state","in":"query","description":"Pull Request 状态","required":false,"schema":{"type":"string"}},{"name":"sort","in":"query","description":"排序字段，默认按创建时间","required":false,"schema":{"type":"string"}},{"name":"direction","in":"query","description":"升序/降序","required":false,"schema":{"type":"string"}},{"name":"page","in":"query","description":"当前的页码","required":false,"schema":{"type":"integer","format":"int32","default":1}},{"name":"per_page","in":"query","description":"每页的数量，最大为 100","required":false,"schema":{"type":"integer","format":"int32","default":20}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int64"},"url":{"type":"string"},"htmlUrl":{"type":"string"},"number":{"type":"integer","format":"int32"},"state":{"type":"string"},"assigneesNumber":{"type":"integer","format":"int32"},"testersNumber":{"type":"integer","format":"int32"},"assignees":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string"},"login":{"type":"string"},"name":{"type":"string"}},"title":"User"}},"testers":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string"},"login":{"type":"string"},"name":{"type":"string"}},"title":"User"}},"mergeable":{"type":"boolean"},"canMergeCheck":{"type":"boolean"},"head":{"type":"object","properties":{"ref":{"type":"string"},"sha":{"type":"string"},"repo":{"type":"object","properties":{"path":{"type":"string"},"namespace":{"type":"object","properties":{"path":{"type":"string"}},"title":"NameSpace"},"assigner":{"type":"object","properties":{"id":{"type":"string"},"login":{"type":"string"},"name":{"type":"string"}},"title":"User"}},"title":"Repo"}},"title":"Project"},"base":{"type":"object","properties":{"ref":{"type":"string"},"sha":{"type":"string"},"repo":{"type":"object","properties":{"path":{"type":"string"},"namespace":{"type":"object","properties":{"path":{"type":"string"}},"title":"NameSpace"},"assigner":{"type":"object","properties":{"id":{"type":"string"},"login":{"type":"string"},"name":{"type":"string"}},"title":"User"}},"title":"Repo"}},"title":"Project"},"createdAt":{"type":"string"},"updatedAt":{"type":"string"},"mergedAt":{"type":"string"},"milestone":{"type":"object","properties":{"closed_issues":{"type":"integer","description":"关闭的issue数量","format":"int32"},"created_at":{"type":"string","description":"创建时间"},"description":{"type":"string","description":"描述"},"due_on":{"type":"string","description":"截止时间"},"html_url":{"type":"string","description":"html地址"},"number":{"type":"integer","description":"编号","format":"int64"},"id":{"type":"integer","description":"id","format":"int64"},"open_issues":{"type":"integer","description":"打开的issue数量","format":"int32"},"repository_id":{"type":"integer","description":"仓库id","format":"int64"},"state":{"type":"string","description":"状态"},"title":{"type":"string","description":"标题"},"updated_at":{"type":"string","description":"更新时间"},"url":{"type":"string","description":"url"}},"title":"MilestoneResp"}},"title":"PullRequstResp"}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

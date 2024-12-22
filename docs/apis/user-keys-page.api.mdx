@@ -1,0 +1,71 @@
+---
+id: user-keys-page
+title: "列出授权用户的所有公钥"
+description: ""
+sidebar_label: "列出授权用户的所有公钥"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNVFtr1EAU/i/nscRutrU+5E1QtKygtPZpWco0Obs7NpfpzKQ0hAHFancfVKhKpVVohYIPYn3wghV/TrLsv5CT1G7cXrZP4WTO+b7vXFPwUEh0mUYPnDbzFVrgoXIlF5pHITgAFkQCJSNz3gMHYoWygYl6wDoIFmjWUeA0YUmhVNCyQDDJAtRkOc0UQhYgOCBKb06QazHKBMaJsj+vs/6L4cH3wf4TsEDiWsxlRRZusED4CE7dAuV2MWDgpKATQfA81NhBOQm0HcmA6dJ/dqbwbrPY1+DUjbFGYlEuTxacH70i4N3N4cGvwd6X/O3XS2XP2lXdAdvgQRyAU7dta1IW5zJdnMusbUyLpCgRhQoV8c3YNn3+x73fAAvcKNQYanqdqk3R50x1mZSM8ucaA1X5H608QleDBULSjGhecnHvCp2ZvzWWw43rYCzQXFOxTsOVljzsnK3I/tbw4zsKWMVksvvi4t3s6Plw+7CBCQW5Emnkl5meHJv19rLfx/nOj+HOt6pkj2m8pnmABBhLfzLS0sI9MKMci5VpYLKASoAx9NJF5hWLkxamQjeWXCfgNFsWBKi7EW1gB4uaM90FB2pM8Nr6XI3WsraKiQKKk+vl/rVGIIvU1aJBhsa6HRWCT6S4PrJw2YtcdUY1WEBgpVGftqdtSlhESgcsJIyTpcl6O9nWcf6yl394OnjzKe/9HOxu5v3H+ft+9uzzcPtwHDkdjR6RnNRO44auCZ/xsFLXMtcmMMFJzhxYxRmCov3F1elGSpNHmq4whUvSN4Z+l5tLd8jjiq34F525qpaxm3GurmLq/h21debH5AJ0Qq7Oc+5WX8Y2ukojxhYZkhMltft0hoqcy7ibrotCV6JozU11oO7cfgjG/AVWXDfy
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"列出授权用户的所有公钥"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/user/keys"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"page","in":"query","description":"当前页码","required":false,"example":1,"schema":{"type":"integer","description":"当前页码","format":"int32","default":1}},{"name":"per_page","in":"query","description":"每页的项目数","required":false,"example":30,"schema":{"maximum":100,"type":"integer","description":"每页的项目数","format":"int32","default":30}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","description":"ID","format":"int64"},"title":{"type":"string","description":"标题"},"key":{"type":"string","description":"SSH密钥Key"},"created_at":{"type":"string","description":"创建时间","format":"date-time"},"url":{"type":"string","description":"URL"}},"title":"UserKeyResp"}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

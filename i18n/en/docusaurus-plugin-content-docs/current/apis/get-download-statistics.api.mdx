@@ -1,0 +1,71 @@
+---
+id: get-download-statistics
+title: "下载次数统计"
+description: ""
+sidebar_label: "下载次数统计"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VcFOFEEQ/RVTJyUTZsVwmZtmjRIPJoAnstk008Vu68x0010LrJNOPMuRGC8mhIM3YzwZIyH+DKx8hqnpWRiYXcFETpOe6nrvVU3VmxIkGoupIJSQbInMYQQSXWqVIaULSAAi0Aat4OOKhAQGSF29W2RayDUSpByp1EEEJAYOkg1YRaOdIm0VOuhFYIQVORJajpZQiBwhAb1boIUIFHMYQUOYQWxxe6QsSyM7wghwT+QmwxB06RBzAUkJNDb8zpFVxQC8jy5YLBp95ySOhKW+FIRTqu0R2vHfuepe3wYfC3mH6FJZTCuM/wjf49vO6MKh4/hSp8OPq5AvX0AEqS4IC+LoQrzAjxaq3nyNKUEExvIkkgqYsjWEXSShskamsFZwKYowdzcjmqrLrXKut2Ly8fPk0yH4qBqvvpI3p5weH5z9PFjpchJpKcZ9mfXTUHadqQrCQbUSLbbfx4fnX48ggi1tc0Hh8qOlAEYi+wewd8dzwfxs0ac/9s9PTkLW+ff9s/e/eNcVVRvyRL1te8EqOhPgWqF1ljtTZ7u0dvZz5Ujb8e1B/A1Ku4KwVusjGKKQlUuV1dFhOrKKxpBs9CLIkYa6tj8eHDaTBGJhVLyzHPMguLisTM3HJR99PC2g75o26dDuBC/sXXKs8cxXQ+h5C7d0VV4tPc1QFH2pq/TWVjJYODxc7Cx2uHNGO8pFwRj1koePOPlyNPnw7WIArkCVl5vIqHVrCfcoNplQBeOObNX2UPsGCKOYfxnCIrC6ZGrrSe28s3rQi2CoHTFEWW4Kh69s5j2/DtbDfwmpnNjMGl7zBsfXrXZHZKPKptnN5iQ0vPM215tmeHm/xwerOGG2uLmdvL9ae+aDe/OaOrWqYtzknAoK/Zyp+O5Iq2/nexcrURUdQo/TFA01kti0fXM/nj1dB+//AE9A8GI=
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"下载次数统计"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/repos/{owner}/{repo}/download_statistics"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"start_date","in":"query","description":"","required":false,"schema":{"type":"string"}},{"name":"end_date","in":"query","description":"","required":false,"schema":{"type":"string"}},{"name":"direction","in":"query","description":"","required":false,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","properties":{"downloadStatisticsDetail":{"type":"array","items":{"type":"object","properties":{"pdate":{"type":"string","description":"日期"},"repo_id":{"type":"string","description":"仓库ID"},"today_dl_cnt":{"type":"integer","description":"日统计","format":"int32"},"total_dl_cnt":{"type":"integer","description":"总统计","format":"int32"}},"description":"仓库下载统计趋势","title":"BizDownloadStatisticsResp"}},"downloadStatisticsTotal":{"type":"integer","format":"int32"},"downloadStatisticsHistoryTotal":{"type":"integer","format":"int32"}},"title":"BizDownloadStatisticsDateResp"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

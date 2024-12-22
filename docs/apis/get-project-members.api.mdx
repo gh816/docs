@@ -1,0 +1,71 @@
+---
+id: get-project-members
+title: "获取仓库的所有成员"
+description: ""
+sidebar_label: "获取仓库的所有成员"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVl1v2zYU/SsDn9JCqNMOfdHbHoahGIYV7fYUGAIt38RsJVElqSSeIcBZEyRu0dpdhiQNknYFmmUfWNNsaZPa7fZjZkn2vxhIKnYcu4nc9UkgqXPPuZfk5amgIvgMbCygiMxp7HAwUBG4zYgvCPWQiZCBqA8My+G1IjLRDIjrjN4CW3wFbgEYRwYSeIYjcwrpGZQ3kI8ZdkHIZXOqgjzsAjIRnfOAIQMRGdnHooRO07Vbq1FzNa5Vo/0nya/N7vpBtPUy2q5OtN8utI82/60uJK3FpLUcr6y1j35rN5vJ5qL+Q4a7gAzE4E5AmMxHsAAMBPPY9R3QqXC7BC5GZgWJsi/nuGDEm0FhaPREMvBpBo2dw73o78WJj0br4xk4pr0TACsP8aZ/9JnSDRuKTjwBM6rQ05S5WOipT6+oiNM4cAQyLw9wA7Oy8d8k331EDZNhmJfBuE89DlzCr0xOys8g89dfIgPZ1BPgCbl6MXdRfoZIMWNY6iYCXH5inhbkeUUG8pk8zIJoLlIc3pLTSSc//hKvHJIiCo20WtkQUeNBsvtSogIObEykIiP2bWscXLzxKmXkAosssHuv4+qCBOBZLDA7HxE9P4ju1gPm9EGWHI0HBBeTDBidVff7F8mL/ePqW7aXFdg++iNeW06LOQeFbEKTd4+6z17pjqKStG3g3HJgFpyRp3sQHm/f7T5uJM3daOX34aMvc5/3CQNuYXG+ls4/y/HW03j9dXf9QGId4hLVqHvAAqUOYG9YxsZe1Pg5qq93HzckUv9+bu77rejJfcWEubB0s85KFm9Vo8bD+P5OvFXrVJdkFMItO2AMPGFxGjAbLFe/D5kTeLca1R7E2ztxs6E3tScuDfhBGlU8GekWJZ41h8sZzu+9n6KlnXjtTfS2rm6Yps92PTVhvyHoKliMOsBHNK9Rh7mz+0On9udZne1M1EDbC0O5N9i1xmh/2L2mOqBNXZcIAcziZS7AtaYZdTPXv33UjOuNdvN5p7qU/NVKWk/7e+EDcwnnhHoZGrcfOM4IVhkm4KXRK7joEm/UkrwfRKin+npPhJo+lcNKI3q0Ee296ew/Q32M9jw3gPsoVKUtAS4q36MrzcEOGBFlZE7l5d6LEk1tlExL+gsT5bBPcrNXc9J68FxFneowV5HDMGdTx8EFyrCgymxxYLPaV+X70W/Kp1Bvr3zDp6nKNJVoy0StIrX50MYgA8lgenD50uSlSVVFyoWLVbVSh9B5eBjV17TzSTYX41o13qrpipyOWem/1DJ8Wm4B8yLnO5iozUh7sU5/CmGfSCFXlbPwqZRpHntFM/Vjg2XIG6hEuZDgSqWAOXzLnDCU09q7SNNZJBwXnPc525MyU+8zUuptKPf/mMVOoDydNE/jxU+d01kcfRfW58nLASOSaMykJm6kJu3CJ//fVY+Ufdy4vPJJycfp6A0cr1BDmk+57A+QoY5PmO9dTFVFvfSZbYMvToCkrwxP3tIvPv8GheF/vdsdhA==
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取仓库的所有成员"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/repos/{owner}/{repo}/collaborators"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"仓库所属空间地址(企业、组织或个人的地址path)","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"仓库路径(path)","required":true,"example":"","schema":{"type":"string"}},{"name":"page","in":"query","description":"page","required":false,"schema":{"type":"integer","format":"int32","default":1}},{"name":"per_page","in":"query","description":"pageSize","required":false,"schema":{"type":"integer","format":"int32","default":10}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string","description":"用户id"},"name":{"type":"string","description":"用户名称"},"username":{"type":"string","description":"用户名"},"nick_name":{"type":"string","description":"用户昵称"},"state":{"type":"string","description":"状态"},"avatar":{"type":"string","description":"头像url"},"avatar_url":{"type":"string","description":"头像url"},"email":{"type":"string","description":"用户邮箱"},"name_cn":{"type":"string","description":"用户中文名"},"web_url":{"type":"string","description":"网页地址"},"access_level":{"type":"integer","description":"权限级别","format":"int32"},"expires_at":{"type":"string","description":"过期时间"},"limited":{"type":"boolean","description":"是否受限"},"type":{"type":"string","description":"类型"},"last_owner":{"type":"boolean","description":"是否最后拥有者"},"is_current_source_member":{"type":"boolean","description":"是否当前来源用户"},"last_source_owner":{"type":"boolean","description":"是否最后来源"},"join_way":{"type":"string","description":"加入方式"},"source_name":{"type":"string","description":"来源名称"},"member_roles":{"type":"array","description":"用户角色","items":{"type":"object","description":"用户角色","properties":{}}},"iam_id":{"type":"string","description":"用户iamId"},"committer_system_from":{"type":"boolean","description":"是否为提交者系统来源"},"permissions":{"type":"object","properties":{"pull":{"type":"boolean"},"push":{"type":"boolean"},"admin":{"type":"boolean"}},"title":"Permission"}},"description":"成员对象","title":"MemberResp"}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

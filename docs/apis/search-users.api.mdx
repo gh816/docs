@@ -1,0 +1,71 @@
+---
+id: search-users
+title: "搜索用户"
+description: "搜索 用户"
+sidebar_label: "搜索用户"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVs9v1EYU/lfQOwGy2A1RLr71UFWoByQop2i1mthvdwdsjzMzThOtLKVqU0BNulEhCi1BahBSc2EbsYHChvw3GW/3xL9QPdvsOuyyDs3J8njmfd8378fnNrgYSnSYRhfsBvMUWuCiciQPNRcB2JBs7w2Onl8aPD5IHvwDFogQJaNvN1ywQSGTTuuOQqnAAs2aCuxFuJ2uQs2CkEnmo6bP9mIbAuYj2BCyJoIFnOIvRyjX4FNUc/LIPNwa7r8e/PkDWCBxOeKywBFXmR96CPacBcppoc/AboPPVrkf+WDPVasW6LWQwHigsYmyDKIhpM90tn/+erq7wSJPgz0Xx9aYOsp6Of3k7w4F/uOn4f67wdNusnM4U8R8daqKhXIRU4E+L2W+WtSyXCIizbzZ6A0fd83L3TMKtIyKAqDJtSNcupWxjpy60pIHzXNEz6OlFfQxXq3IVwmpSyj/+pvpd8zL3aT7+sP7zbuCB+jWmb6c9A7Mz5vJ7pvh7tGVD+83h8dP/u2+OH3bT/bWT096ZvPdcGNrZo7gS7RdjEZRs5BumvZS0cP9vul3Zkugc18sYxS4mJ80Ui2Oa4SnQhEoWm/D9WqVHmfj3PwWLHBEoDHQ9PVq5So9JmgwKRnJ4xp9VVgXS3fRocyHkqaP5hkWW2GayXokvXIp5sWR+bFj9g7Ns3WILVjiovzQoLt+evwLbXck0oisM30OqAdPzXE/yzGdbQjPE9+nE7Bd1s6DVw9P3z5Ldg6H9zuTjTwKRrDlwcxGL+kdzAjW0r43/fpiC7g7ddkTTSrF0qv7/dic7JjtLTqTlXLpvf31KN8v0Wfy3nmSep8aajvtGNBcp0VOZpQZ0C1UIcQxfWwhc7MUpK8KnUhyvQb2Ys0CH3VLkJs1Ma0ypltgQ4WFvLKyUMksrhLlHqdQrmR2VhvHuU2lnFYl3VzQyIorJ+R4yIK6Kxw1oQAsoGDZy9y16rUq6Q+F0j5LbzmfAtmwHHnwmSDtcWtNmHV+fxpXdSX0GA8ofJ7xTOYisJATjYVUW+rbFmRiaxa0hNK0qd1eYgrvSC+OaTkbROToLldsyfvc30OR2yd+O5XaPVwb/x6sMC9KBy+Nw/PjTLXEWWhjR/+fiJdv5SP3yqVJV5uBvHwBkRc1uhm0cpu9ELORaczA+WhtY6AavUhOSNRfo75NKy079JXjYFikR2YSF5v4m6+/gzj+D3zARJ4=
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"搜索用户"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/search/users"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+搜索 用户
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"page","in":"query","description":"当前页码","required":false,"example":1,"schema":{"maximum":100,"type":"integer","description":"当前页码","format":"int32","default":1}},{"name":"per_page","in":"query","description":"每页的项目数","required":false,"example":30,"schema":{"maximum":50,"type":"integer","description":"每页的项目数","format":"int32","default":30}},{"name":"q","in":"query","description":"搜索关键字","required":true,"example":"gitcode","schema":{"type":"string","description":"搜索关键字","examples":["gitcode"]}},{"name":"sort","in":"query","description":"排序字段，joined_at(注册时间)，默认为最佳匹配","required":false,"example":"","schema":{"type":"string","description":"排序字段，joined_at(注册时间)，默认为最佳匹配"}},{"name":"order","in":"query","description":"排序顺序","required":false,"example":"desc","schema":{"type":"string","description":"排序顺序","examples":["desc"]}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"array","items":{"type":"object","properties":{"avatar_url":{"type":"string","description":"头像地址"},"bio":{"type":"string","description":"简介"},"created_at":{"type":"string","description":"创建时间"},"followers":{"type":"integer","description":"粉丝数量","format":"int32"},"following":{"type":"integer","description":"关注数量","format":"int32"},"html_url":{"type":"string"},"id":{"type":"string"},"login":{"type":"string","description":"登录名"},"name":{"type":"string","description":"姓名"},"remark":{"type":"string","description":"备注名"}},"title":"UserSearchResp"}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

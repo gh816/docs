@@ -1,0 +1,71 @@
+---
+id: delete-project-mile-stone
+title: "删除仓库单个里程碑"
+description: "删除仓库单个里程碑"
+sidebar_label: "删除仓库单个里程碑"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9U8FuEzEQ/RU0J5CsbkCUw96QyAEBAlE4RSvk7E4Sl13btWdDI8tnkIADqnrghhAHxBcg+J1GVf8CjXebpLSFA6KnXc/Y82bemxegQuuwlIQV5BNZexRQoS+dsqSMhhyWbz6dfPxy9PNg+eNg+f7w6Pu3k9fvjr++Pf78AQQYi07yzfsV5FBhjYRPnNnFkh6pGnfIaAQBJKce8hFwzKdYIcBKJxskdJwKoGWDkIN5pdGBAMXgVtIMfu8IBDjca5Xjnsm1KAD3ZWNr7JK+nGEjIQ9AC8sxT07pKcQoVigOrfnvILptxv8wy+ACFKUJp6nmxLhGUhe6cxtiLLiUt0Z79Pzi1mDAn7N4jx+AgNJoQk2cldbWqkwKZruer4TzoGbMeoIA61hvUgkgxhgFzFBWScGQjh7L1ilaQD4qBDRIM7NeDK7AJOSQSauy+XbGMvgsJM1jFvgYs+Z0SXwWOgojE45u3q1KsYbZ4Va7bpjliUldK0oqlTVK/aIypb+Idi7WHW5uDbYGEAVY46mRiYNewT8v/5maYU3rX571rBLuU2ZrqTRjt67mGh0/I5BWcY/baT+s4QnyU2fk/fKueeJgv2yFgJnxxDVCGEuPz10dI4f3WnS9LnPplBwzSaMAlfL8f4n/N8e6/rRf1RvXLhujD0q94PZl3fZ2eYmLlbfZIVcImti6YsxejFisHJKo7pJ3yxItbTw7Z8K46Z17w4fDZ0OI8RcRMgXG
+sidebar_class_name: "delete api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"删除仓库单个里程碑"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/api/v5/repos/{owner}/{repo}/milestones/{number}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+删除仓库单个里程碑
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"number","in":"path","description":"","required":true,"example":0,"schema":{"type":"integer","format":"int64"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"application/json":{"schema":{"type":"object","properties":{}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

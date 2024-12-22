@@ -1,0 +1,71 @@
+---
+id: create-protect-branch-setting
+title: "新建保护分支规则"
+description: ""
+sidebar_label: "新建保护分支规则"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VD1v1EAQ/StoKohMfCClcUciCkRBlI/qdEJz68l5g7272R0nOVnuEIqoERJFOiRKqKHgz3ARPwPN2nfnkEsJLmzv7O7Me28+GsjJeVLIlEN2gmWgBHIKymvH2hrIABKwjjzK8kUOGShPyLTvLZPiXY9GFYfErM0MEmCcBcjG0NlhkoBDjxUxebE3YLAiyMBeGPKQgJYQDrmADXE9ndXaCzL2NSVAl1i5krrNoAqqELIGeO7EFtgLhrZNVlE8OfuPgky6mxR41+ZzOaGsYTIsv+hcqVWULD0NEqkZuFpHHMOFLnOFPhel+hB2ekqKIQHnRXjWFOTW6uRdMAm4OhTkN25V5Gcbt9oEWHNkundvSg/oTJwMRGnloqfgrAkdsqejkXxuK/vqJSRDSbbSrdsq9Gim1paEpnNbEOaxUJq4DKRqr3kO2XgiRLiwUoCujupIPjNI0en0fCeVVIe0iXXVpo0s23QaqVBIQ8cmNXQhWSV/3tXjZB3kUJBFQm0CkrSDdXqfL+kP07AUcq3+2rIUfZAHbU5s5N1rroT269yqsKkqBV+3eLI92h7FHNvAFcZa6sv75uO3xY/vv35e37z/vLh6d/Ph6+8vbxdXn/52OKhN8d0rz3TJqStRG/Fe+1IOdqqOAZ0WFDuxQZwVjNmyZ7O+rZbqRkWXA0AUniRQ2MDip2mmGOjYl20r5rOafJ/Oc/QapyLFuIFcB/m/ZwYN8T886Lvn0YP7qPRGNHOhgGXdN/Mbmq8mjwyJ/xg0KtZOViUeSXdbe12Ux0fiYH31zggRxN2NZ0qR48FZ6a122CH7x0eSn34wVTaPwxCl9uXdD3XxHRs42hoo0cxqnMnZLqI8fwCJmRrj
+sidebar_class_name: "put api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"新建保护分支规则"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/v5/repos/{owner}/{repo}/branches/setting/new"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"required":["wildcard"],"type":"object","properties":{"wildcard":{"type":"string"},"pusher":{"type":"string"},"merger":{"type":"string"}},"title":"CreateProtectBranchSettingReq"},"example":""}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"boolean"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

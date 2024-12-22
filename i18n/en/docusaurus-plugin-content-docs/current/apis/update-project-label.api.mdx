@@ -1,0 +1,71 @@
+---
+id: update-project-label
+title: "更新一个仓库的任务标签"
+description: "修改项目标签"
+sidebar_label: "更新一个仓库的任务标签"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VE1rFEEQ/StSJw1NZo3Gw9yCF0XBEPUUlqV3prLbOjvd6e6NWYYGD4IfIAgRA8aD8SIIhiBBkizon9kP919I9cxmd5ON7sF4Gqq7qt6b6novgxiVxohbjCFc44lBBjGaSAtlhUwhhM7Pvd7bo8HuUX9nr/fxef/rD2AgFWpOCbdjCKGpYm5xWctHGNm7vIoJMLC8ZiBcBR8bKDNQXPMGWtR0nkHKGwghyCcpamAgCExxW4fTDICBxvWm0MTR6iYywE3eUAnmlyaqY4NDmIFtKTozVou0Bs6xExSNSl44iNSiJlKeVHx80WjjIOtN1K0/oxSPO0vnSCZS/8vWZco2SqYGDd0vlEr0mWx57w4wiGRqMbV0OxfM0edMV1mlNQMGStMaWpH3FPFYjkgt1vxaTWLkCyxiYLAmdYPbPPfaAjhW/P1p9tNbdN+87n/ep6p8WDOWDT59+PXyG5XRQhphpW5VZmLeaW91j7fOML9xnZo1dTIrA0ol1hpJ8xVu/17YfbHTbR/3tr8Ptg88mpf7bLW9nYPeu/1hrWNghfVLvkL/771hBY0CR3d15LF3h8yHBqOmFrYF4WqZQQNtXca5oCJSlBdWCAFXIthYDPxAg8zbiQsyCl2QePMJsgllOhIY6o3ciMojoPu0an6bHC3/mvT/VxCOEuRpJZaRmSYGapYHV+dL8yUak5LGNnhKPQpd5cPoHD7tHH7J37P//lmn3e6+2j1x1onO2UgP0324GL7FTRuohIt0bBvy+awCV4IILkKxdMAgHJpuWPhiPid/M+FhZQZ1aSy1ybIqN/hQJ87RcW4L5OOxMLyajPnAY2yN7GmDJ01vauQv56QO/WaUW6ZAC0qejnHumC6vFLZ05dJ58ykOedoaxxySyUczle3Fgfpn+M+Yky/tyicC9BPPc5aiCJUdqyZTduNqXF56cPMWOPcbfa/6Ew==
+sidebar_class_name: "patch api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"更新一个仓库的任务标签"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"patch"}
+  path={"/api/v5/repos/{owner}/{repo}/labels/{original_name}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+修改项目标签
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"original_name","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"name","in":"query","description":"","required":false,"schema":{"type":"string"}},{"name":"color","in":"query","description":"","required":false,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","properties":{"id":{"type":"integer","description":"标签id","format":"int32"},"name":{"type":"string","description":"标签名称"},"color":{"type":"string","description":"标签颜色"},"repository_id":{"type":"integer","description":"仓库id","format":"int64"},"url":{"type":"string","description":"标签url"},"created_at":{"type":"string","description":"创建时间"},"updated_at":{"type":"string","description":"更新时间"}},"title":"ReposLabelResp"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

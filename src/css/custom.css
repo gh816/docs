@@ -1,0 +1,238 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #991B1B;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-menu-color-background-active: #fee2e2;
+  --ifm-color-warning: #ffba00;
+  --ifm-color-danger: #fa383e;
+  --ifm-color-post: red;
+  --ifm-color-button: #000000;
+  --ifm--color-nav: #000000;
+  --ifm-code-background: #F6F6F7;
+  --ifm-global-radius: 0;
+  --ifm-color-info: #000000;
+  --ifm-border-info: .4rem;
+  --ifm--menu-color: #ffffff;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #FCA5A5;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm--color-nav: rgb(255, 255, 255);
+  /* --ifm-hover-overlay: #991B1B !important; */
+  --ifm-menu-color-background-active: #FCA5A5;
+  --ifm-menu-color-active: #7F1D1D;
+}
+
+
+.api-method > .menu__link,
+.schema > .menu__link {
+  align-items: center;
+  justify-content: start;
+}
+
+.api-method > .menu__link::before,
+.schema > .menu__link::before {
+  width: 55px;
+  height: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  border: 1px solid;
+  margin-right: var(--ifm-spacing-horizontal);
+  text-align: center;
+  flex-shrink: 0;
+  border-color: transparent;
+  color: white;
+}
+
+.get > .menu__link::before {
+  content: "get";
+  color: black;
+  border: 1px solid var(--ifm-color-button);
+  /* background-color: var(--ifm-color-primary); */
+}
+
+.post > .menu__link::before {
+  content: "post";
+  color: black;
+  border: 1px solid var(--ifm-color-button);
+}
+
+.delete > .menu__link::before {
+  content: "del";
+  color: black;
+  border: 1px solid var(--ifm-color-button);
+  /* background-color: var(--openapi-code-red); */
+}
+
+.put > .menu__link::before {
+  content: "put";
+  color: black;
+  border: 1px solid var(--ifm-color-button);
+  /* background-color: var(--openapi-code-blue); */
+}
+
+.patch > .menu__link::before {
+  content: "patch";
+  color: black;
+  border: 1px solid var(--ifm-color-button);
+  /* background-color: var(--openapi-code-orange); */
+}
+
+.head > .menu__link::before {
+  content: "head";
+  background-color: var(--ifm-color-secondary-darkest);
+}
+
+.event > .menu__link::before {
+  content: "event";
+  background-color: var(--ifm-color-secondary-darkest);
+}
+
+.schema > .menu__link::before {
+  content: "schema";
+  background-color: var(--ifm-color-secondary-darkest);
+}
+
+.badge{
+  color: black;
+  background-color: transparent;
+  border-radius: .25rem;
+}
+
+
+/* patch 字体样式*/
+.badge--warning{
+  border: 1px solid var(--ifm-color-button);
+}
+
+/* del 字体样式 */
+.badge--danger{
+  border: 1px solid var(--ifm-color-button);
+}
+
+/* get 字体样式 */
+.badge--primary{
+  border: 1px solid var(--ifm-color-button);
+}
+
+/* put样式 */
+.badge--info{
+  border: 1px solid var(--ifm-color-button);
+}
+
+/* post 字体样式 */
+.badge--success{
+  border: 1px solid var(--ifm-color-button);
+}
+
+.openapi-tabs__response-code-item.success.active{
+  background-color: transparent !important;
+  color: #00a400 !important;
+  border: 1px solid #00a400;
+}
+
+
+.menu__link{
+  line-height: 2;
+}
+
+.navbar{
+  box-shadow: 0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;
+}
+.navbar__link{
+  font-weight: 600;
+  color: var(--ifm--color-nav);
+}
+
+.menu__link{
+  font-size: 15px;
+}
+
+.menu__link--active{
+  font-weight: 600 !important;
+}
+
+.openapi-explorer__request-btn{
+  background-color: #0F172A !important;
+  border-radius: var(--ifm-border-info) !important;
+}
+
+
+.openapi-tabs__code-container:not(.openapi-tabs__code-container-inner){
+  box-shadow: none !important;
+  border-radius: var(--ifm-border-info) !important;
+  border: 0px !important;
+
+}
+
+
+.openapi-explorer__request-form{
+  box-shadow: none !important;
+  border-radius: var(--ifm-border-info) !important;
+  border: 0px !important;
+}
+
+
+.openapi-explorer__response-container{
+  box-shadow: none !important;
+  border-radius: var(--ifm-border-info) !important;
+  border: 0px !important;
+}
+
+.openapi__method-endpoint{
+  border-radius: var(--ifm-border-info) !important;
+  border: 0px !important;
+}
+.menu__link menu__link--sublist menu__link--active{
+  color: var(--ifm--menu-color) !important;
+}
+
+
+
+
+
+/* .navbar__items {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar__items a{
+  margin-right: 10px;
+}
+*/
+/* .navbar__items .navbar__link {
+  margin-right: 20px;
+  margin-left: 20px;
+} 
+
+.navbar__items .navbar__brand {
+  margin-right: 40%;
+} */
+
+
+
+

@@ -1,0 +1,71 @@
+---
+id: get-issue-extend-settings
+title: "获取 issue 扩展配置"
+description: ""
+sidebar_label: "获取 issue 扩展配置"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVM1u1EAMfpXKJ6hGzVIoh9yQqFCFRKVuOa1WaJp4swPJzHTsrLpEc+TAATjBO3BB4sSJxyk/b4E8Sdul3SItp8nY48/+HH/uoEQfsNCMJeQzXRMqKJGKYDwbZyEHUOA8Bi3XgxJyqJAPiFrcP2O05RiZja0IFLCuCPIJHIZKW/M6RRBMFXgddIOMQdwdWN0g5OBCBQqM5PCa57AmccDT1gQpjUOLCvBMN77G3knFHBsNeQe89GIjDsZWEONUIsk7S0ji3x2N5Pgb/vApKCicZbQs3u1sW44bqDoEvZRCGRtasbuTl1gwKPBB+sMGL73PEsEbdalkkB5euoxlrDCAgpkLjebe9PDBxePHSMVapMow4vEmcMSaW/p/Yn38rdR694bV/JveeDPIynDhSkyzOb5Odn3g/V2I0mnDaaiGqLhquznqR0he3kQFc9RlmuouXQmLNhheQj6ZKmiQ524QjHRTZjyHTHuTLfYyFyrKOheqmBlJkWHKkdGVngjDotfM9Ap7LPOZ/kgU8cxcIjkUW9So7YvSFbROTQLWX+7tjHZG0jPviBttBWNQ5a/3384/fNpKNW39ePv5/OvH32/e/fz+5TpidyUeAR/6zHjGma+1sQLfhloe9tQnoL2RMvZkpYREMR+WgGQD0bf0IFEfujBVMHfEEt11J5rweahjFPNpi2Ho9EIHo0+kA5MOSkPyfcs6W636ztGwXu5u3UbgQipWhLLQdTvsnle4HDZYnF7OQUrfex4VBXpeiZHtEleH4sn+McT4B+GA4To=
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取 issue 扩展配置"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/orgs/{org}/issue/extend/settings"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"org","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"array","items":{"type":"object","properties":{"typeName":{"type":"string"},"typeId":{"type":"integer","format":"int64"},"typeDesc":{"type":"string"},"giteeTypeId":{"type":"integer","format":"int64"},"status":{"type":"array","items":{"type":"object","properties":{"statusName":{"type":"string"},"statusId":{"type":"integer","format":"int64"},"statusDesc":{"type":"string"},"giteeStatusId":{"type":"integer","format":"int64"},"gitcodeIssueStatus":{"type":"integer","format":"int32"}},"title":"Status"}}},"title":"IssueExtendSettingResp"}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: auth-api
+title: "认证接口"
+description: ""
+sidebar_label: "认证接口"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVMGO0zAQ/Zd3ttqyx9z2gBAnDsCpiirXmW28JLHXnqy2RD7wA/ARwBW+CrSfgcYpbbddUKReEo1n5j3PzBsPqMgHMpqpQnGjm0gKFUUTrGfrOhSAgvMUtJivKxTQPdfX3kKB9SaiWOKNHF3NFigVvA66JaYgngGdbgkFTGOp45WtoGAF9a6nsMUzXIHuehuObkMPuvWNgAx7lASFaGpqNYoBvPXijhxst0FKak8bqLKBDK/6YC9iPgaaTh696yKtcsgF7MZVNJEzGncZ15ARppYYWfOFdILwf7pS7VsZxX+1WMjvjMa4jqlj8WnvG2uyZOe3UQKGcwK3viXDUPBBBM42w6eUkkJNusoSHrIZyfTB8hbFslRoiWsnm7ChnK65RoG5ky2Yy8cF+zFPjML9uAjlAeOt3GOkksbduHwly+OoG9LdqnImPtdIARuNF7PFbIGk4F3kVucCdzN5/PHt8een35+///ry9RRkODRJ8HaNYHrguW+07QSxD40EjlUtkauCwqGuUqF2kcU5DGsd6X1oUpLjUQGy9pWNet0cjfwDbU+egXvd9MIO0dM/4k/2d1rK062bkvN3aybF7iR/iC3FCFaCZdJ79eRGjEnXxpDno6wzgaZjXb16+Q4p/QHsfuoN
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"认证接口"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/oauth/authorize"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"client_id","in":"query","description":"","required":false,"example":"{client_id}","schema":{"type":"string"}},{"name":"redirect_uri","in":"query","description":"","required":false,"example":"{redirect_uri}","schema":{"type":"string"}},{"name":"response_type","in":"query","description":"","required":false,"example":"code","schema":{"type":"string"}},{"name":"scope","in":"query","description":"","required":false,"example":"{scope}","schema":{"type":"string"}},{"name":"state","in":"query","description":"","required":false,"example":"{state}","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"","content":{"application/json":{"schema":{"type":"object","properties":{}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

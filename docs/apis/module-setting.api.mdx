@@ -1,0 +1,71 @@
+---
+id: module-setting
+title: "设置项目模块"
+description: ""
+sidebar_label: "设置项目模块"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVbFuE0EQ/RU0FYmWnEFKcx0gCoQQkZNUlhWN7yb2Jne3m929ONbpOiQ+IAUFokhHlR4i+BqC4S/Q7F58lwtOEdzYOzM7MzvvvXEFKWlDCTpKIT7EzJKAlGxipHZSFRADCFCaDPLxdQox5CotM9ol52QxBQEOpxbiEQxJKyudMpIsjAVoNJiTI8PeCgrMCWJQ84IMCJCcW6ObQb/g8ur98urDY/ZtgABDJ6U03J4zJQmgM8x1RqEzm8woR4grcAvNNusMd1XXYlXRkFb3Fvx5dX797fx/C47DTbLuhUoXHJGowlHh+CdqncnEzzA6sly1uptKTY4ocSBAG5644znGFczQHszlsexETpTKCAuohfdKa0ta77aUlEa6xfqInMyUDpr214cdKnO83osFZgsr7fqIVNqktFaG9/djagFOOj/ofZ2iox2jeCBvu3wb0gln62BS80VDVqvChoE9Gwz46zbI796A6CKyGW3eDwKmqeS7mO3cguN2XN1Dq/btzAhTz/vKH1sARmMBObmZYiHp0oPNlIwhQi2j0+2I2Wqjysukjio+1lGQXGRXmrNkToOwxm36XX5L6EIAs2zY8vHVzcC6fAr87jCoNbQtt7YeS1pH4EV7bpnQ2rrYs7VmRR4qP9EG9YR5cJCqxN6RKAjg94bD063B1sBPXlmXoydTo/Xflz+W3y//XHxdfrr89eXi+vPHfqqOLDlrg6ajMxfpDKXnamkyDgzIjAC15Prbfjdoxd3FN2ssbrZLQMgjEzAaC5gpHtMIqmqClvZNVtdsPinJNFQ4RSNxwo8fVZBKy7/X7OFu34+HzYraeNRblv98TmPEYsHPwKxsdtkxLVYLmfflgxroLc8HNOAnWI9XsvHDCK6XoeKTPU7QXr2zTbn7cON5kpB2nVjWed1V3c7+HgiYNDs6V6n/j8A5o4vzmz88zu3l7m0VZFhMS5xybKjIn79wKor+
+sidebar_class_name: "put api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"设置项目模块"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/v5/repos/{owner}/{repo}/module/setting"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"组织(path)","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"仓库(path)","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"has_wiki":{"type":"boolean"},"has_issue":{"type":"boolean"},"has_security":{"type":"boolean"},"has_merge_request":{"type":"boolean"},"has_fork":{"type":"boolean"},"has_analysis":{"type":"boolean"},"has_discussion":{"type":"boolean"}},"title":"UpdateProjectModuleSettingReq"},"example":""}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","additionalProperties":{"type":"object"},"properties":{}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

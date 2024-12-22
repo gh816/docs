@@ -1,0 +1,71 @@
+---
+id: get-issue-pull-requests
+title: "获取 issue 关联的 Pull Requests"
+description: ""
+sidebar_label: "获取 issue 关联的 Pull Requests"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV1tvG1UQ/iureUqrVe0WysO+FYFQRKEokKfIso53x/bSvfWcs6GWtVJSBTWpUoLUkqAkDZCCgApBgCgJjkV/DN61/eS/gGbXjm/rJk0jeICn1Z45Z+ab+0wVDPQ46kyiAVqRWQJVMFDo3PSk6TqgAajgesgZ/U4boEEJ5bQQPn7gW9YM3vFRSAEqSFYSoM1BTBOQU8FjnNkokdN5FRxmI2jgfuIgBxVMYu4xWYZRiY3jR2HtUbSyEP660/yx1t7YD7f3wicLU436YuNo86+FxebxUvP4frS83jh61qjVmptLyQ1idwlU4HjHNzmpJLmPKuBdZnsWJtoIvYw2A60KsuLRmZDcdEoQBOoJSMe3C6egjPVUmvX1cO3wIkRy9NwzmKV1+Ev459LUhWlquwb2xN7xkVfG5NINRVOySqe+3D7+svXzt536auPoYaP+dePoQfvJbvve08bRs3DtXvTFXqe+0qmvKlc79eVwdyes16Ifvgnra/Qivt56vte7uNp6/jjc2lE8rjQ3lxQbeQlZwUKl+eAgWljs1FeG9OsG55hOpiOxFPuq6HKbyeTotWuxHkXmWxK0bBDkiJfwXEegoNfXsln6DKt6611QQXcdiY4k6uXMZfqMyWScMzKUKdEWA+du4WPUJajgccoZaSayTONUvG+8DoEKZWlbeZ9bKS5TwTCLxdkJtG68nk2KkExiKhtpSiudUnCNSipB50jF44ZMpfqeQdQ8SyfHPp9I1S1XTKaWkRmnm55jMfW1KKflhZpk4alc4/xM9UOcVCmEom9Z+QnUvuHhTc4cvfwWk2yGgAQqMCHMkjPk2wmgLLdEWXx2VANy32c23qT3swL5BERxGDCB/xv9HzZ6Fw0OVppXqUB9jC+NXgU2zyTjE4vUCytYcvAik9zyMLbGtFN0Z1B4CRFFMkT8J7W3WAGti1K+3xZGejxXTCO1Weiu5fJx2KMM2rvbrZXfJttu9H74+cPm93u95BemdHklfyaoyRg0AW2q7Uc50KV+50rtL2Nwl7fC41q0cdDe2D+tr42+jbb2o/W9/luJd2X+jGaN1u9H2z/1jDsQKu9R5+xO3zcpQk7iRWdOPu6reb2M+u0BGQXXtZA5Kb5YDv84iJ4uRF99NyRkdMyHIAi6nTfJx/hXoO5zU1ZAm8tRS5dlt7smUCzGRRsyzDMz89czsbMz1XgHCDJV+g0yZrwxZKrJEBNkPCrbvL9ZCOTzyRKR60v7kGayOMIDml6LSQPpAtdJz7zh6mJMWVCBmCU/V69kr2TJJ54rpM3iYtCdi1ufHYZr60qMTQk//b21+JimVLKGMrD1DDGv9mdHktM1O/k741nMdAYiNLHLHDDPJETXoZsIoILW25C03kqQbFQqaCdrybCJciqUXSGJX7VKLXqWW0FAx8lET9uXYQoaridseYPI/9V5P9Vmt7HS31TmmeXH+w2N9POMm8TjJVWcmumuFZeUV182UyH3arVTGYTcUyXxMG1h58I8snqeA0A3kM6NIHUXPQeOOMKD3ElRif2YkG7oOnpy4BEtY8FghXnn7Y8gCP4GhPlMbA==
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取 issue 关联的 Pull Requests"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/repos/{owner}/{repo}/issues/{number}/pull_requests"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"仓库所属空间地址(企业、组织或个人的地址path)","required":true,"example":"","schema":{"type":"string"}},{"name":"number","in":"path","description":"Issue 编号","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"仓库路径(path)","required":true,"example":"","schema":{"type":"string"}},{"name":"mode","in":"query","description":"mode : 0 （默认，不传上面那个参数）， 1（增强模式，传上述参数，返回 pr 的 mergeable 状态）","required":false,"schema":{"type":"integer","format":"int32","default":0}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int64"},"html_url":{"type":"string"},"diffUrl":{"type":"string"},"number":{"type":"integer","format":"int64"},"state":{"type":"string"},"title":{"type":"string"},"body":{"type":"string"},"createdAt":{"type":"string"},"updated_at":{"type":"string"},"merged_at":{"type":"string"},"closed_at":{"type":"string"},"head":{"type":"object","properties":{"ref":{"type":"string"},"sha":{"type":"string"},"repo":{"type":"object","properties":{"path":{"type":"string"},"name":{"type":"string"},"full_name":{"type":"string"}},"title":"BranchDataRepo"},"assigner":{"type":"object","properties":{"login":{"type":"string"},"name":{"type":"string"}},"title":"NameLoginUser"}},"title":"BranchData"},"base":{"type":"object","properties":{"ref":{"type":"string"},"sha":{"type":"string"},"repo":{"type":"object","properties":{"path":{"type":"string"},"name":{"type":"string"},"full_name":{"type":"string"}},"title":"BranchDataRepo"},"assigner":{"type":"object","properties":{"login":{"type":"string"},"name":{"type":"string"}},"title":"NameLoginUser"}},"title":"BranchData"},"assignees":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string"},"login":{"type":"string"},"name":{"type":"string"},"avatar_url":{"type":"string"},"html_url":{"type":"string"},"type":{"type":"string"}},"title":"OpenUserInfoResp"}},"testers":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string"},"login":{"type":"string"},"name":{"type":"string"},"avatar_url":{"type":"string"},"html_url":{"type":"string"},"type":{"type":"string"}},"title":"OpenUserInfoResp"}},"labels":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","description":"mr id","format":"int64"},"color":{"type":"string","description":"颜色"},"name":{"type":"string","description":"名称"},"repository_id":{"type":"integer","description":"仓库id","format":"int64"},"url":{"type":"string","description":"url"},"created_at":{"type":"string","description":"创建时间"},"updated_at":{"type":"string","description":"更新时间"},"text_color":{"type":"string","description":"文本颜色"}},"title":"MergeRequestLabelResp"}},"can_merge_check":{"type":"boolean","description":"合并检查"}},"title":"IssuePullRequest"}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

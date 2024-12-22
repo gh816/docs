@@ -1,0 +1,71 @@
+---
+id: delete-issue-comment
+title: "删除Issue某条评论"
+description: "删除 issue 评论"
+sidebar_label: "删除Issue某条评论"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Uz1vFDEQ/SunqUCysgdSGncIrohAQuKjOq3QnD3JOeyuHdt75GS5o6CkpUCARA09/4co/As03s3dhXBlUu16xp438+a9BJqcJ4WRNMhjbAIJ0BSUNy4a24GE3x++/vn0fWJC6Gly+fP95Y9fIMA68sg3jjRI0NRQpCO+8ti2LXURBEQ8CSDnUMIBagEOPbYUyXM8QYctgQT7riMPAgyjOYxL+LcFEODprDeem4y+JwF0jq1raEgGtaQWQSaIa8exEL3pTiBnsUHx5Oytgxh9SxA1vwzOdoEC5x9Op/y5Xv75UxCgbBeZf5kAnWuMKluqTgNfSTch7OKUFK/Led5pNAUg55wFLAl1WVYqx0Cq9yauQc5rAS3Fpd0unyvwzBIqdKZaHVbMeKhSWW+uEh9zVWQUKjWoJFTJ6MyTk18Nsqi3OC+516EdZvXYlrZNLHSphrB7o60K/6OZiw2HBwfTgylkAc6G2GIhYdzWoOwiz4svHy8+f9uo+1q9tOV0jxlGKiOdx8o1aDrG633DbwdS5oDOcF+HRQPOctfySvnySpyDU3iJAz2cM5qts7QhcpmUFhjotW9y5vBZT37cxwq9wQVzM0+gTeD/PZ7enejei1GR9yf7JhmD2K15Amz6Ua5vab2xL5vgDkELYXeMaTTkeuOKQvOQeKQUubjz5Ibx8q5fnsyezV7NIOe/ivPmaA==
+sidebar_class_name: "delete api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"删除Issue某条评论"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/api/v5/repos/{owner}/{repo}/issues/comments/{id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+删除 issue 评论
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"id","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"application/json":{"schema":{"type":"object","properties":{}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

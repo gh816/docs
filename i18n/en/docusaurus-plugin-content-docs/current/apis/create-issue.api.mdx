@@ -1,0 +1,71 @@
+---
+id: create-issue
+title: "创建一个仓库WebHook"
+description: ""
+sidebar_label: "创建一个仓库WebHook"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVk1v00AQ/StoTm1lcCgfB9+gQqLiUFSKOERRtLGnyVJnd7u7boksS0WqBJyRQOLrDhdAQqJKEX+GhMK/QLPrJm4SQqEncol3dnZ2Zt7zG+eQoNIYM4sJRJssNRhAgibWXFkuBUQAAUiFmtFyNYEIYo3M4qoxGUIAlrUNRHW4h62OlFsGGgEoplkXLWrayUGwLkIEcleghgA4RVXMdmDyqsHh02H/6fcne8OPb47e9n8+/zR89WH4em9h8OXh4ODFt72HR4f7R4ePvj9+Njh4N+j3j17sew8KtwgBaNzOuKZarM4wAHzAuipFX4aJO9hlEOVge4psxmou2lAUwShJjUqeIscfn98Pv+4vnPHahj+Jxl6XSY88YiksCkuPTKmUx67t4X1Dd+fToWTrPsYWAlCaQLIcjTsbx2jMhtxCMePeADKdzrSjiHXPVdr0eyMfLiy2HXybUneZ9aZLy3RKMWN2pU5mhlSZ6TRxB4U1lf2WlCkyQQ6WtZt/dOLENjPXRUiLcx26qNvYLBs+LxYlxa2Db8Vx/R62bkq5tY7brkljcAvy1WiUFMZ3frlWo7+TnFm7BUEV2qVw6W/Q5Mkfgbh6eR6scwHSaLLUzj6nJSXUPHUCPlYzlsmpufP/0SMoFTBpslltq7Cn1ERPkw6yxCli7pYG40xz24Oo3qDLbUeSuCppHAFIeiIImeLhzpWQVMmEuVPQIsxpWYRebimS3vFS2xiHvUPccvQpAiD5WB8LzY1jAk8IxXEJJZHGyylZqFU5NfY7gZNXwin4vHkCMG88AZE3/QYU2iTYxaZ0CJT9jgmgZiJjMyXbEAA1yS8uXqhdqDn2SWO7zGlkqf/Dxy+Hh/3BwR4NGCf15cs/GbGi1RS8JIHFBzZUKeOi8j56MOvAFKc0rriBoSQlGR0PxagcPKMZ2iEiRHXI8xYzeFenRUHm7Qx1yZkdpjlrUeH1HBJu6Pk3Q7ya7MJ6OawWz5193s4suzQy0aNyWZqVg3ALe6PPABq5Z8h5Yv7+Qxqu30Vj9GK6LvqtFX/v+Q0KMD46NZCpBn/iWhyjshVfUvii+l7fXruzAQG0yjnfdQoJmu0SGdju8XcWBXei42w5pEy0M9YmX38l/X4B00yOog==
+sidebar_class_name: "post api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"创建一个仓库WebHook"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/v5/repos/{owner}/{repo}/hooks"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"仓库所属空间地址(企业、组织或个人的地址path)","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"仓库路径(path)","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"accessToken":{"type":"string"},"url":{"type":"string"},"encryption_type":{"type":"integer","format":"int32"},"password":{"type":"string"},"push_events":{"type":"boolean"},"tag_push_events":{"type":"boolean"},"issues_events":{"type":"boolean"},"note_events":{"type":"boolean"},"merge_requests_events":{"type":"boolean"}},"title":"CreateWebHookReq"},"example":""}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","properties":{"id":{"type":"integer","format":"int64"},"url":{"type":"string"},"password":{"type":"string"},"result":{"type":"string"},"project_id":{"type":"integer","format":"int64"},"result_code":{"type":"integer","format":"int32"},"push_events":{"type":"boolean"},"tag_push_events":{"type":"boolean"},"issues_events":{"type":"boolean"},"note_events":{"type":"boolean"},"merge_requests_events":{"type":"boolean"},"created_at":{"type":"string"}},"title":"Webhook"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

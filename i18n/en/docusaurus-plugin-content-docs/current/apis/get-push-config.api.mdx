@@ -1,0 +1,71 @@
+---
+id: get-push-config
+title: "获取项目推送规则"
+description: ""
+sidebar_label: "获取项目推送规则"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVE1v20YQ/SvGnJKAsJwg6YG3tgmCIigauO3JEIgVOaI2Jrmb3aVrlSBQAU5tt/4qgubD7SEuCtcwEjsn17Wd+M+IonTKXyiGZGxZStoiPZG7w3lv5nHeJOChVOgygx7YTRZotMBD7SouDRcR2AAWCImK0fEzD2zw0dyNdetTETW5DxYY5muwZ2AapdDcCMVRQ90CyRQL0aCiaAIRCxFsEN9EqMACTtiSmRaMEubHC/nx4iWKXQYLFN6PuaLyjIrRApxnoQywrEy7LQwZ2AmYtqQ7bRSPfEhT64xRoRT/SNg9fpgdPfy/hHXK1FJEGjXFr01N0eMi1Rd3wAJXRAYjQ9ErtSv0GEMVjXvoGrBAKhLf8BJTIV07kTCO5n6EntNoO770hzIbQgTIorEms/Xd7EGnv3eYHW73fl0e7K709zv55kL+4nW2sdpb3+ge/Q4pFReG3Dghas18dBT6OD/e7ih6md893ep19nvPtga7K4QVsnmnyQN0NP8Wh0B4ZNAvpuBdKL1Hi93jg8HTjWzpYOLNyVK2+nP31erE55+8OVkGC5pChcyUKB9dJxo9y6Wj4gCdplBOOWD/Lshg66/8l718byvf+D776Um+uVA1cbiarT/uHv7QP33Z/2MhW3palkJMHkZtInHRkbFu/QeWfLvTe/FbdnLUW9uhXlYe9H58fkZKHaXpmAxrO4PvOiU3+YubYvrOTXfTCEgpr4XMK/yVFEeNbqy4aYM9U7cgRNMSlWFpkmj0bagxyWtzN2rkCl1LCrXSWkLHtEZNOe5bY2tUc6V76+fYX9KoFtOYkqeaohChKtElDRxPuHpMCLCAwMrD1cmpySkSVAptQhYRRuXW/tqf2fqj8ueMCHEBMDm3EWFXv8HgvKnJgPGI0GMV0Idl5zPAJKcqbhQel4JqtN+uI7vaEsMK1C1oCW0oNUkaTOPXKkhTur4fo6pUnmOKswZ1P5OAxzW9v2eVDpd8abraMpcnRvbdOzupLlnUpg5YEFfraBbbZzuVVt4HFTCy/z6ggEK8tH42kYUYZehj10VphpJo5aXD43n71leQpn8DTUmHMA==
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取项目推送规则"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/repos/{owner}/{repo}/push_config"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"组织(path)","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"仓库(path)","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","properties":{"reject_not_signed_by_gpg":{"type":"boolean","description":"只允许带有验证的签名提交"},"commit_message_regex":{"type":"string","description":"提交信息校验"},"max_file_size":{"type":"integer","description":"提交文件限制 （单位 MB）","format":"int64"},"skip_rule_for_owner":{"type":"boolean","description":"项目管理员的提交不受上述规则限制"},"deny_force_push":{"type":"boolean","description":"禁止强推（包括管理员）"}},"description":"推送规则","title":"PushConfigDto"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

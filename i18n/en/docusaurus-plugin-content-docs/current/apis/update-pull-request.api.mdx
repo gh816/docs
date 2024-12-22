@@ -1,0 +1,71 @@
+---
+id: update-pull-request
+title: "更新Pull Request信息"
+description: "更新Pull Request信息"
+sidebar_label: "更新Pull Request信息"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VlFv1EYQ/iuneUqQwddUvPgtRZVa9aEohafohPbsyZ2p7d3srhNOlqUkakmBoIAEDWppC0i95qEcqYQKOaXkx/Rs5574C9XYTnzJXdKittzL3e7OzDc78+03F4GDQqLNNDpgLTBPoQEOKlu6Qrs8AAvS71+m3+5cDj2vNoeLISo92H+arr4AA7hAycjsUwcsCIXDNJJhaQcGaNZSYM3DqLuChgGCSeajRknHEQTMR7AgCP0mSjDAJWTBdBtOpgMGSFwMXUkJaxmiAXiD+cJDsOoGKLuNPgMrAt0RFNINNLbymAtc+kwXWx/OQBwbR7h8OfgXsHQ4hqu0dIPWMRSJgv9PII3CE5X+iDsdsrB5oDHQ9JMJ4bl23ijzuiKkaDwUb15Hm1omJLVVu6jyU1cT+knEk5mP9reWPlkfPnsEsQHNMpl3cE5ufp30dslZaabfFTq7/Xu6sjple1yh83ZvgwsMpimY73qoNA/wWsmxSQw5Hni4vpFt38me3U/6m8nmqynXmZ7AIgM81kRP/X2i2YPt4cpWsvkq+eZmsreSffdV+mQ9e/7m7d5Gcu9u9svOQXc1/W1t+HA/6XeTx9u1mfMz9dpg985w6+Xg9YPhDz9mt3bT3u3k+Vb2a/fPlbWku2bVmmHLECjztAIbKSGmlNsKENU/v2v6eCXZuZ/0nqY//Tzo99OHOxOv6ki2oEfCNTn3kAXj4R69SO51D3pvsj96g9f9g7u3su19eguHfIKrJ8ViDhcJYYTvMdlLVIIHqiDjTL1OX8exPv8MjFG2nzPP/QcEP5W8pxMzNsCWSEo6qyeeFgI5+fTs0ihRVKONzMklM8qXCu1QuroD1nzDAB91mzuFttgkLrnGWGAy4ZpLF02SH2VGudbFZkTL2BSh5ykzKogSk8agXCpUuVEBfEHFzOsVG0ASMleJzceHHTuqZfUAihJW67Jy1cb4s6xXD6oyG2d0/YiMpJMxqeoCH83BJmJec7itJsksXbFYfHChfqFO3RFcaZ/l4ljq9RmT71jAEbE9y6fsuMYb2hQec4OcE9KjAEWr5oEJl7K7mE8CwSl363A4WeX8yFtG67IWDQPaXGlyj6ImU3hVenFM24shypIcS0y6rEmVmY/AcRX9PmXij15naq6cR9O1025QbrKgQ5kzLyyH1ZfYqSY6TcH3iFqU7D2D5u2JG0fPNC91cXSpQDl/hQJUrmODmTIuPGZtG4UesSVZi0df+eXZK5c+gUqmfO7kfzLYMpGHLRep8fymudLlexF4LGiFrEW2BSZ9/gIJeqv5
+sidebar_class_name: "patch api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"更新Pull Request信息"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"patch"}
+  path={"/api/v5/repos/{owner}/{repo}/pulls/{number}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+更新Pull Request信息
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"number","in":"path","description":"","required":true,"example":0,"schema":{"type":"integer","format":"int32"}},{"name":"owner","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"title":{"type":"string","description":"Pull Request 标题"},"body":{"type":"string","description":"Pull Request 内容"},"state":{"type":"string","description":"Pull Request 状态(closed，open)"},"milestone_number":{"type":"integer","description":"里程碑序号(id)","format":"int32"},"labels":{"type":"string","description":"用逗号分开的标签，名称要求长度在 2-20 之间且非特殊字符。如: bug,performance"},"assignees_number":{"type":"integer","description":"最少审查人数","format":"int32"},"draft":{"type":"boolean","description":"是否设置为草稿"}},"title":"UpdatePullRequestReq"},"example":""}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","properties":{"title":{"type":"string"},"body":{"type":"string"},"state":{"type":"string"},"createdAt":{"type":"string"},"updatedAt":{"type":"string"}},"title":"UpdatePullRequestResp"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

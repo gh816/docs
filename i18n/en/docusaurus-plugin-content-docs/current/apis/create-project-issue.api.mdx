@@ -1,0 +1,71 @@
+---
+id: create-project-issue
+title: "创建 issue 标签"
+description: ""
+sidebar_label: "创建 issue 标签"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVt9rG0cQ/lfE9MUJ25xbmj7cW1PyENqS4KRPQpjV3Vja9H5sdvfsiOPAARM7JcWFgE0Tp5hSCCktdYupg2Tyz1R3ip/6L5TZPVmKnWDVrl50e5qd+Wbmm2+UQ4hSYcANhuAv8UgjgxB1oIQ0Ik3AB2CQSlScjjdC8CFQyA3eUuldDMwNrTMEBoZ3NPhNsGcNLQaSKx6jQUXvc0h4jOBDksVtVMBAkG/JTRdOBrQuGqPDrXLzYK583C83HpY/vyj3NsuHP/xz+Lja3j3aWa0OBuW3u40PGuXmwSVgoPBeJhQlYVSGDPA+j2WEDr8Ouhhz8HMwPUnvtFEi6UBRsGNg6UpyBq7h4EnZf1I9Wi3/+HH0sn+0vV/u7JXPV+eGhw+Gr57+vfpgNFgbDdarja3hq1+G/f7o6ZqzIHf/C0iFMp0B45uD38vXa3MXDNtyN1Gba2nYI4sgTQwmhh65lJEILCm8u5pi56ddcaV4j/AajPU7M5vGUtBZoZZpotGafzw/T19vp3jzC2DTSC57l/9T8LRNvAUGUhGvjXCxRDhlIxKDHUuHt2PHqiFCYLCUqpgbZ/jpJ1AQoChVp1M86eDop503j/6kC66jZ9mX3383erEHtjAy1cKkqrc4E1THhPegzVR0dmwyoszsuIeL3MwAd+NZOehX238dbe/bODKc+W71bL/a2pvcNXjfLM5Y1mprvdr5dVxcuiyMJdVXqDq44Fj8JW9jtIBaEtMKBl3koVWn3B41BpkSpgd+s8UgRtNNSe1kqi1ZaNp88LgU3vJVz3bDy61oFF5Ox8ITVvu83Glc4UUUUNOMoVp2OtiaxLlNhLXcKxjQCC1Mhu36eCqa44xbNPVLqS1FnVsQIU8WwzTQp+oBDCigO3x0Zf7KPFWUUom5HdVaT1y/GhZ4o9pdH/32+qSvqaknt3UfqDmejLhIpujkatQELgUBuAo1a4GBP5ZXfyxhbk8w8I83Ql2uFoMu1dxvQp63ucavVVQU9PpehqpuzzJXgrdthXIIhabn9yyw6QTmFmopvNQ415Z5Z/ZjvUlIbZZ5lNXK+g32JguPRPxcOC++dc4B2nXrgphPbKFzwLBcKVrHs2q77X763MX98A45mFw9tZYoB3fjsyBAaaZsaXEU06N+6+btO8CgXW+7OA3tzuUrRGS+Mv4vRM7tyrDvcoh40sl4h2xdSPr8C4w0jaM=
+sidebar_class_name: "post api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"创建 issue 标签"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/v5/repos/{owner}/{repo}/issues/{number}/labels"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"number","in":"path","description":"Issue 编号(区分大小写，无需添加 # 号)","required":true,"example":"","schema":{"type":"string"}},{"name":"owner","in":"path","description":"仓库所属空间地址(企业、组织或个人的地址path)","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"仓库路径(path)","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"array","items":{"type":"string"}},"example":""}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","description":"mr id","format":"int64"},"color":{"type":"string","description":"颜色"},"name":{"type":"string","description":"名称"},"repository_id":{"type":"integer","description":"仓库id","format":"int64"},"url":{"type":"string","description":"url"},"created_at":{"type":"string","description":"创建时间"},"updated_at":{"type":"string","description":"更新时间"},"text_color":{"type":"string","description":"文本颜色"}},"title":"MergeRequestLabelResp"}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

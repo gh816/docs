@@ -1,0 +1,71 @@
+---
+id: create-project-file
+title: "新建文件"
+description: ""
+sidebar_label: "新建文件"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VsFu00AQ/RU0J6hMHZB68Q0qkBCHVmk5RRaa2NN4i+3d7q7bRpYlhIQ4wqknjpwruHBIxd+UAn+BZu3ETuKq6qHNJdnZnXmz82bepoSYlKYILcUQHGBqyIOYTKSFskLmEAB4IBVp5OWrGAKINKGlXS0PKbIvRUrggcWJgWAEQ1LSCCu1IAOhBwo1ZmRJ824JOWYEAciTnDR4IDi+QptAD6imo0JoTsvqgjygU8xUSvWmiRLKEIIS7FSxzVgt8glUlbdA0aTknYM0ge8CJKw9ydjnMp7yiUjmlnLLP1GpVESOFP/QMFLZCdUijhZOHmRkDE6IeWmw5Jg5BA+UZo4ts7aMs5JUG6Rvb6wxj5LeLSxsIvWIqxauH1gt2tXnL5ezb5e/vv59/7HjTRmK9Jbu/z6c/zn/wUEimWXCWrptFrPZsvcts5jN5ilUHlhhHfHbqzM0pCNG6bRGxec1GSVzU9PydDDgr2WUndfgdQnb8DeWe+EmqvlaN58zSV+PehCj7euF7lVrhBtub1R94YQwdmpRuqWhqNDCTiEYhdx7NpEsQUoalyIPXAA+KuEfb/k88MYvnbpUfsnLym9KY/yST1c8caSPa0EKW4A9rpe7auUBD9SwHb0Xc1I6k9GSvhiI1jSfg9ay3P5r9nlLtRtrzdq3tepWsRAdSMdHU+ooJczfxjIyfcrEdagXTzYHmwMOwKXN0OlJI3FXZ99/X8yuzj5dXvxcDdKtCCxkxdKp9VWKIueIhU75YE3WCFAJRt5ywqgk5xXMH4Sg0ew5aWxyfqEHCXMejKAsx2jojU6ris1HBemmPY5RCxzztUclxMLw72tetW7eD4eNWj56cN0VGiPmU04d06IR73c0XTxn/CjcI6ir1D1jOiqqcDGmrtD11naN8nifA7Sua88UZ1x7PIsiUrZzlpWr6k757s7ePk9T8/plMnbPOp5w6+DJ/L8JB3ca5WwlpJhPinoia0j+/Ad82R4p
+sidebar_class_name: "post api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"新建文件"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/v5/repos/{owner}/{repo}/contents/{path}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"path","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"required":["content","message"],"type":"object","properties":{"content":{"type":"string"},"message":{"type":"string"},"branch":{"type":"string"},"author[name]":{"type":"string","description":"提交作者"},"author[email]":{"type":"string","description":"提交作者邮箱"},"committer[name]":{"type":"string","description":"提交人"},"committer[email]":{"type":"string","description":"提交人邮箱"}},"title":"CreateProjectFileReq"},"example":""}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","properties":{"commit":{"type":"object","properties":{"sha":{"type":"string"},"date":{"type":"string"}},"title":"Commit"}},"title":"CreateProjectFileResp"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

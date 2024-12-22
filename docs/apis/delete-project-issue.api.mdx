@@ -1,0 +1,71 @@
+---
+id: delete-project-issue
+title: "删除issue 标签"
+description: ""
+sidebar_label: "删除issue 标签"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVF1rE0EU/Svh+hJhcKvQl30T7ENRUPx4KkEmm9tm62Z3nJmtLctAlNJWrUSotFiq9KFYFcQKQjQt/TNmkuapf0HubPph6xdpn2bvzOy9Z+4592RQQSEx4Bor4I/zSCGDCqpAhkKHSQw+AINEoOQUjlbAhwpGqPGWTCYx0KNKpQgMNJ9Q4I+BixWUGAgueQ01StrPIOY1BB/itFZGCQxCyi24rsLJgi5FobuzbBvNol1s2YU5u7Fptxp27vX+zmJnZb23Vu80t+2z9cKFgm00LwIDiQ/TUNIjtEyRAU7zmogwx6+CKtY4+BnoGUF7SsswngBj2CGw5FH8D1zt7SXbWuo8rdsvb7sfWr2Vr3Zty76pF9s7j9vfVn/UH3e3Z7vb852F5fa3j+1Wq7s6m9+gdOcCUqJI/gPjXvOz3Z0tnltZt/ytbGd9vvtp17580d3cKnaefu/NN+zCeu/1RvfV+73nXzrL8736im007cJcb/XV/s6ifffEL5TTCTaOXKcSzwCzRH8qkcQKFZ1fGRqi5VeAN68DgyCJNcaaTrkQURg4TXuTiq5kp0skZVI4MBCSJkCHroAxxjCoIq84aWcuVBikMtQz4I+VGNRQV5OjUaEM1DUfPC5Cb2rYIx6VlznNGS+j0HihGx0vy0fEeBEvY0Qxr6GhFqCcyqepdFTwDoHOcRFB44nDH2rXtyBCHt+vJIE6xRgwoGR5cPnS0KUhMAxEonSNu270qc9pdNAKOcsnU2VHfaWs/d5pnNaeiHgYU95URnQx78IYcBFS/WFHukgInX8wf/6BxnMjYeAfWkbeELdF4EoMqonSlDDLylzhPRkZQ9sPU5R9Kqa4DHmZujGWQSVU9P0Hpzv+kOLtvhgvFgayo992ob/J4xl6PY/SvrYf4MyRM9LYDYTz7PY0AOictTNiPmFXA8BwmhkYxbm41yCMk4pN6dBNnEbzo6tBgEIf++mUYZnjPnNt5MbI3REw5icIhBdg
+sidebar_class_name: "delete api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"删除issue 标签"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/api/v5/repos/{owner}/{repo}/issues/{number}/labels/{name}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"number","in":"path","description":"Issue 编号(区分大小写，无需添加 # 号)","required":true,"example":"","schema":{"type":"string"}},{"name":"owner","in":"path","description":"仓库所属空间地址(企业、组织或个人的地址path)","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"仓库路径(path)","required":true,"example":"","schema":{"type":"string"}},{"name":"name","in":"path","description":"标签名称(批量删除用英文逗号分隔，如: bug,feature)","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"application/json":{"schema":{"type":"object","properties":{}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

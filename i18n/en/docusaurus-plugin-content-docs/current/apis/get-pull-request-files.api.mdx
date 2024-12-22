@@ -1,0 +1,71 @@
+---
+id: get-pull-request-files
+title: "pr提交的文件变更信息"
+description: ""
+sidebar_label: "pr提交的文件变更信息"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vl9v3EQQ/yrVPKWVFYeivtwbKv8KgkQXeIpOpz3v+G6L7d3sri+NLEsJihQqFQWpUFAoCCReqCKliArCpYIPU/sOnvgKaGzn4qRnJVwQT/buzM7+5t/+JgGOSqPHLHJo+Sww6ABH42mhrJARtAAckAo1o+UdDi3oo12Jg6CN6zEa+6YI0IADlvUNtNaARNcqmYGOA4ppFqJFTeIEIhYitCCKwx5qcEDQHYrZAZy/eHJwkO9+lx09WWn//fxB/unP48cH2fHDfPRwpT3Z38lHe+Mvnr7Y+jg//C0ffS4EBwc0rsdCky9Wx+gA3mOhCrB0w3gDDBm0ErCbivaM1SLqQ5o6U1xyI7oAVglhfH8r/+nbyY+jv758lj9+mn+ztZA9386O9l9sbU+OdybHu+NPHmVHT7LRiLAWGmTu+n8BUqOSl8D456+H+e87C1e8tkMnjZKRQUPym0tL9Dl74fK74IAnI4uRJekN9wZ9XrIqe3fRs+CA0lRUVpQ2PcmxpiUii/0iDb7UIbPl1qs3IXWAcY68G4ioPHmJExpDOcR/dcSTcenHJXS58P2uRt9c7GaPGeyawawwOzBAxhuFxjJtG6SpA1bYIpGvC99vE5QKVx0T05ptUtVYDC+BNcKNbi+Qva7gTYisMFZ4F5sqpTNsFLU7SyAD3m0UErJG4VDgRk3QkzJAFp0J0uoUeRX1K3gQ62DmvifDUNim2FVSM5C6QacG921C+P8V/rSFL4gI3rPzFxeGym42pIlxLuhVYcHKjBycWKwF6J3V5feXq9164G5XvpxvEGKsO5Evz2q/h7qPFW/dLvJDem00qtSjQik4LCmWBr1YC3JireNAiHYgK26Ek7oGlynhDm+59FwbNymoJXUTWqauioPAuEnJg6nrE40u3jUyoscY9bDky87pTav0lhahSOnp92URlAq9R+HrcumZl7gAHCBj5eKVxaXFpaL1pLEhi4pOL0lF6fHeZ9noh8n+zvjRbnb8S7731fjrZ9kf34+3D89bTU4rhS6ockNF4aqAiajWG2Uw1oApQVBuFUykJAFtnbBtq2K0Iii0no4Htbh0HBhIY8lWktBT+qEO0pS212PUVSaGTAvWo5isJcCFof+Gyabuw0K7Isfr1+YZO2b6f9IaETXGkAVxRbUf4ebpAESsPhfMq48hc4Au83VFzOfGkjlgFNWSdqZdWSS7FL3meahs7RBNImm9Rd964wNI038APJ4Tog==
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"pr提交的文件变更信息"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/repos/{owner}/{repo}/pulls/{number}/files.json"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"number","in":"path","description":"第几个PR，即本仓库PR的序数。对应iid","required":true,"example":"","schema":{"type":"string"}},{"name":"owner","in":"path","description":"仓库所属空间地址(企业、组织或个人的地址path)","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"仓库路径(path)","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","properties":{"code":{"type":"integer","format":"int32"},"added_lines":{"type":"integer","format":"int32"},"remove_lines":{"type":"integer","format":"int32"},"count":{"type":"integer","format":"int32"},"diff_refs":{"type":"object","properties":{"base_sha":{"type":"string"},"head_sha":{"type":"string"},"start_sha":{"type":"string"}},"title":"DiffRefs"},"diffs":{"type":"array","items":{"type":"object","properties":{"new_blob_id":{"type":"string"},"statistic":{"type":"object","properties":{"type":{"type":"string"},"path":{"type":"string"},"old_path":{"type":"string"},"new_path":{"type":"string"},"view":{"type":"boolean"}},"title":"Statistic"},"head":{"type":"object","properties":{"type":{"type":"string"},"url":{"type":"string"},"commit_id":{"type":"string"},"commit_short_id":{"type":"string"}},"title":"Head"},"added_lines":{"type":"integer","format":"int32"},"remove_lines":{"type":"integer","format":"int32"},"content":{"type":"object","properties":{"text":{"type":"array","items":{"type":"object","properties":{"empty":{"type":"boolean"}},"additionalProperties":{"type":"object"},"title":"JSONObject"}}},"title":"Content"}},"title":"DiffFileInfo"}}},"title":"MergeRequestCommitFileResp"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

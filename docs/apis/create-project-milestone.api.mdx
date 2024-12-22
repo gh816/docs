@@ -1,0 +1,71 @@
+---
+id: create-project-milestone
+title: "创建仓库里程碑"
+description: "创建仓库里程碑"
+sidebar_label: "创建仓库里程碑"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VkuLG0cQ/iuhTonpeNavHObmhByCMTZr5ySEaE3XSu3MTPd29+xaDAMbSFjnAYtZ7A1xAmFPIWBYiHHANuTPWFL0L0J1jzSz8sorH2xdNFNTz+/rquoSBGqDCXcoIN7iqUUGAm1ipHZS5RDD+MGT8csXr18ejl8czvZ/nv750/T4ITBQGg0nna8ExJAY5A5vG3UPE3dTpmidyhEYOD6wEHegkXUZaG54hg4NfSoh5xlCDGo3RwMMJIXV3A1hORdgYHC7kIaydaZABnifZzrF8NEmQ8w4xCW4kSaZdUbmA6gqtohiUKv3FKQbLNG6z5UYkUaicoe5o0eudSoTj1h0z1KksuWqidgBUWBP5YSddKnHqw6k+oQuMNCG0HcSrU/Dq72Rz3Jdkz/2Z8e/QMXAOu7WMJj++Hyy9y0ZnJKfG+fg4L9/T7xZKOR8iwd/TZ4eT46ez46eEVfzippDc12ITdwmny0qKlI1aLXKbUDi8sYG/Z32fusGsDYRF6ILp7F/O7pJqiyKnrS2qOEO6jJ3OPDndalfvv97dvR0+ut33mLy6GS2fwAMtpTJuAt2Vy5TJaFlRI+78xEKTThH6AMTwmDosrRXmPR8S9Ic/3Yy/n2P7PIi66NZA7Tpq8fjg3+WYPrsKvmQYg17Kc60VRrz9Zmb/HA4frW3BnM0Qqx0yox6a2UXhueKHN+5Gd+53Qst1j5okyfPJo9PGubXIp2UzmzbTbQ6tOkQufDjvvSvFpPCSDeCuNNlkKEbKtoiWlnfgDSWY4i4ltHOtcjDHZV+PVRRSa9VlM1jWBrJaHbCMuk2vu9Qg3viKwY0cTeb2fzlfIospmdTW03IqmIbcd1Mi/lPS2VLtX0mKfK8J1Riz9oylHJ4uXRx4+IGOSAAMu47tF5Xq9bv0gRYzLeVBjWFDu+7SKdc5i16A+Ad4FpSXtegPuPAIJ5v5bhenC3guwyGxFjcgbLsc4tfm7SqSLxdoKnJ3eFG8j7B0SlBSEvPK+4a7TI+3qw34icfrUq+FvJ8REnztKgX9Dc4WtwmaPF/wKAeo6q7OPC+6PDpixDl07vkoDF941pAGQeL60mC2rV0aXNV7X65fevOXWDQr28bmRL+hsN3iUC+GzJTvlA/AL2shJTng4IPSDeEpN//5pKtjg==
+sidebar_class_name: "post api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"创建仓库里程碑"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/v5/repos/{owner}/{repo}/milestones"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+创建仓库里程碑
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"required":["due_on","title"],"type":"object","properties":{"title":{"type":"string","description":"标题"},"state":{"type":"string","description":"状态"},"description":{"type":"string","description":"描述"},"due_on":{"type":"string","description":"截止时间"}},"title":"MilestoneAddReq"},"example":""}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","properties":{"closed_issues":{"type":"integer","description":"关闭的issue数量","format":"int32"},"created_at":{"type":"string","description":"创建时间"},"description":{"type":"string","description":"描述"},"due_on":{"type":"string","description":"截止时间"},"html_url":{"type":"string","description":"html地址"},"number":{"type":"integer","description":"编号","format":"int64"},"id":{"type":"integer","description":"id","format":"int64"},"open_issues":{"type":"integer","description":"打开的issue数量","format":"int32"},"repository_id":{"type":"integer","description":"仓库id","format":"int64"},"state":{"type":"string","description":"状态"},"title":{"type":"string","description":"标题"},"updated_at":{"type":"string","description":"更新时间"},"url":{"type":"string","description":"url"}},"title":"MilestoneResp"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

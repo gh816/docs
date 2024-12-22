@@ -1,0 +1,71 @@
+---
+id: get-branches
+title: "Get All Branches of a Repository"
+description: ""
+sidebar_label: "Get All Branches of a Repository"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVs1u3DYQfhViLnUCZbV2kYtuadAGQdHacJqTsQi41KzERhJpcuR6K+iUe/sO7TnIC/R10r5GMZTkVfZHmyxykkhq5vs4P9+ogRStQyUJU0hWsvAYQYpeOW1JmwoSgAiMRSd5+TKFBDKk75ysVI4eIiCZeUhuoNuCRQRWOlkioeP9BipZIiRgfqvQQQSafVpJOWwDXaM1XpNxa3HJH4srSbk4u3SZrPTvAV8YJ177/ugRRODwttaOuZOrMQK8l6UtsKPtVY6lhKQBWlve8+R0lUHbRg+0HFrzuawY9Mx+LWRvHA3ItzW69Q70K+NIV5n4QWOResF2cW3TkKsxgT5th0DZ7UrWBUECg/mYyFJ6nCZyGV5kEYmruijENd7W6Okb/yUsxoipdqiC70lY6VXMO6deNtiOca3Mjtz0ee0cViSuZIbi57pchpo9jq4rwix8uzKulNRtfXsx5nP+CRV0b47TeUlYenEVCj7DSPwk73VZl+J8Pv9qtC7mY15SKfT+DZm3eCQ7Fp3nohCdiRhMthvjcEEs+GNvTeXR8/nFfM6Prdr7ESJQpiKsiE8fx4/5seNVOieZpOaQjfbN8ldU3GjWsYyR7rC66+5wYqiy1HTcgc/33SkC7q+91Q+kKejD8w6hDR4JVZDeB4OlMQXK6hOLTluv0VtoWz7IUaZBX5uw9Khqp2kNyc0ighIpN71QM21WtQRiaXV89zRmwfNxE+S4jRtetvFyo+ce3d0g3bUrIIGcyPokZgezTJMyKc6UKXcK4t/3f3/858///vjw8a93wMkdaL3iXIWotVxRKxOu298tNco/6d0+uZjNhTJ2t9ggAmbVLc5n89k8xM94KmW1ySe8QBLPikIMA0qYlZBio+HbjptNaTFGnwPCe4ptIXXFKCEKTR/HG5BWM5unodSt4Zglw3BL+nHyEM9FBLnxxHZNw0L72hVty9tdU3GUU+3lsjg0f8cMpwfCXvJvcb2ZNXeyqMOE4ob/fNgJ+Z/A7MfKiZgj7Z/AGA+SE4H2K/4EZq/aJ8JNK/oU7GZgnAh9dt0r8yNxSLsn8LcGw4bDghdOM4kvLOcRoVP+/faSHaZBtR6THC7R9enJYTv0L3gCkyAU7eJBy0PouqNnSqEdtyuPvHYs7C++/wXa9n/ksfwh
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get All Branches of a Repository"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/repos/{owner}/{repo}/branches"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"Repository Owner Path (Organization or User Path)","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"Repository Path(path)","required":true,"example":"","schema":{"type":"string"}},{"name":"sort","in":"query","description":"Sorting Fields name/updated","required":false,"schema":{"type":"string","default":"updated"}},{"name":"base","in":"query","description":"Optional, Pull Request's","required":false,"schema":{"type":"string"}},{"name":"direction","in":"query","description":"asc/desc","required":false,"schema":{"type":"string","default":"desc"}},{"name":"page","in":"query","description":"Current Page Number","required":false,"schema":{"type":"integer","format":"int32","default":1}},{"name":"per_page","in":"query","description":"Items Per Page, Maximum 100","required":false,"schema":{"type":"integer","format":"int32","default":20}},{"name":"access_token","in":"query","description":"personal access token","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"array","items":{"type":"object","properties":{"name":{"type":"string"},"commit":{"type":"object","properties":{"sha":{"type":"string"},"date":{"type":"string"}},"title":"Commit"},"protected":{"type":"boolean"}},"title":"BranchResp"}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

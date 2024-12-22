@@ -1,0 +1,71 @@
+---
+id: org-user-info-1
+title: "获取组织成员详情"
+description: ""
+sidebar_label: "获取组织成员详情"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VDtv1EAQ/itoKohW8QURCncUCEUUkQKpTqdozp7zLbG9m9n1KYe1FSCoeDSIX0BLSZHfk8fPQLN2Lia5SCAelb3z7cx+8/imhZwsU4aeckhnWDpSkJPLWFuvTQ0pgAJjiVGOOzmkYLjYd8Q79cwcbIECj4WDdAy7XGCtX8aLDiYKLDJW5IkFbqHGijp3UKAltEU/hzXvMR01moWR54YU0DFWtqQOdNmcKoS0Bb+0YnOedV1ACGr1RuOI4++/eWgins6a2pET/P5oJJ+fw+8+BQWZqT3VXtCNZEM+N6Ka6QvKPCiwLHX2uoup88EdXXsqiEHBzHCFvjM9fABBdbndJKn6WqwBGi7X2nGBHnn/FlRq+pu0r5xLU0gjfp1lUOC1j62QYYv0Mq8Xw7tTY0rCWjA25fpcmSrkw7WQGczrX+zHn6Q6lNB14FJze+QsBAHnhHkUVxuPjrKGtV9COp4oqMjPjci1oJhMnBJI0OpksZ0YLlzSGi5CUlE1JXZJeymaILNPvOh0O7kK/ExGN1YjiK5mJibTM8ykFQe5ydw6oUmw7rC1Odocxbk1zlcYK9Wr9uL999MPn89PXp+fvD179/H005eLb1/PXr25HrC9kpXE7svp6dgntkRdD2a8S3sMaLWw2IbYdqGYdnuoz14Mq6UxUTA3zotf207R0T6XIYj5qCHu67tA1jiV1Mct5NrJ/y0rdMj37l6/cu7duY16b8R6KZSxbPp9dEjLfn3KpvuPT64KEyarqYtpd/CjLCPrB46y6cJwBJ88fg4h/AAKly8M
+sidebar_class_name: "get api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"获取组织成员详情"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/v5/orgs/{org}/members/{username}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"org","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}},{"name":"username","in":"path","description":"","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","properties":{"id":{"type":"integer","format":"int64"},"path":{"type":"string"},"name":{"type":"string"},"url":{"type":"string"},"avatarUrl":{"type":"string"},"user":{"type":"object","properties":{"id":{"type":"string"},"login":{"type":"string"},"name":{"type":"string"}},"title":"User"},"active":{"type":"boolean"},"role":{"type":"string"},"remark":{"type":"string"},"organization":{"type":"object","properties":{"id":{"type":"integer","format":"int64"},"login":{"type":"string"},"name":{"type":"string"}},"title":"Organization"}},"title":"OrgUserInfoResp"}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

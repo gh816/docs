@@ -1,0 +1,71 @@
+---
+id: handler-pull-request-review
+title: "处理 Pull Request 审查"
+description: ""
+sidebar_label: "处理 Pull Request 审查"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVd9rG0cQ/lfMPDlwzbmBvNxbWvpQSohR0ichwupuLG16ul3v7ikRx4FSTOxAS1zyy5i0aSAJ1Bg7paVxZNH+MdHq7Cf/C2X2zrJiJ2mxo4fT7e7szDffzDeXQYRSYcgMRhAssFijBxHqUHFpuEggAPBASFSMll9HEECbJVGMaj6N4xoupqhNDbscb4IHhrU0BHWgs5nqUEPDA8kU66BBRccZJKyDEECSdpqowANOgSQzbTgevdjctMu/jnY25msHwx/sj3+Mn2yOdu/bwf35WrG+ZAf3xg9fve1/b7ff2MEDziPwQOFiyhUlZFSKHuAt1pExlrnosI0dBkEGpidpTxvFkxbkuTfBJW4m/wGrhDC+27e//1L8Nth//Kd98sr+3J8dDW+Pdtbf9m8Xu0vF7vJ45dFoZ2M0GBBWZ0Huzn0KkAql+B8Y915v27+XZs8YtlHeRG2+EFGPLEKRGEwMvTIpYx66BvFvaIqdnXQlmjcwNOCBVNROhqOm0wWhQpwyawoRI0tOJDNe27arL+1wYFf+slvPxk9f7PfX9/5ZPhiu7O+u7W09t6svD4Z3qUfubdjtN8XWs2L1jv1prXjwdPxwhZgDw43L9JKUSnQxuoyqhZMWXoT8HTpyuqJQS5HoEuuFuTn6exfYlW/A+0Rk5C5kG1nkdJK5pcYwVdz0IKg3POigaQsSoRTa3afCB+Azyf3uRZ96QvuZ69/cz2iZ+zKNY+1npdhyXx2KVaPqloJsHIW5SlBLNB4Q/tpR2b86JGdSNuqhnHpwQbjsKoJDKuH1SIT6RB3BAwpaLj4/P3d+jminbDrMcVV1t32+VKzemZkeJDNl3Y+7nGpF8l4xbPCW8WXMeEL+UxWTYclWHZjkhOOi04MUhDI41HxQ6cqxRuvJkKqIa3jQJvKDOmRZk2n8VsV5TtuLKaqqTl2mOGsSGfUMIq7p/QMDdhr/bK2S57mZ0wy+9+ZebbKkRzmzOK3E/h32jkYwzZVTwTz7IDwF6LJWZ8R8bDCeAobrlLwx0awrdnn0ZRn3s2vk4OjqieFAOZQ3LoUhSvNR22n9z1+5eg08aFbTuCMi901gJGx6Vt9tuu1ml9vLIGZJK2Utsi190u9fhxQn0A==
+sidebar_class_name: "post api-method"
+info_path: docs/apis/clean-docs
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"处理 Pull Request 审查"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/v5/repos/{owner}/{repo}/pulls/{number}/review"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"number","in":"path","description":"第几个PR，即本仓库PR的序数。对应iid","required":true,"example":"","schema":{"type":"string"}},{"name":"owner","in":"path","description":"仓库所属空间地址(企业、组织或个人的地址path)","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"仓库路径(path)","required":true,"example":"","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","properties":{"force":{"type":"boolean","description":"是否强制审查通过（默认否），只对管理员生效"}},"title":"ApprovedMergeRequestReq"},"example":""}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"application/json":{"schema":{"type":"object","properties":{}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

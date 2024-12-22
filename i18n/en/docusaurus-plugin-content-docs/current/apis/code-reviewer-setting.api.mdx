@@ -1,0 +1,71 @@
+---
+id: code-reviewer-setting
+title: "Modify Repository Code Review Settings"
+description: ""
+sidebar_label: "Modify Repository Code Review Settings"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vs2O2zYQfhViTrsBbTlb5KJbG/RQFOkunOxpaxRjaSwzkUguSXmjCgIK9N6ir9AX6Av0dRZ9jWIoyX/KosU29cUiNZz5OPPNN2ohJ+sow0A5pBssPUnIyWdO2aCMhhRAgrHkkJff5JBCZnJa0k7RA7m3FILSBUgIWHhI72BJ1ngVjFPkQZ4uVxIsOqwokGPjFjRWBCmYB00OJCgOaDFs4RzF3k8jrtlY3GDYiotrV6BWP0Zwwjhx64dXlyDB0X2tHF8suJok0EesbEn9nXy2pQohbSE0lvd8cHyTrpN7WI6s+beoOOiF/VyRMcvI+x+C+UB6RHBfk2smECw5bzSWoj8ixiPnEJ6OuuqNyYevTN6wRWZ0IB34Ea0tVRbzm7z3HLE9cnUIcgfovSo0xarvn7+rq3WsbCAfi75/Gt6s5IjHrN9TFkCCdcy3wIRhAHu3E+jnqUDrnNlhKWpPjhMpRYZaWGd2KidR1WVQtiSxw7ImL4UnZmOgXKwbkZmqQj8XVKTiYnTwUo5PV5fQHW7xj1B6w/8HyPeBoZyn+ABJ6UBFTPrGuApDv/XF1QTkG6VVVVdCRw/CbARaGzPo+xinpfosEcYMduxehdgTr6eCsqR7BnDUNx2fcOSt0b4nw9ViwX+nEa+/BXnM3xfJi1PKnrMN81zxWSxvTnh3ated0bKLcLaEeU+HuPSU1U6FBtK7lYSKwtawXto6spr1I4UErUp2rxKWFp+0Ufi6pOVll7ghCSwS5HajSNauhBS2Idg0SXLazTI9b0ztZmjVrDecZ6aaZP/xz58ef/3tr1/+ePz9Z+A2HwG+5Wz095DAXb089P/XY8pPWu/A830LHLYmVFxMqLPoWMQ2JmZ2KHtuMj8rVOB5MruaL0Rm7FTfQAInol+8nC/mi1gM40OFUY0GxXxjcrVpxJEiM61Ezysx0Mqfuz/SOo40FD3Qx5DYEpXmWDH97VDAO0CrGNOrqLHWsMt0nF/pMDH2hVxJ2Bof+FzbrtHTrSu7jrd7Nefy5srjunxq/h4jvFgOenspnpL9T97gAzXTmRLFJ3bWihdOMYjnA3rOgP4k2GETdXMMcrxEn2melP8V5cnAfgaSWOputZeBmLr+1es+9OwdOzgcncxSvkZ/4sssIxuObFm3umMVubl9BxLWw4SuTB4/UPCB2YYP43ca+47yFfdaKFEXNRZs20fk39/rMHUg
+sidebar_class_name: "put api-method"
+info_path: docs/zh/docs-gitcode-2-0-copy
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Modify Repository Code Review Settings"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/api/v5/repos/{owner}/{repo}/reviewer"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"owner","in":"path","description":"Repository Owner Path (Organization or User Path)","required":true,"example":"","schema":{"type":"string"}},{"name":"repo","in":"path","description":"Repository Path(path)","required":true,"example":"","schema":{"type":"string"}},{"name":"access_token","in":"query","description":"personal access token","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"required":["assignees","assigneesNumber","testers","testersNumber"],"type":"object","properties":{"assignees":{"type":"string","description":"aprroval username, can provide multiple values, separated by commas. eg: (username1,username2)"},"testers":{"type":"string","description":"tester username, can provide multiple values, separated by commas. eg: (username1,username2)\t"},"assigneesNumber":{"type":"integer","format":"int32","description":"Minimum number of approvals\t"},"testersNumber":{"type":"integer","format":"int32","description":"Minimum number of testers"}},"title":"CodeReviewerSettingReq"},"example":""}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object","additionalProperties":{"type":"object"},"properties":{}}}},"headers":{}}}}
+>
+  
+</StatusCodes>
+
+
+      
